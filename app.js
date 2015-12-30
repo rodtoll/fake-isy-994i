@@ -5,6 +5,7 @@ var fs = require('fs');
 var parser = require('xmldom').DOMParser;
 var FolderNode = require('./foldernode.js').FolderNode;
 var DeviceNode = require('./devicenode.js').DeviceNode;
+var SceneNode = require('./scenenode.js').SceneNode;
 
 var basicAuth = require('basic-auth');
 
@@ -64,15 +65,28 @@ ISYServer.prototype.hadleNodesRequest = function(req,res) {
 
 ISYServer.prototype.handleCommandRequest = function(req, res) {
     var nodeToUpdate = this.nodeIndex[req.params.address];
+
     if(nodeToUpdate == undefined || nodeToUpdate == null) {
-        this.buildResponse(res, false, 404);
+        this.buildCommandResponse(res, false, 404);
+    } else if(nodeToUpdate instanceof FolderNode) {
+        this.buildCommandResponse(res, false, 500, 'Specified address is a folder, cannot issue command');
     } else {
+        // Build list of devices to command
+        var devicesToCommand = [];
+        if(nodeToUpdate instanceof SceneNode) {
+            devicesToCommand = nodeToUpdate.children;
+        } else {
+            devicesToCommand.push(nodeToUpdate);
+        }
+        
         try {
-            nodeToUpdate.simulateExecuteCommand(req.params.command, req.params.parameter);
-            this.buildResponse(res, true, 200);
+            for(var i = 0; i < devicesToCommand.length; i++) {
+                devicesToCommand[i].simulateExecuteCommand(req.params.command, req.params.parameter);
+            }
+            this.buildCommandResponse(res, true, 200);
         }
         catch(err) {
-            this.buildResponse(res, false, 500, err);
+            this.buildCommandResponse(res, false, 500, err);
         }
     }    
 }
@@ -81,10 +95,10 @@ ISYServer.prototype.handleConfigureRequest = function(req, res) {
     var configName = req.params.configName;
     var configValue = req.params.configValue;
     if(configName == undefined || configValue == undefined || configName == null || configValue == null) {
-        this.buildResponse(res, false, 500, 'No config value or config name specified');
+        this.buildCommandResponse(res, false, 500, 'No config value or config name specified');
     }
     if(this.getConfigSetting(configName)==undefined) {
-        this.buildResponse(res, false, 404, "Unknown config value");        
+        this.buildCommandResponse(res, false, 404, "Unknown config value");        
     }
     this.setConfigSetting(configName, configValue);
 }
@@ -109,7 +123,13 @@ ISYServer.prototype.loadConfig = function() {
         }
         this.nodeIndex[newNode.getAddress()] = newNode;
     }
-    
+ 
+    // Load scenes
+    var scenes  = this.rootDoc.getElementsByTagName('group');
+    for(var i = 0; i < scenes.length; i++) {
+        var newScene = new SceneNode(scenes[i], this.nodeIndex);
+        this.nodeIndex[newScene.getAddress()] = newScene;
+    }  
 }
 
 ISYServer.prototype.authHandler = function (req, res, next) {
