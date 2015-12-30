@@ -50,7 +50,7 @@ DeviceNode.prototype.simulateExecuteCommand = function(command, value) {
     // On
     if(command == 'DON') {
         if(utils.isEmptyValue(value)) {
-            return this.setValue(value);
+            return this.setValue(255);
         } else if(!this.isDimmable()) {
             throw new Error('Specified device: '+this.getName()+' is not dimmable cannot specify dim value');
         } else {
