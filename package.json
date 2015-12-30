@@ -1,0 +1,30 @@
+{
+  "name": "fake-isy-994i",
+  "description": "Node.js server that acts like a ISY-994i ",
+  "license": "MIT",
+  "version": "0.1.0",
+  "author": "Rod Toll <rod_toll@hotmail.com>",
+  "keywords": [
+    "isy",
+    "universal devies",
+    "insteon"
+  ],
+  "main": "isy.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "faye-websocket": "",
+    "xmldom": "",
+    "basic-auth": ""
+  },
+  "bugs": {
+    "url": "https://github.com/rodtoll/fake-isy-994i/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fake-isy-994i/isy-js.git"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "homepage": "https://github.com/fake-isy-994i/isy-js"
+}
