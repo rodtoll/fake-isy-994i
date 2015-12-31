@@ -387,8 +387,6 @@ ISYServer.prototype.start = function() {
     });    
 }
 
-var host = new ISYServer(3000);
-host.start();
-
+exports.ISYServer = ISYServer;
 
 
