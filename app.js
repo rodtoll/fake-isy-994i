@@ -96,7 +96,9 @@ ISYServer.prototype.handleCommandRequest = function(req, res) {
         try {
             for(var i = 0; i < devicesToCommand.length; i++) {
                 if(devicesToCommand[i].simulateExecuteCommand(req.params.command, req.params.parameter)) {
-                    this.sendDeviceUpdate(this.webSocketClientList[0],devicesToCommand[i]);
+                    for(var socketIndex = 0; socketIndex < this.webSocketClientList.length; socketIndex++) {
+                        this.sendDeviceUpdate(this.webSocketClientList[socketIndex],devicesToCommand[i]);
+                    }
                 }
             }
             this.buildCommandResponse(res, true, 200);
@@ -239,6 +241,15 @@ ISYServer.prototype.configureRoutes = function() {
         
 }
 
+ISYServer.prototype.removeSocket = function(ws) {
+    for(var socketIndex = 0; socketIndex < this.webSocketClientList.length; socketIndex++) {
+        if(this.webSocketClientList[socketIndex] == ws) {
+            this.webSocketClientList.splice(socketIndex,1);
+            return;
+        }
+    }
+}
+
 ISYServer.prototype.start = function() {
     var that = this;
     this.loadConfig();
@@ -255,6 +266,8 @@ ISYServer.prototype.start = function() {
                 
                 ws.on('close', function(event) {
                     console.log('close'+event.code+" "+event.reason);
+                    that.removeSocket(ws);
+                    ws = null;
                 });
                 
                 that.webSocketClientList.push(ws); 
