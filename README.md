@@ -89,6 +89,7 @@ The following REST operations are supported:
 * `/config/reset` - Drops all websocket connections, resets all devices and nodes back to the state as specified in the nodeFile, elkStatusFile and elkToplogyFile.
 * `/config/<configname>/<configValue>` - Sets the configuration value specified to the specified value. boolean should be true or false (case sensitive). NOTE: If you change any of the file parameters you will need to do a reset (as above) to load the new configs.
 * `/rest/nodes/<ISY Address>/cmd/DON` - ISY on operation.
+* `/rest/nodes/<ISY Address>/cmd/DON/<dimlevel>` - ISY on with dim level operation.
 * `/rest/nodes/<ISY Address>/cmd/DOF` - ISY off operation.
 * `/rest/nodes/<ISY Address>/cmd/DFON` - ISY Fast On operation.
 * `/rest/nodes/<ISY Address>/cmd/DFOF` - ISY Fast Off operation.
