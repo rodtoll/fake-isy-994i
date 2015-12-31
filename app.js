@@ -7,22 +7,17 @@ var FolderNode = require('./foldernode.js').FolderNode;
 var DeviceNode = require('./devicenode.js').DeviceNode;
 var SceneNode = require('./scenenode.js').SceneNode;
 var WebSocket = require('faye-websocket');
+var log = require('./utils').log;
+var setLogEnabled = require('./utils').setLogEnabled;
 
 var basicAuth = require('basic-auth');
 
-var ISYServer = function(port) {
+var ISYServer = function(port, config) {
     this.app = express();
     this.port = port;
-    this.nodeIndex = {};
-    this.nodeList = [];
     this.config = {};
-    this.sequenceNumber = 0;
-    this.webSocketClientList = [];
-    this.setConfigSetting(this.CONFIG_ELK_ENABLED, true);
-    this.setConfigSetting(this.CONFIG_EXTENDED_ERRORS, true);
-    this.setConfigSetting(this.CONFIG_USERNAME, 'admin');
-    this.setConfigSetting(this.CONFIG_PASSWORD, 'password');
-    this.setConfigSetting(this.CONFIG_REQUIRE_AUTH, true);
+    this.loadConfig(config);
+    this.resetState();
 }
 
 ISYServer.prototype.CONFIG_ELK_ENABLED = 'elkEnabled';
@@ -30,6 +25,48 @@ ISYServer.prototype.CONFIG_EXTENDED_ERRORS = 'extendedErrors';
 ISYServer.prototype.CONFIG_USERNAME = 'userName';
 ISYServer.prototype.CONFIG_PASSWORD = 'password';
 ISYServer.prototype.CONFIG_REQUIRE_AUTH = 'requireAuth';
+ISYServer.prototype.CONFIG_LOGGER_ENABLED = 'loggerEnabled';
+ISYServer.prototype.CONFIG_NODE_FILE = 'nodeFile';
+ISYServer.prototype.CONFIG_ELK_STATUS_FILE = 'elkStatusFile';
+ISYServer.prototype.CONFIG_ELK_TOPOLOGY_FILE = 'elkTopologyFile';
+ISYServer.prototype.CONFIG_LOG_RESPONSE_BODY = 'logResponseBody';
+ISYServer.prototype.CONFIG_LOG_WEBSOCKET_NOTIFICATION = 'logWebSockets';
+
+ISYServer.prototype.loadConfig = function(config) {
+    
+    this.configSettings = [
+        // Logger should always be the first setting, used to set default of logger below this block
+        { name: this.CONFIG_LOGGER_ENABLED, default: true },        
+        { name: this.CONFIG_ELK_ENABLED, default: true },
+        { name: this.CONFIG_EXTENDED_ERRORS, default: true },
+        { name: this.CONFIG_USERNAME, default: 'admin' },
+        { name: this.CONFIG_PASSWORD, default: 'password' },
+        { name: this.CONFIG_REQUIRE_AUTH, default: true },
+        { name: this.CONFIG_NODE_FILE, default: './example-nodes.xml' },
+        { name: this.CONFIG_ELK_STATUS_FILE, default: './example-elk-status.xml' },
+        { name: this.CONFIG_ELK_TOPOLOGY_FILE, default: './example-elk-topology.xml' },
+        { name: this.CONFIG_LOG_RESPONSE_BODY, default: true},
+        { name: this.CONFIG_LOG_WEBSOCKET_NOTIFICATION, default: true}
+    ];
+    
+    // Special case logging as we need to setup logging BEFORE loading config so we can log setting results
+    if(config != undefined && config.loggerEnabled != undefined) {
+        setLogEnabled(config.loggerEnabled);
+    } else {
+        setLogEnabled(this.configSettings[0].default);
+    }
+    
+    log('Configuration:');
+    
+    for(var configIndex = 0; configIndex < this.configSettings.length; configIndex++) {
+        if(config == undefined || config[this.configSettings[configIndex].name] == undefined) {
+            this.setConfigSetting(this.configSettings[configIndex].name, this.configSettings[configIndex].default);
+        } else {
+            this.setConfigSetting(this.configSettings[configIndex].name, config[this.configSettings[configIndex].name]);            
+        }
+        log(this.configSettings[configIndex].name+': '+this.getConfigSetting(this.configSettings[configIndex].name));
+    }
+}
 
 ISYServer.prototype.getConfigSetting = function(settingName) {
     return this.config[settingName];
@@ -49,6 +86,9 @@ ISYServer.prototype.buildCommandResponse = function(res, resultSuccess, resultCo
         resultString += '    <extended>'+extended+'</extended>\r\n';
     }
     resultString += '</RestResponse>\r\n'; 
+    if(this.getConfigSetting(this.CONFIG_LOG_RESPONSE_BODY)) {
+        log('Response Body: '+resultString);
+    }
     res.send(resultString);
 } 
 
@@ -59,25 +99,47 @@ ISYServer.prototype.setupResponseHeaders = function(res, resultCode) {
     res.set('Last-Modified', new Date());
     res.set('Connection','Keep-Alive');
     res.set('Content-Type', 'text/xml; charset=UTF-8');    
+    
     res.status(resultCode);
 }
 
 ISYServer.prototype.handleElkStatusRequest = function(req,res) {
+    this.logRequestStartDetails(req);
     this.setupResponseHeaders(res,200);
     res.send(this.elkStatus);
+    this.logRequestEndDetails(res);    
 }
 
 ISYServer.prototype.handleElkTopologyRequest = function(req,res) {
+    this.logRequestStartDetails(req);    
     this.setupResponseHeaders(res,200);
+    if(this.getConfigSetting(this.CONFIG_LOG_RESPONSE_BODY)) {
+        log('Response Body: '+this.elkTopology);
+    }
     res.send(this.elkTopology);
+    this.logRequestEndDetails(res);    
 }
 
-ISYServer.prototype.hadleNodesRequest = function(req,res) {
+ISYServer.prototype.handleNodesRequest = function(req,res) {
+    this.logRequestStartDetails(req);    
     this.setupResponseHeaders(res,200);
+    if(this.getConfigSetting(this.CONFIG_LOG_RESPONSE_BODY)) {
+        log(this.rootDoc.toString());
+    } 
     res.send(this.rootDoc.toString());
+    this.logRequestEndDetails(res);
+}
+
+ISYServer.prototype.logRequestStartDetails = function(req) {
+    log("REQUEST. Source="+req.ip+" Url: "+req.originalUrl);   
+}
+
+ISYServer.prototype.logRequestEndDetails = function(res) {
+    log("RESULT: Code="+res.statusCode);
 }
 
 ISYServer.prototype.handleCommandRequest = function(req, res) {
+    this.logRequestStartDetails(req);
     var nodeToUpdate = this.nodeIndex[req.params.address];
 
     if(nodeToUpdate == undefined || nodeToUpdate == null) {
@@ -107,22 +169,56 @@ ISYServer.prototype.handleCommandRequest = function(req, res) {
             this.buildCommandResponse(res, false, 500, err);
         }
     }    
+    this.logRequestEndDetails(res);    
 }
 
 ISYServer.prototype.handleConfigureRequest = function(req, res) {
+    this.logRequestStartDetails(req);
     var configName = req.params.configName;
     var configValue = req.params.configValue;
     if(configName == undefined || configValue == undefined || configName == null || configValue == null) {
         this.buildCommandResponse(res, false, 500, 'No config value or config name specified');
+        this.logRequestEndDetails(res);
+        return;
     }
     if(this.getConfigSetting(configName)==undefined) {
-        this.buildCommandResponse(res, false, 404, "Unknown config value");        
+        this.buildCommandResponse(res, false, 404, "Unknown config value"); 
+        this.logRequestEndDetails(res);                 
+        return;      
     }
-    this.setConfigSetting(configName, configValue);
+    var valueToSet = configValue;
+    if(valueToSet == 'true') {
+        valueToSet = true;
+    } else if(valueToSet == 'false') {
+        valueToSet = false;
+    } else if(!isNaN(valueToSet)) {
+        valueToSet = Number(valueToSet);
+    } 
+    this.setConfigSetting(configName, valueToSet);
+    this.buildCommandResponse(res, true, 200, "Configuration updated");     
+    this.logRequestEndDetails(res);        
 }
 
-ISYServer.prototype.loadConfig = function() {
-    var fileData = fs.readFileSync('./example-nodes.xml', 'ascii');
+ISYServer.prototype.resetState = function() {
+    this.webSocketClientList = [];
+    this.sequenceNumber = 0;
+    this.loadNodeState();    
+}
+
+ISYServer.prototype.handleResetNodesRequest = function(req,res) {
+    this.logRequestStartDetails(req);
+    log('RESET: Resetting node state back to initial state');
+    this.resetState();
+    this.buildCommandResponse(res, true, 200, 'Node state reset to initial');
+    this.logRequestEndDetails(res);
+}
+
+ISYServer.prototype.loadNodeState = function() {
+    // Ensure we are clean
+    this.nodeIndex = {};
+    this.nodeList = [];
+    
+    var fileData = fs.readFileSync(this.getConfigSetting(this.CONFIG_NODE_FILE), 'ascii');
     this.rootDoc = new parser().parseFromString(fileData.substring(2, fileData.length));
     
     // Load folders
@@ -152,16 +248,16 @@ ISYServer.prototype.loadConfig = function() {
         this.nodeList.push(newScene);        
     }  
     
-    this.elkStatus = fs.readFileSync('./example-elk-status.xml');
-    this.elkTopology = fs.readFileSync('./example-elk-topology.xml');
+    this.elkStatus = fs.readFileSync(this.getConfigSetting(this.CONFIG_ELK_STATUS_FILE));
+    this.elkTopology = fs.readFileSync(this.getConfigSetting(this.CONFIG_ELK_TOPOLOGY_FILE));
+}
+
+ISYServer.prototype.buildUnauthorizedResponse = function(res) {
+    res.set('WWW-Authenticate', 'Basic realm=Authorization Required');    
+    res.sendStatus(401);
 }
 
 ISYServer.prototype.authHandler = function (req, res, next) {
-    function unauthorized(res) {
-        res.set('WWW-Authenticate', 'Basic realm=Authorization Required');
-        return res.sendStatus(401);
-    };
-
     var user = basicAuth(req);
 
     if(!this.getConfigSetting(this.CONFIG_REQUIRE_AUTH)) {
@@ -169,13 +265,17 @@ ISYServer.prototype.authHandler = function (req, res, next) {
     }
 
     if (!user || !user.name || !user.pass) {
-        return unauthorized(res);
+        this.buildUnauthorizedResponse(res);
+        log('ERROR: Denied request, credentials not specified');        
+        return res;
     }
 
     if (user.name === this.getConfigSetting(this.CONFIG_USERNAME) && user.pass === this.getConfigSetting(this.CONFIG_PASSWORD)) {
         return next();
     } else {
-        return unauthorized(res);
+        this.buildUnauthorizedResponse(res);        
+        log('ERROR: Denied request, credentials not specified');                
+        return res;
     }
 }
 
@@ -192,6 +292,9 @@ ISYServer.prototype.sendDeviceUpdate = function(ws,device) {
     updateData += '</action><node>';
     updateData += device.getAddress();
     updateData += '</node><eventInfo></eventInfo></Event>';
+    if(this.getConfigSetting(this.CONFIG_LOG_WEBSOCKET_NOTIFICATION)) {
+        log('WEBSOCKET: NOTIFICATION: '+updateData);
+    }
     ws.send(updateData);
 }
 
@@ -207,6 +310,10 @@ ISYServer.prototype.sendInitialState = function(ws) {
 ISYServer.prototype.configureRoutes = function() {
     var that = this;
     
+    this.app.get('/config/reset', function(req, res) {
+        that.handleResetNodesRequest(req,res);
+    });
+    
     this.app.get('/config/:configName/:configValue', function(req, res) {
         that.handleConfigureRequest(req,res);
     });
@@ -220,7 +327,7 @@ ISYServer.prototype.configureRoutes = function() {
     });
     
     this.app.get('/rest/nodes', this.authHandler.bind(this), function (req, res) {
-        that.hadleNodesRequest(req,res);
+        that.handleNodesRequest(req,res);
     });
     
     this.app.get('/rest/elk/get/topology', this.authHandler.bind(this), function (req, res) {
@@ -252,7 +359,6 @@ ISYServer.prototype.removeSocket = function(ws) {
 
 ISYServer.prototype.start = function() {
     var that = this;
-    this.loadConfig();
     this.configureRoutes();
     var server = this.app.listen(this.port, function () {
         var host = server.address().address;
@@ -261,17 +367,22 @@ ISYServer.prototype.start = function() {
         console.log('fake-isy-994i app listening at http://%s:%s', host, port);
         
         server.on('upgrade', function(request, socket, body) {
+            log('WEBSOCKET: Incoming upgrade request..');
             if (WebSocket.isWebSocket(request)) {
+                log('WEBSOCKET: Incoming websocket connection request ver=', socket.version, ' proto='+socket.protocol+' source='+request.ip);  
+                              
                 var ws = new WebSocket(request, socket, body);
                 
                 ws.on('close', function(event) {
-                    console.log('close'+event.code+" "+event.reason);
+                    log('WEBSOCKET: close event code='+event.code+" reason="+event.reason);
                     that.removeSocket(ws);
                     ws = null;
                 });
                 
                 that.webSocketClientList.push(ws); 
                 that.sendInitialState(ws);                
+            } else {
+                log('WEBSOCKET: IGNORED: Upgrade request ignored, not a websocket');
             }
         });  
     });    
