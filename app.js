@@ -45,8 +45,8 @@ ISYServer.prototype.loadConfig = function(config) {
         { name: this.CONFIG_NODE_FILE, default: './example-nodes.xml' },
         { name: this.CONFIG_ELK_STATUS_FILE, default: './example-elk-status.xml' },
         { name: this.CONFIG_ELK_TOPOLOGY_FILE, default: './example-elk-topology.xml' },
-        { name: this.CONFIG_LOG_RESPONSE_BODY, default: true},
-        { name: this.CONFIG_LOG_WEBSOCKET_NOTIFICATION, default: true}
+        { name: this.CONFIG_LOG_RESPONSE_BODY, default: false},
+        { name: this.CONFIG_LOG_WEBSOCKET_NOTIFICATION, default: false}
     ];
     
     // Special case logging as we need to setup logging BEFORE loading config so we can log setting results
@@ -369,9 +369,8 @@ ISYServer.prototype.start = function() {
         server.on('upgrade', function(request, socket, body) {
             log('WEBSOCKET: Incoming upgrade request..');
             if (WebSocket.isWebSocket(request)) {
-                log('WEBSOCKET: Incoming websocket connection request ver=', socket.version, ' proto='+socket.protocol+' source='+request.ip);  
-                              
                 var ws = new WebSocket(request, socket, body);
+                log('WEBSOCKET: Incoming websocket connection request ver='+ws.version+' proto='+ws.protocol);                  
                 
                 ws.on('close', function(event) {
                     log('WEBSOCKET: close event code='+event.code+" reason="+event.reason);
