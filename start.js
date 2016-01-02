@@ -13,7 +13,7 @@ var config = {
     elkStatusFile: './example-elk-status.xml',
     elkTopologyFile: './example-elk-topology.xml',
     logResponseBody: false,
-    logWebSockets: false
+    logWebSockets: true
 }
 
 var server = new ISYServer(3000, config);

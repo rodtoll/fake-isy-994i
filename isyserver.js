@@ -46,7 +46,7 @@ ISYServer.prototype.loadConfig = function(config) {
         { name: this.CONFIG_ELK_STATUS_FILE, default: './example-elk-status.xml' },
         { name: this.CONFIG_ELK_TOPOLOGY_FILE, default: './example-elk-topology.xml' },
         { name: this.CONFIG_LOG_RESPONSE_BODY, default: false},
-        { name: this.CONFIG_LOG_WEBSOCKET_NOTIFICATION, default: false}
+        { name: this.CONFIG_LOG_WEBSOCKET_NOTIFICATION, default: true}
     ];
     
     // Special case logging as we need to setup logging BEFORE loading config so we can log setting results
