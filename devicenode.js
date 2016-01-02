@@ -118,7 +118,10 @@ DeviceNode.prototype.isSecureDevice = function() {
 }
 
 DeviceNode.prototype.isDimmable = function() {
-    return(utils.stringStartsWith(this.getPotentialValues(),'%'))
+    // Fans take dim commands so either fan or dimmable light    
+    return(
+        utils.stringStartsWith(this.getPotentialValues(),'%') ||
+        this.getPotentialValues() == 'off/low/med/high');
 }
 
 DeviceNode.prototype.updateFormattedValue = function() {
