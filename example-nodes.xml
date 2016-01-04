@@ -1,1 +1,2818 @@
-<?xml version="1.0" encoding="UTF-8"?><nodes><root></root><folder flag="0"><address>127</address><name>Unused</name></folder><folder flag="0"><address>13066</address><name>Upstairs Stairs</name></folder><folder flag="0"><address>13167</address><name>Secondary</name></folder><folder flag="0"><address>14382</address><name>Main Floor Bathroom</name></folder><folder flag="0"><address>1460</address><name>Upstairs Hall</name></folder><folder flag="0"><address>21278</address><name>Music Room</name></folder><folder flag="0"><address>23278</address><name>Basement Rec Room</name></folder><folder flag="0"><address>23875</address><name>Girls Bathroom</name></folder><folder flag="0"><address>24587</address><name>Play Room</name></folder><folder flag="0"><address>30962</address><name>Sam Bedroom</name></folder><folder flag="0"><address>36793</address><name>Server Room</name></folder><folder flag="0"><address>37794</address><name>TV Room</name></folder><folder flag="0"><address>42035</address><name>Kitchen</name></folder><folder flag="0"><address>42740</address><name>Utility</name></folder><folder flag="0"><address>42997</address><name>Master Bedroom</name></folder><folder flag="0"><address>43858</address><name>Main Floor Hall</name></folder><folder flag="0"><address>46017</address><name>ZWaveNetwork</name></folder><folder flag="0"><address>48638</address><name>Dining Room</name></folder><folder flag="0"><address>53077</address><name>Office</name></folder><folder flag="0"><address>54218</address><name>Sarah Bedroom</name></folder><folder flag="0"><address>54384</address><name>Garage</name></folder><folder flag="0"><address>5496</address><name>Basement Hall</name></folder><folder flag="0"><address>58858</address><name>Outside</name></folder><folder flag="0"><address>59604</address><name>Sophia Bedroom</name></folder><folder flag="0"><address>9191</address><name>Front Door</name></folder><node flag="128"><address>14 47 41 1</address><name>Main Floor Closet Sensor</name><parent type="3">43858</parent><type>16.2.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>14 47 41 1</pnode><ELK_ID>A05</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="0"><address>14 47 41 2</address><name>Side Gate Unused</name><parent type="3">127</parent><type>16.2.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>14 47 41 1</pnode><ELK_ID>A06</ELK_ID><property id="ST" value="255" formatted="On" uom="on/off" /></node><node flag="128"><address>14 49 B9 1</address><name>Server Room Door Sensor</name><parent type="3">36793</parent><type>16.2.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>14 49 B9 1</pnode><ELK_ID>A07</ELK_ID><property id="ST" value=" " formatted=" " uom="on/off"/></node><node flag="0"><address>14 49 B9 2</address><name>Back Gate Unused</name><parent type="3">127</parent><type>16.2.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>14 49 B9 1</pnode><ELK_ID>A08</ELK_ID><property id="ST" value=" " formatted=" " uom="on/off"/></node><node flag="128"><address>14 5C B2 1</address><name>Main TV Room Motion</name><parent type="3">127</parent><type>16.1.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>14 5C B2 1</pnode><ELK_ID>A09</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="0"><address>14 5C B2 2</address><name>Main TV Room Motion-Light</name><parent type="3">127</parent><type>16.1.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>14 5C B2 1</pnode><ELK_ID>A10</ELK_ID><property id="ST" value=" " formatted=" " uom="on/off"/></node><node flag="0"><address>14 5C B2 3</address><name>Main TV Room Motion-Low Bat</name><parent type="3">127</parent><type>16.1.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>14 5C B2 1</pnode><ELK_ID>A11</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="128"><address>14 7C CF 1</address><name>Play Room Motion-Sensor</name><parent type="3">127</parent><type>16.1.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>14 7C CF 1</pnode><ELK_ID>I11</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="0"><address>14 7C CF 2</address><name>Play Room Motion-Dusk.Dawn</name><parent type="3">127</parent><type>16.1.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>14 7C CF 1</pnode><ELK_ID>I09</ELK_ID><property id="ST" value=" " formatted=" " uom="on/off"/></node><node flag="0"><address>14 7C CF 3</address><name>Play Room Motion-Low Bat</name><parent type="3">127</parent><type>16.1.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>14 7C CF 1</pnode><ELK_ID>I10</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="128"><address>14 7C D8 1</address><name>Rod Office Motion</name><parent type="3">127</parent><type>16.1.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>14 7C D8 1</pnode><ELK_ID>I12</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="0"><address>14 7C D8 2</address><name>Rod Office Motion-Light</name><parent type="3">127</parent><type>16.1.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>14 7C D8 1</pnode><ELK_ID>I13</ELK_ID><property id="ST" value=" " formatted=" " uom="on/off"/></node><node flag="0"><address>14 7C D8 3</address><name>Rod Office Motion-Low Bat</name><parent type="3">127</parent><type>16.1.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>14 7C D8 1</pnode><ELK_ID>I14</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="128"><address>14 A6 C5 1</address><name>Sam Light</name><parent type="3">30962</parent><type>1.46.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>14 A6 C5 1</pnode><ELK_ID>J02</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>14 A6 C5 2</address><name>Sam Fan</name><parent type="3">30962</parent><type>1.46.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>14 A6 C5 1</pnode><ELK_ID>J04</ELK_ID><property id="ST" value="255" formatted="High" uom="off/low/med/high" /></node><node flag="128"><address>14 A7 12 1</address><name>Sarah Light</name><parent type="3">54218</parent><type>1.46.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>14 A7 12 1</pnode><ELK_ID>J12</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>14 A7 12 2</address><name>Sarah Fan</name><parent type="3">54218</parent><type>1.46.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>14 A7 12 1</pnode><ELK_ID>J15</ELK_ID><property id="ST" value="0" formatted="Off" uom="off/low/med/high" /></node><node flag="128"><address>14 A8 BC 1</address><name>Sophia Light</name><parent type="3">59604</parent><type>1.46.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>14 A8 BC 1</pnode><ELK_ID>K11</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>14 A8 BC 2</address><name>Sophia Fan</name><parent type="3">59604</parent><type>1.46.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>14 A8 BC 1</pnode><ELK_ID>K14</ELK_ID><property id="ST" value="0" formatted="Off" uom="off/low/med/high" /></node><node flag="128"><address>17 14 73 1</address><name>Master Bedroom Fireplace</name><parent type="3">42997</parent><type>2.20.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>17 14 73 1</pnode><ELK_ID>A16</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="128"><address>17 15 23 1</address><name>Deck Motion Light</name><parent type="3">58858</parent><type>2.20.56.157</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>17 15 23 1</pnode><ELK_ID>B01</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="128"><address>17 15 35 1</address><name>TV Fireplace</name><parent type="3">37794</parent><type>2.20.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>17 15 35 1</pnode><ELK_ID>B02</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="128"><address>17 15 6A 1</address><name>Basement Motion LIght</name><parent type="3">58858</parent><type>2.20.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>17 15 6A 1</pnode><ELK_ID>B03</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="128"><address>17 19 F9 1</address><name>S - Upstairs Hall By Bath</name><parent type="3">13167</parent><type>1.25.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>17 19 F9 1</pnode><ELK_ID>B04</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>17 22 F6 1</address><name>S - Front Hall Front Door</name><parent type="3">13167</parent><type>1.25.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>17 22 F6 1</pnode><ELK_ID>B05</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>17 27 82 1</address><name>Upstairs Hall Light</name><parent type="3">1460</parent><type>1.25.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>17 27 82 1</pnode><ELK_ID>B06</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>17 28 71 1</address><name>Kitchen Island Light</name><parent type="3">42035</parent><type>1.25.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>17 28 71 1</pnode><ELK_ID>B07</ELK_ID><property id="ST" value="255" formatted="On" uom="%/on/off" /></node><node flag="128"><address>17 79 81 1</address><name>Garage Door Sensor</name><parent type="3">54384</parent><type>7.0.54.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>17 79 81 1</pnode><ELK_ID>I01</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="0"><address>17 79 81 2</address><name>Garage Sensor-Unused Relay</name><parent type="3">127</parent><type>7.0.54.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>17 79 81 1</pnode><ELK_ID>K01</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="128"><address>17 D5 A8 1</address><name>Garage Door Opener-Unused Sen</name><parent type="3">127</parent><type>7.0.54.0</type><enabled>false</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>17 D5 A8 1</pnode><ELK_ID>B08</ELK_ID><property id="ST" value=" " formatted=" " uom="on/off"/></node><node flag="0"><address>17 D5 A8 2</address><name>Unused - Garage Door-Relay</name><parent type="3">127</parent><type>7.0.54.0</type><enabled>false</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>17 D5 A8 1</pnode><ELK_ID>B09</ELK_ID><property id="ST" value=" " formatted=" " uom="on/off"/></node><node flag="128"><address>17 D7 ED 1</address><name>Doorbell Sensor</name><parent type="3">9191</parent><type>7.0.54.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>17 D7 ED 1</pnode><ELK_ID>B10</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="0"><address>17 D7 ED 2</address><name>Unused Doorbell-Relay</name><parent type="3">127</parent><type>7.0.54.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>17 D7 ED 1</pnode><ELK_ID>B11</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="128"><address>18 10 86 1</address><name>Kitchen Light</name><parent type="3">42035</parent><type>1.25.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 10 86 1</pnode><ELK_ID>B12</ELK_ID><property id="ST" value="255" formatted="On" uom="%/on/off" /></node><node flag="128"><address>18 10 9C 1</address><name>Dining Room Light</name><parent type="3">48638</parent><type>1.25.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 10 9C 1</pnode><ELK_ID>B13</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>18 11 48 1</address><name>S - Main Floor Hall Office</name><parent type="3">13167</parent><type>1.25.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 11 48 1</pnode><ELK_ID>B14</ELK_ID><property id="ST" value="255" formatted="On" uom="%/on/off" /></node><node flag="128"><address>18 11 CE 1</address><name>Master Bathroom Light</name><parent type="3">42997</parent><type>1.25.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 11 CE 1</pnode><ELK_ID>B15</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>18 12 18 1</address><name>S - Basement Stairs Light Bot</name><parent type="3">13167</parent><type>1.25.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 12 18 1</pnode><ELK_ID>B16</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>18 12 29 1</address><name>S - Upstairs Stairs Main Floo</name><parent type="3">127</parent><type>1.25.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 12 29 1</pnode><ELK_ID>C01</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>18 12 32 1</address><name>Upstairs Stairs Light</name><parent type="3">13066</parent><type>1.25.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 12 32 1</pnode><ELK_ID>C02</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>18 18 C3 1</address><name>S - Rec Room Light Back Door</name><parent type="3">13167</parent><type>1.25.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 18 C3 1</pnode><ELK_ID>C03</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>18 18 C5 1</address><name>Front Hall Light</name><parent type="3">43858</parent><type>1.25.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 18 C5 1</pnode><ELK_ID>C04</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>18 2F B1 1</address><name>Butlers Pantry Light</name><parent type="3">42035</parent><type>1.25.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 2F B1 1</pnode><ELK_ID>C05</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>18 36 B1 1</address><name>Music Room Light Switch</name><parent type="3">21278</parent><type>2.28.58.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 36 B1 1</pnode><ELK_ID>C06</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="128"><address>18 39 DD 1</address><name>S - Basement Door Switch</name><parent type="3">127</parent><type>2.28.58.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 39 DD 1</pnode><ELK_ID>C07</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="128"><address>18 43 C4 1</address><name>Garage Light</name><parent type="3">54384</parent><type>2.28.58.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 43 C4 1</pnode><ELK_ID>C08</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="128"><address>18 55 FA 1</address><name>Master Bedroom Light</name><parent type="3">42997</parent><type>1.28.54.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 55 FA 1</pnode><ELK_ID>D01</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>18 55 FA 2</address><name>Bedroom Keypad.Night</name><parent type="3">42997</parent><type>1.28.54.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 55 FA 1</pnode><ELK_ID>D02</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>18 55 FA 3</address><name>Bedroom Keypad.Garage Status</name><parent type="3">42997</parent><type>1.28.54.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 55 FA 1</pnode><ELK_ID>D03</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>18 55 FA 4</address><name>Bedroom Keypad.Romance</name><parent type="3">42997</parent><type>1.28.54.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 55 FA 1</pnode><ELK_ID>D04</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>18 55 FA 5</address><name>Bedroom Keypad.Fireplace</name><parent type="3">42997</parent><type>1.28.54.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 55 FA 1</pnode><ELK_ID>D05</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>18 55 FA 6</address><name>Bedroom Keypad.Night Hallway</name><parent type="3">42997</parent><type>1.28.54.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 55 FA 1</pnode><ELK_ID>D06</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>18 55 FA 7</address><name>Bedroom.Side Gate</name><parent type="3">42997</parent><type>1.28.54.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 55 FA 1</pnode><ELK_ID>D07</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>18 55 FA 8</address><name>Bedroom Keypad.All On</name><parent type="3">42997</parent><type>1.28.54.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 55 FA 1</pnode><ELK_ID>D08</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>18 59 CD 1</address><name>Outside Front Light</name><parent type="3">9191</parent><type>2.15.54.157</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 59 CD 1</pnode><ELK_ID>D09</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="0"><address>18 59 CD 3</address><name>Front Keypad.Away</name><parent type="3">43858</parent><type>2.15.54.157</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 59 CD 1</pnode><ELK_ID>D10</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="0"><address>18 59 CD 4</address><name>Front Keypad.Night</name><parent type="3">43858</parent><type>2.15.54.157</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 59 CD 1</pnode><ELK_ID>D11</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="0"><address>18 59 CD 5</address><name>Front Keypad.Decorations</name><parent type="3">43858</parent><type>2.15.54.157</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 59 CD 1</pnode><ELK_ID>D12</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="0"><address>18 59 CD 6</address><name>Front Keypad.Home</name><parent type="3">43858</parent><type>2.15.54.157</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 59 CD 1</pnode><ELK_ID>D13</ELK_ID><property id="ST" value="255" formatted="On" uom="on/off" /></node><node flag="128"><address>18 5A CF 1</address><name>Outside Back Lights</name><parent type="3">42035</parent><type>2.15.54.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 5A CF 1</pnode><ELK_ID>D14</ELK_ID><property id="ST" value="255" formatted="On" uom="on/off" /></node><node flag="0"><address>18 5A CF 2</address><name>Deck Keypad.AlarmOn</name><parent type="3">42035</parent><type>2.15.54.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 5A CF 1</pnode><ELK_ID>H12</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="0"><address>18 5A CF 3</address><name>Deck Keypad.Night</name><parent type="3">42035</parent><type>2.15.54.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 5A CF 1</pnode><ELK_ID>D15</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="0"><address>18 5A CF 4</address><name>Deck Keypad.Fireplace</name><parent type="3">42035</parent><type>2.15.54.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 5A CF 1</pnode><ELK_ID>D16</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="0"><address>18 5A CF 5</address><name>Deck Keypad.Sophia</name><parent type="3">42035</parent><type>2.15.54.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 5A CF 1</pnode><ELK_ID>E01</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="0"><address>18 5A CF 6</address><name>Deck Keypad.Home</name><parent type="3">42035</parent><type>2.15.54.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 5A CF 1</pnode><ELK_ID>E02</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="0"><address>18 5A CF 7</address><name>Deck Keypad.Side Gate</name><parent type="3">42035</parent><type>2.15.54.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 5A CF 1</pnode><ELK_ID>H13</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="0"><address>18 5A CF 8</address><name>Deck Keypad.Garage</name><parent type="3">42035</parent><type>2.15.54.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 5A CF 1</pnode><ELK_ID>H11</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="128"><address>18 C 87 1</address><name>S - Upstairs Hall By Master</name><parent type="3">13167</parent><type>1.25.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 C 87 1</pnode><ELK_ID>E03</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>18 C1 AB 1</address><name>TV Lamp</name><parent type="3">37794</parent><type>1.0.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 C1 AB 1</pnode><ELK_ID>E04</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>18 C1 C8 1</address><name>Master Bedroom Lamp</name><parent type="3">42997</parent><type>1.0.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 C1 C8 1</pnode><ELK_ID>E05</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>18 D 22 1</address><name>S - Main Floor Hall Front Hal</name><parent type="3">13167</parent><type>1.25.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 D 22 1</pnode><ELK_ID>E06</ELK_ID><property id="ST" value="255" formatted="On" uom="%/on/off" /></node><node flag="128"><address>18 E 2A 1</address><name>TV Light Switch</name><parent type="3">37794</parent><type>1.25.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 E 2A 1</pnode><ELK_ID>E07</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>18 E 45 1</address><name>S - Upstairs Hall By Laundry</name><parent type="3">13167</parent><type>1.25.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>18 E 45 1</pnode><ELK_ID>E08</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>19 4F 6C 1</address><name>S - Main Floor Hall Light By </name><parent type="3">127</parent><type>1.32.64.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>19 4F 6C 1</pnode><ELK_ID>E09</ELK_ID><property id="ST" value="255" formatted="On" uom="%/on/off" /></node><node flag="128"><address>19 51 9E 1</address><name>Kitchen Table</name><parent type="3">42035</parent><type>1.32.64.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>19 51 9E 1</pnode><ELK_ID>E10</ELK_ID><property id="ST" value="255" formatted="On" uom="%/on/off" /></node><node flag="128"><address>19 53 7D 1</address><name>Rec Room Light</name><parent type="3">23278</parent><type>1.32.64.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>19 53 7D 1</pnode><ELK_ID>E11</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>19 53 90 1</address><name>Basement Stairs Light</name><parent type="3">5496</parent><type>1.32.64.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>19 53 90 1</pnode><ELK_ID>E12</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>19 56 18 1</address><name>S - Upstairs Stairs Top Left</name><parent type="3">127</parent><type>1.32.64.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>19 56 18 1</pnode><ELK_ID>E13</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>19 57 51 1</address><name>Play Room Light</name><parent type="3">24587</parent><type>1.32.64.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>19 57 51 1</pnode><ELK_ID>E14</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>19 C0 E4 1</address><name>Outside Plug Left of Garage</name><parent type="3">58858</parent><type>2.20.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>19 C0 E4 1</pnode><ELK_ID>E15</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="128"><address>19 C2 FA 1</address><name>Outside Plug Right Side</name><parent type="3">58858</parent><type>2.20.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>19 C2 FA 1</pnode><ELK_ID>E16</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="128"><address>19 C3 48 1</address><name>Outside Plug Left of Porch</name><parent type="3">58858</parent><type>2.20.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>19 C3 48 1</pnode><ELK_ID>F01</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="128"><address>19 C3 5B 1</address><name>Back Ground Motion Light</name><parent type="3">58858</parent><type>2.20.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>19 C3 5B 1</pnode><ELK_ID>F02</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="128"><address>1A 12 32 1</address><name>Kitchen Alcove Light</name><parent type="3">42035</parent><type>1.32.64.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1A 12 32 1</pnode><ELK_ID>L04</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>1A A EB 1</address><name>Server Room Light</name><parent type="3">36793</parent><type>1.32.64.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1A A EB 1</pnode><ELK_ID>K08</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>1A E CC 1</address><name>S - Dinning Room Inner Wall</name><parent type="3">13167</parent><type>1.32.64.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1A E CC 1</pnode><ELK_ID>F09</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>1B 31 E 1</address><name>Main Floor Closet Light</name><parent type="3">43858</parent><type>1.32.64.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1B 31 E 1</pnode><ELK_ID>I07</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>1B 34 B 1</address><name>Sarah Bedroom Old</name><parent type="3">127</parent><type>1.32.64.0</type><enabled>false</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1B 34 B 1</pnode><ELK_ID>J10</ELK_ID><property id="ST" value=" " formatted=" " uom="%/on/off"/></node><node flag="128"><address>1B 4D 2D 1</address><name>Music Room Lamp</name><parent type="3">21278</parent><type>1.0.56.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1B 4D 2D 1</pnode><ELK_ID>I06</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>1C 29 DC 1</address><name>Bedroom RemoteLinc</name><parent type="3">42997</parent><type>0.18.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1C 29 DC 1</pnode><ELK_ID>F10</ELK_ID><property id="ST" value=" " formatted=" " uom="%/on/off"/></node><node flag="0"><address>1C 29 DC 2</address><name>Bedroom RemoteLinc - 2</name><parent type="3">42997</parent><type>0.18.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1C 29 DC 1</pnode><ELK_ID>F11</ELK_ID><property id="ST" value=" " formatted=" " uom="%/on/off"/></node><node flag="0"><address>1C 29 DC 3</address><name>Bedroom RemoteLinc - 3</name><parent type="3">42997</parent><type>0.18.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1C 29 DC 1</pnode><ELK_ID>F12</ELK_ID><property id="ST" value=" " formatted=" " uom="%/on/off"/></node><node flag="0"><address>1C 29 DC 4</address><name>Bedroom RemoteLinc - 4</name><parent type="3">42997</parent><type>0.18.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1C 29 DC 1</pnode><ELK_ID>F13</ELK_ID><property id="ST" value=" " formatted=" " uom="%/on/off"/></node><node flag="0"><address>1C 29 DC 5</address><name>Bedroom RemoteLinc - 5</name><parent type="3">42997</parent><type>0.18.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1C 29 DC 1</pnode><ELK_ID>F14</ELK_ID><property id="ST" value=" " formatted=" " uom="%/on/off"/></node><node flag="0"><address>1C 29 DC 6</address><name>Bedroom RemoteLinc - 6</name><parent type="3">42997</parent><type>0.18.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1C 29 DC 1</pnode><ELK_ID>F15</ELK_ID><property id="ST" value=" " formatted=" " uom="%/on/off"/></node><node flag="0"><address>1C 29 DC 7</address><name>Bedroom RemoteLinc - 7</name><parent type="3">42997</parent><type>0.18.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1C 29 DC 1</pnode><ELK_ID>H09</ELK_ID><property id="ST" value=" " formatted=" " uom="%/on/off"/></node><node flag="0"><address>1C 29 DC 8</address><name>Bedroom RemoteLinc - 8</name><parent type="3">42997</parent><type>0.18.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1C 29 DC 1</pnode><ELK_ID>H10</ELK_ID><property id="ST" value=" " formatted=" " uom="%/on/off"/></node><node flag="128"><address>1C DF 26 1</address><name>Sophia Keypad.Light</name><parent type="3">59604</parent><type>1.27.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1C DF 26 1</pnode><ELK_ID>L03</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>1C DF 26 3</address><name>Sophia Keypad.A</name><parent type="3">59604</parent><type>1.27.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1C DF 26 1</pnode><ELK_ID>K15</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>1C DF 26 4</address><name>Sophia Keypad.B</name><parent type="3">59604</parent><type>1.27.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1C DF 26 1</pnode><ELK_ID>K16</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>1C DF 26 5</address><name>Sophia Keypad.C</name><parent type="3">59604</parent><type>1.27.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1C DF 26 1</pnode><ELK_ID>L01</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>1C DF 26 6</address><name>Sophia Keypad.D</name><parent type="3">59604</parent><type>1.27.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1C DF 26 1</pnode><ELK_ID>L02</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>1C E0 46 1</address><name>Sarah Keypad-Main</name><parent type="3">54218</parent><type>1.27.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1C E0 46 1</pnode><ELK_ID>K06</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>1C E0 46 3</address><name>Sarah Keypad-A</name><parent type="3">54218</parent><type>1.27.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1C E0 46 1</pnode><ELK_ID>K02</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>1C E0 46 4</address><name>Sarah Keypad-B</name><parent type="3">54218</parent><type>1.27.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1C E0 46 1</pnode><ELK_ID>K03</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>1C E0 46 5</address><name>Sarah Keypad-C</name><parent type="3">54218</parent><type>1.27.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1C E0 46 1</pnode><ELK_ID>K04</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>1C E0 46 6</address><name>Sarah Keypad-D</name><parent type="3">54218</parent><type>1.27.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1C E0 46 1</pnode><ELK_ID>K05</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>1D FA 5A 1</address><name>S - Sam Keypad.Light</name><parent type="3">13167</parent><type>1.27.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1D FA 5A 1</pnode><ELK_ID>J09</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>1D FA 5A 3</address><name>Sam Keypad.A</name><parent type="3">30962</parent><type>1.27.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1D FA 5A 1</pnode><ELK_ID>J05</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>1D FA 5A 4</address><name>Sam Keypad.B</name><parent type="3">30962</parent><type>1.27.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1D FA 5A 1</pnode><ELK_ID>J06</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>1D FA 5A 5</address><name>Sam Keypad.C</name><parent type="3">30962</parent><type>1.27.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1D FA 5A 1</pnode><ELK_ID>J07</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>1D FA 5A 6</address><name>Sam Keypad.D</name><parent type="3">30962</parent><type>1.27.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1D FA 5A 1</pnode><ELK_ID>J08</ELK_ID><property id="ST" value="255" formatted="On" uom="%/on/off" /></node><node flag="128"><address>1F 42 F7 1</address><name>Christmas.Appliance.F7</name><parent type="3">127</parent><type>2.9.66.0</type><enabled>false</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1F 42 F7 1</pnode><ELK_ID>H05</ELK_ID><property id="ST" value=" " formatted=" " uom="on/off"/></node><node flag="128"><address>1F 45 84 1</address><name>Christmas.Appliance.84</name><parent type="3">42740</parent><type>2.9.66.0</type><enabled>false</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1F 45 84 1</pnode><ELK_ID>H03</ELK_ID><property id="ST" value=" " formatted=" " uom="on/off"/></node><node flag="128"><address>1F 46 F0 1</address><name>ApplianceLink.F0</name><parent type="3">42740</parent><type>2.9.66.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1F 46 F0 1</pnode><ELK_ID>H14</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="128"><address>1F 47 4B 1</address><name>Christmas.Appliance.4B</name><parent type="3">127</parent><type>2.9.66.0</type><enabled>false</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1F 47 4B 1</pnode><ELK_ID>H02</ELK_ID><property id="ST" value=" " formatted=" " uom="on/off"/></node><node flag="128"><address>1F 47 EB 1</address><name>Christmas.Appliance.EB</name><parent type="3">42740</parent><type>2.9.66.0</type><enabled>false</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>1F 47 EB 1</pnode><ELK_ID>H04</ELK_ID><property id="ST" value=" " formatted=" " uom="on/off"/></node><node flag="128"><address>21 5D 67 1</address><name>Basement Motion Sensor-Sensor</name><parent type="3">127</parent><type>16.1.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>21 5D 67 1</pnode><ELK_ID>H08</ELK_ID><property id="ST" value=" " formatted=" " uom="on/off"/></node><node flag="0"><address>21 5D 67 2</address><name>Basement Motion Sensor-Dusk.D</name><parent type="3">127</parent><type>16.1.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>21 5D 67 1</pnode><ELK_ID>H06</ELK_ID><property id="ST" value=" " formatted=" " uom="on/off"/></node><node flag="0"><address>21 5D 67 3</address><name>Basement Motion Sensor-Low Ba</name><parent type="3">127</parent><type>16.1.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>21 5D 67 1</pnode><ELK_ID>H07</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="128"><address>21 62 43 1</address><name>Kitchen Motion Sensor-Sensor</name><parent type="3">127</parent><type>16.1.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>21 62 43 1</pnode><ELK_ID>I04</ELK_ID><property id="ST" value=" " formatted=" " uom="on/off"/></node><node flag="0"><address>21 62 43 2</address><name>Kitchen Motion Sensor-Dusk.Da</name><parent type="3">127</parent><type>16.1.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>21 62 43 1</pnode><ELK_ID>I02</ELK_ID><property id="ST" value=" " formatted=" " uom="on/off"/></node><node flag="0"><address>21 62 43 3</address><name>Kitchen Motion Sensor-Low Bat</name><parent type="3">127</parent><type>16.1.0.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>21 62 43 1</pnode><ELK_ID>I03</ELK_ID><property id="ST" value="0" formatted="Off" uom="on/off" /></node><node flag="128"><address>22 47 AA 1</address><name>Main Floor Hallway Light</name><parent type="3">43858</parent><type>1.28.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>22 47 AA 1</pnode><ELK_ID>C15</ELK_ID><property id="ST" value="255" formatted="On" uom="%/on/off" /></node><node flag="0"><address>22 47 AA 2</address><name>Garage Keypad.Away</name><parent type="3">54384</parent><type>1.28.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>22 47 AA 1</pnode><ELK_ID>C12</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>22 47 AA 3</address><name>Garage Keypad.ArrriveHome</name><parent type="3">54384</parent><type>1.28.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>22 47 AA 1</pnode><ELK_ID>C11</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>22 47 AA 4</address><name>Garage Keypad.Night</name><parent type="3">54384</parent><type>1.28.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>22 47 AA 1</pnode><ELK_ID>H16</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>22 47 AA 5</address><name>Garage Keypad.Alarm</name><parent type="3">54384</parent><type>1.28.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>22 47 AA 1</pnode><ELK_ID>C10</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>22 47 AA 6</address><name>Garage Keypad.Home</name><parent type="3">54384</parent><type>1.28.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>22 47 AA 1</pnode><ELK_ID>C16</ELK_ID><property id="ST" value="255" formatted="On" uom="%/on/off" /></node><node flag="0"><address>22 47 AA 7</address><name>Garage Keypad.Gate</name><parent type="3">58858</parent><type>1.28.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>22 47 AA 1</pnode><ELK_ID>C14</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>22 47 AA 8</address><name>Garage Keypad.Garage</name><parent type="3">54384</parent><type>1.28.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>22 47 AA 1</pnode><ELK_ID>C13</ELK_ID><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>29 3D E2 1</address><name>Basement Door Lock</name><parent type="3">23278</parent><type>15.6.66.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>29 3D E2 1</pnode><ELK_ID>A14</ELK_ID><property id="ST" value="255" formatted="locked" uom="on/off" /></node><node flag="0"><address>29 3D E2 2</address><name>Unused Back Door.Off.To.Lock</name><parent type="3">127</parent><type>15.6.66.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>29 3D E2 1</pnode><ELK_ID>A13</ELK_ID><property id="ST" value="255" formatted="locked" uom="on/off" /></node><node flag="128"><address>2B 5A 18 1</address><name>Girls Sink Light</name><parent type="3">23875</parent><type>1.32.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>2B 5A 18 1</pnode><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>2B 5A 19 1</address><name>Girls Shower Light</name><parent type="3">23875</parent><type>1.32.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>2B 5A 19 1</pnode><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>2B 5E 9F 1</address><name>Main Floor Bathroom Light</name><parent type="3">14382</parent><type>1.32.65.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>2B 5E 9F 1</pnode><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>2B 99 34 1</address><name>Office Light</name><parent type="3">53077</parent><type>1.65.67.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>2B 99 34 1</pnode><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>2B 99 34 2</address><name>Office Keypad.B</name><parent type="3">53077</parent><type>1.65.67.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>2B 99 34 1</pnode><property id="ST" value="255" formatted="On" uom="%/on/off" /></node><node flag="0"><address>2B 99 34 3</address><name>Office Keypad.C</name><parent type="3">53077</parent><type>1.65.67.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>2B 99 34 1</pnode><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>2B 99 34 4</address><name>Office Keypad.D</name><parent type="3">53077</parent><type>1.65.67.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>2B 99 34 1</pnode><property id="ST" value="255" formatted="On" uom="%/on/off" /></node><node flag="0"><address>2B 99 34 5</address><name>Office Keypad.E</name><parent type="3">53077</parent><type>1.65.67.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>2B 99 34 1</pnode><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>2B 99 34 6</address><name>Office Keypad.F</name><parent type="3">53077</parent><type>1.65.67.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>2B 99 34 1</pnode><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="0"><address>2B 99 34 7</address><name>Office Keypad.G</name><parent type="3">53077</parent><type>1.65.67.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>2B 99 34 1</pnode><property id="ST" value="255" formatted="On" uom="%/on/off" /></node><node flag="0"><address>2B 99 34 8</address><name>Office Keypad.H</name><parent type="3">53077</parent><type>1.65.67.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>2B 99 34 1</pnode><property id="ST" value="255" formatted="On" uom="%/on/off" /></node><node flag="128"><address>33 9B DC 1</address><name>Main Floor Scones Light</name><parent type="3">43858</parent><type>1.32.68.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>33 9B DC 1</pnode><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>33 A2 70 1</address><name>Pantry Light</name><parent type="3">42035</parent><type>1.32.68.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>33 A2 70 1</pnode><property id="ST" value="0" formatted="Off" uom="%/on/off" /></node><node flag="128"><address>ZW002_1</address><name>Front Door Lock</name><family>4</family><parent type="3">9191</parent><type>4.64.3.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>ZW002_1</pnode><sgid>1</sgid><devtype><gen>4.64.3</gen><mfg>297.46443.65018</mfg><cat>111</cat><model>5</model></devtype><property id="ST" value="0" formatted="Unlocked" uom="11" /></node><node flag="128"><address>ZW003_1</address><name>ZW 003 Repeater</name><family>4</family><parent type="3">46017</parent><type>4.15.1.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>ZW003_1</pnode><sgid>1</sgid><devtype><gen>4.15.1</gen><mfg>134.4.37</mfg><cat>129</cat></devtype></node><node flag="128"><address>ZW004_1</address><name>ZW 004 Repeater</name><family>4</family><parent type="3">46017</parent><type>4.15.1.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>ZW004_1</pnode><sgid>1</sgid><devtype><gen>4.15.1</gen><mfg>134.4.37</mfg><cat>129</cat></devtype></node><node flag="128"><address>ZW005_1</address><name>Deck Door Lock</name><family>4</family><parent type="3">42035</parent><type>4.64.3.0</type><enabled>true</enabled><deviceClass>0</deviceClass><wattage>0</wattage><dcPeriod>0</dcPeriod><pnode>ZW005_1</pnode><sgid>1</sgid><devtype><gen>4.64.3</gen><mfg>297.2.0</mfg><cat>111</cat><model>5</model></devtype><property id="ST" value="0" formatted="Unlocked" uom="11" /></node><group flag="12"><address>00:21:b9:02:0a:52</address><name>My Lighting</name><family>6</family><members><link type="0">18 5A CF 1</link><link type="0">18 5A CF 2</link><link type="0">18 5A CF 3</link><link type="0">18 5A CF 4</link><link type="0">18 5A CF 5</link><link type="0">18 55 FA 1</link><link type="0">18 55 FA 2</link><link type="0">18 55 FA 3</link><link type="0">18 55 FA 4</link><link type="0">18 55 FA 5</link><link type="0">18 55 FA 6</link><link type="0">18 55 FA 7</link><link type="0">18 55 FA 8</link><link type="0">18 39 DD 1</link><link type="0">18 59 CD 1</link><link type="0">18 59 CD 3</link><link type="0">18 59 CD 4</link><link type="0">18 59 CD 5</link><link type="0">18 59 CD 6</link><link type="0">33 A2 70 1</link><link type="0">18 36 B1 1</link><link type="0">17 15 23 1</link><link type="0">19 C0 E4 1</link><link type="0">17 15 6A 1</link><link type="0">18 43 C4 1</link><link type="0">19 51 9E 1</link><link type="0">18 5A CF 6</link><link type="0">18 11 48 1</link><link type="0">19 4F 6C 1</link><link type="0">18 D 22 1</link><link type="0">18 18 C5 1</link><link type="0">17 22 F6 1</link><link type="0">29 3D E2 1</link><link type="0">29 3D E2 2</link><link type="0">18 10 86 1</link><link type="0">17 28 71 1</link><link type="0">19 53 7D 1</link><link type="0">18 18 C3 1</link><link type="0">18 12 18 1</link><link type="0">19 53 90 1</link><link type="0">19 57 51 1</link><link type="0">18 12 29 1</link><link type="0">18 12 32 1</link><link type="0">17 27 82 1</link><link type="0">17 19 F9 1</link><link type="0">18 E 45 1</link><link type="0">18 C 87 1</link><link type="0">19 56 18 1</link><link type="0">14 5C B2 1</link><link type="0">14 5C B2 2</link><link type="0">14 5C B2 3</link><link type="0">17 D5 A8 1</link><link type="0">17 D5 A8 2</link><link type="0">2B 99 34 1</link><link type="0">18 5A CF 7</link><link type="0">18 5A CF 8</link><link type="0">22 47 AA 1</link><link type="0">22 47 AA 2</link><link type="0">22 47 AA 3</link><link type="0">22 47 AA 4</link><link type="0">22 47 AA 5</link><link type="0">17 15 35 1</link><link type="0">33 9B DC 1</link><link type="0">17 14 73 1</link><link type="0">18 11 CE 1</link><link type="0">14 47 41 1</link><link type="0">14 47 41 2</link><link type="0">14 49 B9 1</link><link type="0">14 49 B9 2</link><link type="0">17 D7 ED 1</link><link type="0">17 D7 ED 2</link><link type="0">18 E 2A 1</link><link type="0">1F 47 4B 1</link><link type="0">1F 42 F7 1</link><link type="0">18 2F B1 1</link><link type="0">2B 99 34 2</link><link type="0">1A E CC 1</link><link type="0">18 10 9C 1</link><link type="0">19 C2 FA 1</link><link type="0">19 C3 48 1</link><link type="0">19 C3 5B 1</link><link type="0">18 C1 C8 1</link><link type="0">18 C1 AB 1</link><link type="0">1A A EB 1</link><link type="0">1C 29 DC 1</link><link type="0">1C 29 DC 2</link><link type="0">1C 29 DC 3</link><link type="0">1C 29 DC 4</link><link type="0">1C 29 DC 5</link><link type="0">1C 29 DC 6</link><link type="0">22 47 AA 6</link><link type="0">22 47 AA 7</link><link type="0">22 47 AA 8</link><link type="0">1B 4D 2D 1</link><link type="0">1C 29 DC 7</link><link type="0">1C 29 DC 8</link><link type="0">1B 31 E 1</link><link type="0">1B 34 B 1</link><link type="0">14 7C D8 1</link><link type="0">14 7C D8 2</link><link type="0">14 7C D8 3</link><link type="0">14 A7 12 1</link><link type="0">14 A7 12 2</link><link type="0">1C E0 46 1</link><link type="0">1C E0 46 3</link><link type="0">1C E0 46 4</link><link type="0">1C E0 46 5</link><link type="0">1C E0 46 6</link><link type="0">17 79 81 1</link><link type="0">14 A8 BC 1</link><link type="0">14 A8 BC 2</link><link type="0">1C DF 26 1</link><link type="0">1C DF 26 3</link><link type="0">1C DF 26 4</link><link type="0">1C DF 26 5</link><link type="0">1C DF 26 6</link><link type="0">1D FA 5A 1</link><link type="0">1D FA 5A 3</link><link type="0">1D FA 5A 4</link><link type="0">1D FA 5A 5</link><link type="0">1D FA 5A 6</link><link type="0">14 A6 C5 1</link><link type="0">14 A6 C5 2</link><link type="0">1F 45 84 1</link><link type="0">1F 47 EB 1</link><link type="0">1F 46 F0 1</link><link type="0">14 7C CF 1</link><link type="0">14 7C CF 2</link><link type="0">14 7C CF 3</link><link type="0">17 79 81 2</link><link type="0">21 5D 67 1</link><link type="0">21 5D 67 2</link><link type="0">21 5D 67 3</link><link type="0">21 62 43 1</link><link type="0">21 62 43 2</link><link type="0">21 62 43 3</link><link type="0">1A 12 32 1</link><link type="0">2B 5A 18 1</link><link type="0">2B 5A 19 1</link><link type="0">2B 5E 9F 1</link><link type="0">2B 99 34 3</link><link type="0">2B 99 34 4</link><link type="0">2B 99 34 5</link><link type="0">2B 99 34 6</link><link type="0">2B 99 34 7</link><link type="0">2B 99 34 8</link><link type="0">ZW002_1</link><link type="0">ZW003_1</link><link type="0">ZW004_1</link><link type="0">ZW005_1</link></members></group><group flag="132"><address>10036</address><name>MCP - Door Open</name><parent type="3">42740</parent><deviceGroup>60</deviceGroup><members><link type="32">2B 99 34 5</link></members></group><group flag="132"><address>10399</address><name>Front Hall</name><parent type="3">43858</parent><deviceGroup>24</deviceGroup><ELK_ID>A01</ELK_ID><members><link type="16">18 18 C5 1</link><link type="16">17 22 F6 1</link></members></group><group flag="132"><address>12627</address><name>Interior Lights Minus Bedroom</name><parent type="3">42740</parent><deviceGroup>20</deviceGroup><ELK_ID>A02</ELK_ID><members><link type="32">33 A2 70 1</link><link type="32">18 36 B1 1</link><link type="32">18 43 C4 1</link><link type="32">19 51 9E 1</link><link type="32">18 11 48 1</link><link type="32">19 4F 6C 1</link><link type="32">18 D 22 1</link><link type="32">18 18 C5 1</link><link type="32">17 22 F6 1</link><link type="32">18 10 86 1</link><link type="32">17 28 71 1</link><link type="32">19 53 7D 1</link><link type="32">18 18 C3 1</link><link type="32">18 12 18 1</link><link type="32">19 53 90 1</link><link type="32">18 12 29 1</link><link type="32">18 12 32 1</link><link type="32">17 27 82 1</link><link type="32">17 19 F9 1</link><link type="32">18 E 45 1</link><link type="32">18 C 87 1</link><link type="32">19 56 18 1</link><link type="32">2B 99 34 1</link><link type="32">22 47 AA 1</link><link type="32">33 9B DC 1</link><link type="32">18 E 2A 1</link><link type="32">1F 47 4B 1</link><link type="32">1F 42 F7 1</link><link type="32">18 2F B1 1</link><link type="32">1A E CC 1</link><link type="32">18 10 9C 1</link><link type="32">18 C1 AB 1</link><link type="32">1A A EB 1</link><link type="32">1B 4D 2D 1</link><link type="32">1B 31 E 1</link><link type="32">1F 45 84 1</link><link type="32">1F 47 EB 1</link><link type="32">1F 46 F0 1</link><link type="32">1A 12 32 1</link><link type="32">2B 5A 18 1</link><link type="32">2B 5A 19 1</link><link type="32">2B 5E 9F 1</link></members></group><group flag="132"><address>13005</address><name>Alarm On Buttons</name><parent type="3">42740</parent><deviceGroup>58</deviceGroup><ELK_ID>A03</ELK_ID><members><link type="32">18 5A CF 2</link><link type="32">22 47 AA 5</link><link type="32">2B 99 34 3</link></members></group><group flag="132"><address>13423</address><name>Dining Room</name><parent type="3">48638</parent><deviceGroup>34</deviceGroup><ELK_ID>A04</ELK_ID><members><link type="16">1A E CC 1</link><link type="16">18 10 9C 1</link></members></group><group flag="132"><address>19128</address><name>Garage Status</name><parent type="3">42740</parent><deviceGroup>17</deviceGroup><ELK_ID>F05</ELK_ID><members><link type="32">18 55 FA 3</link><link type="32">18 5A CF 8</link><link type="32">22 47 AA 8</link><link type="16">17 79 81 1</link></members></group><group flag="132"><address>1930</address><name>Upstairs Stairs</name><parent type="3">13066</parent><deviceGroup>28</deviceGroup><ELK_ID>F06</ELK_ID><members><link type="16">18 12 29 1</link><link type="16">18 12 32 1</link><link type="16">19 56 18 1</link></members></group><group flag="132"><address>19882</address><name>Master Bedroom</name><parent type="3">42997</parent><deviceGroup>40</deviceGroup><ELK_ID>I08</ELK_ID><members><link type="16">18 55 FA 1</link><link type="32">18 C1 C8 1</link></members></group><group flag="132"><address>20639</address><name>Sam Fan-High</name><parent type="3">30962</parent><deviceGroup>56</deviceGroup><ELK_ID>J01</ELK_ID><members><link type="32">1D FA 5A 4</link><link type="32">1D FA 5A 5</link></members></group><group flag="132"><address>21117</address><name>Sarah Fan-Off</name><parent type="3">54218</parent><deviceGroup>44</deviceGroup><ELK_ID>J16</ELK_ID><members><link type="32">1C E0 46 4</link><link type="32">1C E0 46 5</link><link type="32">1C E0 46 6</link></members></group><group flag="132"><address>23673</address><name>Kids Go Upstairs Keys</name><parent type="3">42740</parent><deviceGroup>29</deviceGroup><ELK_ID>F16</ELK_ID><members><link type="32">18 5A CF 5</link></members></group><group flag="132"><address>26542</address><name>MCP - Phone Present</name><parent type="3">42740</parent><deviceGroup>61</deviceGroup><members><link type="32">2B 99 34 7</link></members></group><group flag="132"><address>27346</address><name>Basement Stairs</name><parent type="3">5496</parent><deviceGroup>26</deviceGroup><ELK_ID>G01</ELK_ID><members><link type="16">18 12 18 1</link><link type="16">19 53 90 1</link></members></group><group flag="132"><address>28009</address><name>All Back Motion Lights</name><parent type="3">58858</parent><deviceGroup>35</deviceGroup><ELK_ID>G02</ELK_ID><members><link type="16">18 39 DD 1</link><link type="32">17 15 23 1</link><link type="32">17 15 6A 1</link><link type="32">19 C3 5B 1</link></members></group><group flag="132"><address>30560</address><name>Leaving Keys</name><parent type="3">42740</parent><deviceGroup>16</deviceGroup><ELK_ID>G03</ELK_ID><members><link type="32">18 59 CD 3</link><link type="32">22 47 AA 2</link></members></group><group flag="132"><address>31829</address><name>Sarah Fan-High</name><parent type="3">54218</parent><deviceGroup>47</deviceGroup><ELK_ID>J11</ELK_ID><members><link type="32">1C E0 46 3</link><link type="32">1C E0 46 4</link><link type="32">1C E0 46 5</link></members></group><group flag="132"><address>32667</address><name>Home Buttons</name><parent type="3">42740</parent><deviceGroup>41</deviceGroup><ELK_ID>H15</ELK_ID><members><link type="32">18 59 CD 6</link><link type="32">18 5A CF 6</link><link type="32">2B 99 34 2</link><link type="32">22 47 AA 6</link></members></group><group flag="132"><address>32919</address><name>Main Floor TV Room All Lights</name><parent type="3">37794</parent><deviceGroup>19</deviceGroup><ELK_ID>G04</ELK_ID><members><link type="16">18 E 2A 1</link><link type="32">1F 47 4B 1</link><link type="32">1F 42 F7 1</link><link type="32">18 C1 AB 1</link><link type="32">1F 45 84 1</link><link type="32">1F 47 EB 1</link></members></group><group flag="132"><address>33836</address><name>MCP - Car Light</name><parent type="3">42740</parent><deviceGroup>64</deviceGroup><members><link type="32">2B 99 34 4</link></members></group><group flag="132"><address>35388</address><name>Sophia Fan-High</name><parent type="3">59604</parent><deviceGroup>52</deviceGroup><ELK_ID>K10</ELK_ID><members><link type="32">1C DF 26 4</link><link type="32">1C DF 26 5</link></members></group><group flag="132"><address>35783</address><name>Sam Fan -Med</name><parent type="3">30962</parent><deviceGroup>55</deviceGroup><ELK_ID>I15</ELK_ID><members><link type="32">1D FA 5A 4</link><link type="32">1D FA 5A 6</link></members></group><group flag="132"><address>3620</address><name>Arrive Home</name><parent type="3">42740</parent><deviceGroup>38</deviceGroup><ELK_ID>G05</ELK_ID><members><link type="32">18 11 48 1</link><link type="32">19 4F 6C 1</link><link type="32">18 D 22 1</link><link type="32">18 18 C5 1</link><link type="32">17 22 F6 1</link><link type="32">18 10 86 1</link><link type="32">17 28 71 1</link><link type="32">18 12 29 1</link><link type="32">18 12 32 1</link><link type="32">19 56 18 1</link></members></group><group flag="132"><address>37094</address><name>Main Floor Fireplace Scene</name><parent type="3">37794</parent><deviceGroup>37</deviceGroup><ELK_ID>G06</ELK_ID><members><link type="16">18 5A CF 4</link><link type="32">17 15 35 1</link></members></group><group flag="132"><address>38537</address><name>All On Buttons</name><parent type="3">42740</parent><deviceGroup>36</deviceGroup><ELK_ID>G07</ELK_ID><members><link type="32">18 55 FA 8</link></members></group><group flag="132"><address>39987</address><name>Arrive Home Buttons</name><parent type="3">42740</parent><deviceGroup>39</deviceGroup><ELK_ID>G08</ELK_ID><members><link type="32">22 47 AA 3</link></members></group><group flag="132"><address>41223</address><name>Sam Fan Light</name><parent type="3">30962</parent><deviceGroup>53</deviceGroup><ELK_ID>I16</ELK_ID><members><link type="16">1D FA 5A 1</link><link type="32">14 A6 C5 1</link></members></group><group flag="132"><address>44909</address><name>Main Floor Hall</name><parent type="3">43858</parent><deviceGroup>23</deviceGroup><ELK_ID>G09</ELK_ID><members><link type="16">18 11 48 1</link><link type="16">19 4F 6C 1</link><link type="16">18 D 22 1</link><link type="16">22 47 AA 1</link></members></group><group flag="132"><address>45501</address><name>Sophia Fan-Med</name><parent type="3">59604</parent><deviceGroup>51</deviceGroup><ELK_ID>K13</ELK_ID><members><link type="32">1C DF 26 4</link><link type="32">1C DF 26 6</link></members></group><group flag="132"><address>45857</address><name>Sarah Fan-Med</name><parent type="3">54218</parent><deviceGroup>46</deviceGroup><ELK_ID>J14</ELK_ID><members><link type="32">1C E0 46 3</link><link type="32">1C E0 46 4</link><link type="32">1C E0 46 6</link></members></group><group flag="132"><address>46700</address><name>Master Suite Lights</name><parent type="3">42997</parent><deviceGroup>21</deviceGroup><ELK_ID>G10</ELK_ID><members><link type="32">18 55 FA 1</link><link type="32">18 11 CE 1</link><link type="32">18 C1 C8 1</link></members></group><group flag="132"><address>47458</address><name>Master Bedroom Fireplace Ctrl</name><parent type="3">42997</parent><deviceGroup>31</deviceGroup><ELK_ID>G11</ELK_ID><members><link type="16">18 55 FA 5</link><link type="32">17 14 73 1</link></members></group><group flag="132"><address>49197</address><name>All Kitchen Lights</name><parent type="3">42035</parent><deviceGroup>57</deviceGroup><ELK_ID>F03</ELK_ID><members><link type="32">19 51 9E 1</link><link type="32">18 10 86 1</link><link type="32">17 28 71 1</link><link type="32">1A 12 32 1</link></members></group><group flag="132"><address>49387</address><name>Basement Rec Room</name><parent type="3">23278</parent><deviceGroup>25</deviceGroup><ELK_ID>G12</ELK_ID><members><link type="16">19 53 7D 1</link><link type="16">18 18 C3 1</link></members></group><group flag="132"><address>51602</address><name>Sarah Room Light</name><parent type="3">54218</parent><deviceGroup>43</deviceGroup><ELK_ID>K07</ELK_ID><members><link type="32">14 A7 12 1</link><link type="16">1C E0 46 1</link></members></group><group flag="132"><address>52597</address><name>MCP - Device Active</name><parent type="3">42740</parent><deviceGroup>59</deviceGroup><members><link type="32">2B 99 34 8</link></members></group><group flag="132"><address>53777</address><name>Sam Fan-Low</name><parent type="3">30962</parent><deviceGroup>54</deviceGroup><ELK_ID>J03</ELK_ID><members><link type="32">1D FA 5A 5</link><link type="32">1D FA 5A 6</link></members></group><group flag="132"><address>53993</address><name>Sophia Fan Light</name><parent type="3">59604</parent><deviceGroup>49</deviceGroup><ELK_ID>K09</ELK_ID><members><link type="32">14 A8 BC 1</link><link type="16">1C DF 26 1</link></members></group><group flag="132"><address>55034</address><name>Good Night Keys</name><parent type="3">42740</parent><deviceGroup>22</deviceGroup><ELK_ID>G13</ELK_ID><members><link type="32">18 5A CF 3</link><link type="32">18 55 FA 2</link><link type="32">18 59 CD 4</link><link type="32">22 47 AA 4</link></members></group><group flag="132"><address>59954</address><name>Upstairs Hall</name><parent type="3">1460</parent><deviceGroup>27</deviceGroup><ELK_ID>G14</ELK_ID><members><link type="16">17 27 82 1</link><link type="16">17 19 F9 1</link><link type="16">18 E 45 1</link><link type="16">18 C 87 1</link></members></group><group flag="132"><address>62367</address><name>MCP - Recent Light</name><parent type="3">42740</parent><deviceGroup>62</deviceGroup><members><link type="32">2B 99 34 6</link></members></group><group flag="132"><address>63141</address><name>All Outside Lights</name><parent type="3">58858</parent><deviceGroup>32</deviceGroup><ELK_ID>F04</ELK_ID><members><link type="32">18 39 DD 1</link><link type="32">18 59 CD 1</link><link type="32">17 15 23 1</link><link type="32">17 15 6A 1</link><link type="32">19 C3 5B 1</link></members></group><group flag="132"><address>63149</address><name>Going Upstairs Lights</name><parent type="3">42740</parent><deviceGroup>30</deviceGroup><ELK_ID>G15</ELK_ID><members><link type="32">18 12 29 1</link><link type="32">18 12 32 1</link><link type="32">17 27 82 1</link><link type="32">17 19 F9 1</link><link type="32">18 E 45 1</link><link type="32">18 C 87 1</link><link type="32">19 56 18 1</link></members></group><group flag="132"><address>63677</address><name>Side Gate Status Buttons</name><parent type="3">58858</parent><deviceGroup>33</deviceGroup><ELK_ID>G16</ELK_ID><members><link type="32">18 55 FA 7</link><link type="32">18 5A CF 7</link><link type="32">22 47 AA 7</link></members></group><group flag="132"><address>65377</address><name>Outside Decorations</name><parent type="3">58858</parent><deviceGroup>18</deviceGroup><ELK_ID>H01</ELK_ID><members><link type="16">18 59 CD 5</link><link type="32">19 C0 E4 1</link><link type="32">19 C2 FA 1</link><link type="32">19 C3 48 1</link></members></group><group flag="132"><address>7613</address><name>Sophia Fan-Low</name><parent type="3">59604</parent><deviceGroup>50</deviceGroup><ELK_ID>K12</ELK_ID><members><link type="32">1C DF 26 5</link><link type="32">1C DF 26 6</link></members></group><group flag="132"><address>8861</address><name>Living Room All</name><parent type="3">21278</parent><deviceGroup>42</deviceGroup><ELK_ID>I05</ELK_ID><members><link type="16">18 36 B1 1</link><link type="32">1B 4D 2D 1</link></members></group><group flag="132"><address>9040</address><name>Sarah Fan-Low</name><parent type="3">54218</parent><deviceGroup>45</deviceGroup><ELK_ID>J13</ELK_ID><members><link type="32">1C E0 46 3</link><link type="32">1C E0 46 5</link><link type="32">1C E0 46 6</link></members></group><group flag="132"><address>ADR0001</address><name>Auto DR</name><family>5</family><deviceGroup>48</deviceGroup><ELK_ID>A12</ELK_ID><members></members></group></nodes>
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes>
+    <root></root>
+    <folder flag="0">
+        <address>127</address>
+        <name>Unused</name>
+    </folder>
+    <folder flag="0">
+        <address>13066</address>
+        <name>Upstairs Stairs</name>
+    </folder>
+    <folder flag="0">
+        <address>13167</address>
+        <name>Secondary</name>
+    </folder>
+    <folder flag="0">
+        <address>14382</address>
+        <name>Main Floor Bathroom</name>
+    </folder>
+    <folder flag="0">
+        <address>1460</address>
+        <name>Upstairs Hall</name>
+    </folder>
+    <folder flag="0">
+        <address>21278</address>
+        <name>Music Room</name>
+    </folder>
+    <folder flag="0">
+        <address>23278</address>
+        <name>Basement Rec Room</name>
+    </folder>
+    <folder flag="0">
+        <address>23875</address>
+        <name>Girls Bathroom</name>
+    </folder>
+    <folder flag="0">
+        <address>24587</address>
+        <name>Play Room</name>
+    </folder>
+    <folder flag="0">
+        <address>30962</address>
+        <name>Sam Bedroom</name>
+    </folder>
+    <folder flag="0">
+        <address>36793</address>
+        <name>Server Room</name>
+    </folder>
+    <folder flag="0">
+        <address>37794</address>
+        <name>TV Room</name>
+    </folder>
+    <folder flag="0">
+        <address>42035</address>
+        <name>Kitchen</name>
+    </folder>
+    <folder flag="0">
+        <address>42740</address>
+        <name>Utility</name>
+    </folder>
+    <folder flag="0">
+        <address>42997</address>
+        <name>Master Bedroom</name>
+    </folder>
+    <folder flag="0">
+        <address>43858</address>
+        <name>Main Floor Hall</name>
+    </folder>
+    <folder flag="0">
+        <address>46017</address>
+        <name>ZWaveNetwork</name>
+    </folder>
+    <folder flag="0">
+        <address>48638</address>
+        <name>Dining Room</name>
+    </folder>
+    <folder flag="0">
+        <address>53077</address>
+        <name>Office</name>
+    </folder>
+    <folder flag="0">
+        <address>54218</address>
+        <name>Sarah Bedroom</name>
+    </folder>
+    <folder flag="0">
+        <address>54384</address>
+        <name>Garage</name>
+    </folder>
+    <folder flag="0">
+        <address>5496</address>
+        <name>Basement Hall</name>
+    </folder>
+    <folder flag="0">
+        <address>58858</address>
+        <name>Outside</name>
+    </folder>
+    <folder flag="0">
+        <address>59604</address>
+        <name>Sophia Bedroom</name>
+    </folder>
+    <folder flag="0">
+        <address>9191</address>
+        <name>Front Door</name>
+    </folder>
+    <node flag="128">
+        <address>14 47 41 1</address>
+        <name>Main Floor Closet Sensor</name>
+        <parent type="3">43858</parent>
+        <type>16.2.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>14 47 41 1</pnode>
+        <ELK_ID>A05</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>14 47 41 2</address>
+        <name>Side Gate Unused</name>
+        <parent type="3">127</parent>
+        <type>16.2.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>14 47 41 1</pnode>
+        <ELK_ID>A06</ELK_ID>
+        <property id="ST" value="255" formatted="On" uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>14 49 B9 1</address>
+        <name>Server Room Door Sensor</name>
+        <parent type="3">36793</parent>
+        <type>16.2.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>14 49 B9 1</pnode>
+        <ELK_ID>A07</ELK_ID>
+        <property id="ST" value=" " formatted=" " uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>14 49 B9 2</address>
+        <name>Back Gate Unused</name>
+        <parent type="3">127</parent>
+        <type>16.2.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>14 49 B9 1</pnode>
+        <ELK_ID>A08</ELK_ID>
+        <property id="ST" value=" " formatted=" " uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>14 5C B2 1</address>
+        <name>Main TV Room Motion</name>
+        <parent type="3">127</parent>
+        <type>16.1.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>14 5C B2 1</pnode>
+        <ELK_ID>A09</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>14 5C B2 2</address>
+        <name>Main TV Room Motion-Light</name>
+        <parent type="3">127</parent>
+        <type>16.1.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>14 5C B2 1</pnode>
+        <ELK_ID>A10</ELK_ID>
+        <property id="ST" value=" " formatted=" " uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>14 5C B2 3</address>
+        <name>Main TV Room Motion-Low Bat</name>
+        <parent type="3">127</parent>
+        <type>16.1.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>14 5C B2 1</pnode>
+        <ELK_ID>A11</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>14 7C CF 1</address>
+        <name>Play Room Motion-Sensor</name>
+        <parent type="3">127</parent>
+        <type>16.1.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>14 7C CF 1</pnode>
+        <ELK_ID>I11</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>14 7C CF 2</address>
+        <name>Play Room Motion-Dusk.Dawn</name>
+        <parent type="3">127</parent>
+        <type>16.1.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>14 7C CF 1</pnode>
+        <ELK_ID>I09</ELK_ID>
+        <property id="ST" value=" " formatted=" " uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>14 7C CF 3</address>
+        <name>Play Room Motion-Low Bat</name>
+        <parent type="3">127</parent>
+        <type>16.1.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>14 7C CF 1</pnode>
+        <ELK_ID>I10</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>14 7C D8 1</address>
+        <name>Rod Office Motion</name>
+        <parent type="3">127</parent>
+        <type>16.1.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>14 7C D8 1</pnode>
+        <ELK_ID>I12</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>14 7C D8 2</address>
+        <name>Rod Office Motion-Light</name>
+        <parent type="3">127</parent>
+        <type>16.1.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>14 7C D8 1</pnode>
+        <ELK_ID>I13</ELK_ID>
+        <property id="ST" value=" " formatted=" " uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>14 7C D8 3</address>
+        <name>Rod Office Motion-Low Bat</name>
+        <parent type="3">127</parent>
+        <type>16.1.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>14 7C D8 1</pnode>
+        <ELK_ID>I14</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>14 A6 C5 1</address>
+        <name>Sam Light</name>
+        <parent type="3">30962</parent>
+        <type>1.46.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>14 A6 C5 1</pnode>
+        <ELK_ID>J02</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>14 A6 C5 2</address>
+        <name>Sam Fan</name>
+        <parent type="3">30962</parent>
+        <type>1.46.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>14 A6 C5 1</pnode>
+        <ELK_ID>J04</ELK_ID>
+        <property id="ST" value="255" formatted="High" uom="off/low/med/high"/>
+    </node>
+    <node flag="128">
+        <address>14 A7 12 1</address>
+        <name>Sarah Light</name>
+        <parent type="3">54218</parent>
+        <type>1.46.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>14 A7 12 1</pnode>
+        <ELK_ID>J12</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>14 A7 12 2</address>
+        <name>Sarah Fan</name>
+        <parent type="3">54218</parent>
+        <type>1.46.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>14 A7 12 1</pnode>
+        <ELK_ID>J15</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="off/low/med/high"/>
+    </node>
+    <node flag="128">
+        <address>14 A8 BC 1</address>
+        <name>Sophia Light</name>
+        <parent type="3">59604</parent>
+        <type>1.46.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>14 A8 BC 1</pnode>
+        <ELK_ID>K11</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>14 A8 BC 2</address>
+        <name>Sophia Fan</name>
+        <parent type="3">59604</parent>
+        <type>1.46.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>14 A8 BC 1</pnode>
+        <ELK_ID>K14</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="off/low/med/high"/>
+    </node>
+    <node flag="128">
+        <address>17 14 73 1</address>
+        <name>Master Bedroom Fireplace</name>
+        <parent type="3">42997</parent>
+        <type>2.20.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>17 14 73 1</pnode>
+        <ELK_ID>A16</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>17 15 23 1</address>
+        <name>Deck Motion Light</name>
+        <parent type="3">58858</parent>
+        <type>2.20.56.157</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>17 15 23 1</pnode>
+        <ELK_ID>B01</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>17 15 35 1</address>
+        <name>TV Fireplace</name>
+        <parent type="3">37794</parent>
+        <type>2.20.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>17 15 35 1</pnode>
+        <ELK_ID>B02</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>17 15 6A 1</address>
+        <name>Basement Motion LIght</name>
+        <parent type="3">58858</parent>
+        <type>2.20.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>17 15 6A 1</pnode>
+        <ELK_ID>B03</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>17 19 F9 1</address>
+        <name>S - Upstairs Hall By Bath</name>
+        <parent type="3">13167</parent>
+        <type>1.25.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>17 19 F9 1</pnode>
+        <ELK_ID>B04</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>17 22 F6 1</address>
+        <name>S - Front Hall Front Door</name>
+        <parent type="3">13167</parent>
+        <type>1.25.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>17 22 F6 1</pnode>
+        <ELK_ID>B05</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>17 27 82 1</address>
+        <name>Upstairs Hall Light</name>
+        <parent type="3">1460</parent>
+        <type>1.25.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>17 27 82 1</pnode>
+        <ELK_ID>B06</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>17 28 71 1</address>
+        <name>Kitchen Island Light</name>
+        <parent type="3">42035</parent>
+        <type>1.25.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>17 28 71 1</pnode>
+        <ELK_ID>B07</ELK_ID>
+        <property id="ST" value="255" formatted="On" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>17 79 81 1</address>
+        <name>Garage Door Sensor</name>
+        <parent type="3">54384</parent>
+        <type>7.0.54.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>17 79 81 1</pnode>
+        <ELK_ID>I01</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>17 79 81 2</address>
+        <name>Garage Sensor-Unused Relay</name>
+        <parent type="3">127</parent>
+        <type>7.0.54.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>17 79 81 1</pnode>
+        <ELK_ID>K01</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>17 D5 A8 1</address>
+        <name>Garage Door Opener-Unused Sen</name>
+        <parent type="3">127</parent>
+        <type>7.0.54.0</type>
+        <enabled>false</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>17 D5 A8 1</pnode>
+        <ELK_ID>B08</ELK_ID>
+        <property id="ST" value=" " formatted=" " uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>17 D5 A8 2</address>
+        <name>Unused - Garage Door-Relay</name>
+        <parent type="3">127</parent>
+        <type>7.0.54.0</type>
+        <enabled>false</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>17 D5 A8 1</pnode>
+        <ELK_ID>B09</ELK_ID>
+        <property id="ST" value=" " formatted=" " uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>17 D7 ED 1</address>
+        <name>Doorbell Sensor</name>
+        <parent type="3">9191</parent>
+        <type>7.0.54.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>17 D7 ED 1</pnode>
+        <ELK_ID>B10</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>17 D7 ED 2</address>
+        <name>Unused Doorbell-Relay</name>
+        <parent type="3">127</parent>
+        <type>7.0.54.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>17 D7 ED 1</pnode>
+        <ELK_ID>B11</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>18 10 86 1</address>
+        <name>Kitchen Light</name>
+        <parent type="3">42035</parent>
+        <type>1.25.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 10 86 1</pnode>
+        <ELK_ID>B12</ELK_ID>
+        <property id="ST" value="255" formatted="On" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>18 10 9C 1</address>
+        <name>Dining Room Light</name>
+        <parent type="3">48638</parent>
+        <type>1.25.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 10 9C 1</pnode>
+        <ELK_ID>B13</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>18 11 48 1</address>
+        <name>S - Main Floor Hall Office</name>
+        <parent type="3">13167</parent>
+        <type>1.25.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 11 48 1</pnode>
+        <ELK_ID>B14</ELK_ID>
+        <property id="ST" value="255" formatted="On" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>18 11 CE 1</address>
+        <name>Master Bathroom Light</name>
+        <parent type="3">42997</parent>
+        <type>1.25.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 11 CE 1</pnode>
+        <ELK_ID>B15</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>18 12 18 1</address>
+        <name>S - Basement Stairs Light Bot</name>
+        <parent type="3">13167</parent>
+        <type>1.25.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 12 18 1</pnode>
+        <ELK_ID>B16</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>18 12 29 1</address>
+        <name>S - Upstairs Stairs Main Floo</name>
+        <parent type="3">127</parent>
+        <type>1.25.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 12 29 1</pnode>
+        <ELK_ID>C01</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>18 12 32 1</address>
+        <name>Upstairs Stairs Light</name>
+        <parent type="3">13066</parent>
+        <type>1.25.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 12 32 1</pnode>
+        <ELK_ID>C02</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>18 18 C3 1</address>
+        <name>S - Rec Room Light Back Door</name>
+        <parent type="3">13167</parent>
+        <type>1.25.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 18 C3 1</pnode>
+        <ELK_ID>C03</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>18 18 C5 1</address>
+        <name>Front Hall Light</name>
+        <parent type="3">43858</parent>
+        <type>1.25.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 18 C5 1</pnode>
+        <ELK_ID>C04</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>18 2F B1 1</address>
+        <name>Butlers Pantry Light</name>
+        <parent type="3">42035</parent>
+        <type>1.25.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 2F B1 1</pnode>
+        <ELK_ID>C05</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>18 36 B1 1</address>
+        <name>Music Room Light Switch</name>
+        <parent type="3">21278</parent>
+        <type>2.28.58.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 36 B1 1</pnode>
+        <ELK_ID>C06</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>18 39 DD 1</address>
+        <name>S - Basement Door Switch</name>
+        <parent type="3">127</parent>
+        <type>2.28.58.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 39 DD 1</pnode>
+        <ELK_ID>C07</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>18 43 C4 1</address>
+        <name>Garage Light</name>
+        <parent type="3">54384</parent>
+        <type>2.28.58.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 43 C4 1</pnode>
+        <ELK_ID>C08</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>18 55 FA 1</address>
+        <name>Master Bedroom Light</name>
+        <parent type="3">42997</parent>
+        <type>1.28.54.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 55 FA 1</pnode>
+        <ELK_ID>D01</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>18 55 FA 2</address>
+        <name>Bedroom Keypad.Night</name>
+        <parent type="3">42997</parent>
+        <type>1.28.54.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 55 FA 1</pnode>
+        <ELK_ID>D02</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>18 55 FA 3</address>
+        <name>Bedroom Keypad.Garage Status</name>
+        <parent type="3">42997</parent>
+        <type>1.28.54.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 55 FA 1</pnode>
+        <ELK_ID>D03</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>18 55 FA 4</address>
+        <name>Bedroom Keypad.Romance</name>
+        <parent type="3">42997</parent>
+        <type>1.28.54.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 55 FA 1</pnode>
+        <ELK_ID>D04</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>18 55 FA 5</address>
+        <name>Bedroom Keypad.Fireplace</name>
+        <parent type="3">42997</parent>
+        <type>1.28.54.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 55 FA 1</pnode>
+        <ELK_ID>D05</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>18 55 FA 6</address>
+        <name>Bedroom Keypad.Night Hallway</name>
+        <parent type="3">42997</parent>
+        <type>1.28.54.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 55 FA 1</pnode>
+        <ELK_ID>D06</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>18 55 FA 7</address>
+        <name>Bedroom.Side Gate</name>
+        <parent type="3">42997</parent>
+        <type>1.28.54.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 55 FA 1</pnode>
+        <ELK_ID>D07</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>18 55 FA 8</address>
+        <name>Bedroom Keypad.All On</name>
+        <parent type="3">42997</parent>
+        <type>1.28.54.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 55 FA 1</pnode>
+        <ELK_ID>D08</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>18 59 CD 1</address>
+        <name>Outside Front Light</name>
+        <parent type="3">9191</parent>
+        <type>2.15.54.157</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 59 CD 1</pnode>
+        <ELK_ID>D09</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>18 59 CD 3</address>
+        <name>Front Keypad.Away</name>
+        <parent type="3">43858</parent>
+        <type>2.15.54.157</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 59 CD 1</pnode>
+        <ELK_ID>D10</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>18 59 CD 4</address>
+        <name>Front Keypad.Night</name>
+        <parent type="3">43858</parent>
+        <type>2.15.54.157</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 59 CD 1</pnode>
+        <ELK_ID>D11</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>18 59 CD 5</address>
+        <name>Front Keypad.Decorations</name>
+        <parent type="3">43858</parent>
+        <type>2.15.54.157</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 59 CD 1</pnode>
+        <ELK_ID>D12</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>18 59 CD 6</address>
+        <name>Front Keypad.Home</name>
+        <parent type="3">43858</parent>
+        <type>2.15.54.157</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 59 CD 1</pnode>
+        <ELK_ID>D13</ELK_ID>
+        <property id="ST" value="255" formatted="On" uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>18 5A CF 1</address>
+        <name>Outside Back Lights</name>
+        <parent type="3">42035</parent>
+        <type>2.15.54.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 5A CF 1</pnode>
+        <ELK_ID>D14</ELK_ID>
+        <property id="ST" value="255" formatted="On" uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>18 5A CF 2</address>
+        <name>Deck Keypad.AlarmOn</name>
+        <parent type="3">42035</parent>
+        <type>2.15.54.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 5A CF 1</pnode>
+        <ELK_ID>H12</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>18 5A CF 3</address>
+        <name>Deck Keypad.Night</name>
+        <parent type="3">42035</parent>
+        <type>2.15.54.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 5A CF 1</pnode>
+        <ELK_ID>D15</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>18 5A CF 4</address>
+        <name>Deck Keypad.Fireplace</name>
+        <parent type="3">42035</parent>
+        <type>2.15.54.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 5A CF 1</pnode>
+        <ELK_ID>D16</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>18 5A CF 5</address>
+        <name>Deck Keypad.Sophia</name>
+        <parent type="3">42035</parent>
+        <type>2.15.54.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 5A CF 1</pnode>
+        <ELK_ID>E01</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>18 5A CF 6</address>
+        <name>Deck Keypad.Home</name>
+        <parent type="3">42035</parent>
+        <type>2.15.54.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 5A CF 1</pnode>
+        <ELK_ID>E02</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>18 5A CF 7</address>
+        <name>Deck Keypad.Side Gate</name>
+        <parent type="3">42035</parent>
+        <type>2.15.54.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 5A CF 1</pnode>
+        <ELK_ID>H13</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>18 5A CF 8</address>
+        <name>Deck Keypad.Garage</name>
+        <parent type="3">42035</parent>
+        <type>2.15.54.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 5A CF 1</pnode>
+        <ELK_ID>H11</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>18 C 87 1</address>
+        <name>S - Upstairs Hall By Master</name>
+        <parent type="3">13167</parent>
+        <type>1.25.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 C 87 1</pnode>
+        <ELK_ID>E03</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>18 C1 AB 1</address>
+        <name>TV Lamp</name>
+        <parent type="3">37794</parent>
+        <type>1.0.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 C1 AB 1</pnode>
+        <ELK_ID>E04</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>18 C1 C8 1</address>
+        <name>Master Bedroom Lamp</name>
+        <parent type="3">42997</parent>
+        <type>1.0.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 C1 C8 1</pnode>
+        <ELK_ID>E05</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>18 D 22 1</address>
+        <name>S - Main Floor Hall Front Hal</name>
+        <parent type="3">13167</parent>
+        <type>1.25.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 D 22 1</pnode>
+        <ELK_ID>E06</ELK_ID>
+        <property id="ST" value="255" formatted="On" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>18 E 2A 1</address>
+        <name>TV Light Switch</name>
+        <parent type="3">37794</parent>
+        <type>1.25.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 E 2A 1</pnode>
+        <ELK_ID>E07</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>18 E 45 1</address>
+        <name>S - Upstairs Hall By Laundry</name>
+        <parent type="3">13167</parent>
+        <type>1.25.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>18 E 45 1</pnode>
+        <ELK_ID>E08</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>19 4F 6C 1</address>
+        <name>S - Main Floor Hall Light By</name>
+        <parent type="3">127</parent>
+        <type>1.32.64.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>19 4F 6C 1</pnode>
+        <ELK_ID>E09</ELK_ID>
+        <property id="ST" value="255" formatted="On" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>19 51 9E 1</address>
+        <name>Kitchen Table</name>
+        <parent type="3">42035</parent>
+        <type>1.32.64.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>19 51 9E 1</pnode>
+        <ELK_ID>E10</ELK_ID>
+        <property id="ST" value="255" formatted="On" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>19 53 7D 1</address>
+        <name>Rec Room Light</name>
+        <parent type="3">23278</parent>
+        <type>1.32.64.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>19 53 7D 1</pnode>
+        <ELK_ID>E11</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>19 53 90 1</address>
+        <name>Basement Stairs Light</name>
+        <parent type="3">5496</parent>
+        <type>1.32.64.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>19 53 90 1</pnode>
+        <ELK_ID>E12</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>19 56 18 1</address>
+        <name>S - Upstairs Stairs Top Left</name>
+        <parent type="3">127</parent>
+        <type>1.32.64.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>19 56 18 1</pnode>
+        <ELK_ID>E13</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>19 57 51 1</address>
+        <name>Play Room Light</name>
+        <parent type="3">24587</parent>
+        <type>1.32.64.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>19 57 51 1</pnode>
+        <ELK_ID>E14</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>19 C0 E4 1</address>
+        <name>Outside Plug Left of Garage</name>
+        <parent type="3">58858</parent>
+        <type>2.20.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>19 C0 E4 1</pnode>
+        <ELK_ID>E15</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>19 C2 FA 1</address>
+        <name>Outside Plug Right Side</name>
+        <parent type="3">58858</parent>
+        <type>2.20.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>19 C2 FA 1</pnode>
+        <ELK_ID>E16</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>19 C3 48 1</address>
+        <name>Outside Plug Left of Porch</name>
+        <parent type="3">58858</parent>
+        <type>2.20.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>19 C3 48 1</pnode>
+        <ELK_ID>F01</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>19 C3 5B 1</address>
+        <name>Back Ground Motion Light</name>
+        <parent type="3">58858</parent>
+        <type>2.20.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>19 C3 5B 1</pnode>
+        <ELK_ID>F02</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>1A 12 32 1</address>
+        <name>Kitchen Alcove Light</name>
+        <parent type="3">42035</parent>
+        <type>1.32.64.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1A 12 32 1</pnode>
+        <ELK_ID>L04</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>1A A EB 1</address>
+        <name>Server Room Light</name>
+        <parent type="3">36793</parent>
+        <type>1.32.64.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1A A EB 1</pnode>
+        <ELK_ID>K08</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>1A E CC 1</address>
+        <name>S - Dinning Room Inner Wall</name>
+        <parent type="3">13167</parent>
+        <type>1.32.64.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1A E CC 1</pnode>
+        <ELK_ID>F09</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>1B 31 E 1</address>
+        <name>Main Floor Closet Light</name>
+        <parent type="3">43858</parent>
+        <type>1.32.64.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1B 31 E 1</pnode>
+        <ELK_ID>I07</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>1B 34 B 1</address>
+        <name>Sarah Bedroom Old</name>
+        <parent type="3">127</parent>
+        <type>1.32.64.0</type>
+        <enabled>false</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1B 34 B 1</pnode>
+        <ELK_ID>J10</ELK_ID>
+        <property id="ST" value=" " formatted=" " uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>1B 4D 2D 1</address>
+        <name>Music Room Lamp</name>
+        <parent type="3">21278</parent>
+        <type>1.0.56.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1B 4D 2D 1</pnode>
+        <ELK_ID>I06</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>1C 29 DC 1</address>
+        <name>Bedroom RemoteLinc</name>
+        <parent type="3">42997</parent>
+        <type>0.18.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1C 29 DC 1</pnode>
+        <ELK_ID>F10</ELK_ID>
+        <property id="ST" value=" " formatted=" " uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>1C 29 DC 2</address>
+        <name>Bedroom RemoteLinc - 2</name>
+        <parent type="3">42997</parent>
+        <type>0.18.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1C 29 DC 1</pnode>
+        <ELK_ID>F11</ELK_ID>
+        <property id="ST" value=" " formatted=" " uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>1C 29 DC 3</address>
+        <name>Bedroom RemoteLinc - 3</name>
+        <parent type="3">42997</parent>
+        <type>0.18.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1C 29 DC 1</pnode>
+        <ELK_ID>F12</ELK_ID>
+        <property id="ST" value=" " formatted=" " uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>1C 29 DC 4</address>
+        <name>Bedroom RemoteLinc - 4</name>
+        <parent type="3">42997</parent>
+        <type>0.18.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1C 29 DC 1</pnode>
+        <ELK_ID>F13</ELK_ID>
+        <property id="ST" value=" " formatted=" " uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>1C 29 DC 5</address>
+        <name>Bedroom RemoteLinc - 5</name>
+        <parent type="3">42997</parent>
+        <type>0.18.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1C 29 DC 1</pnode>
+        <ELK_ID>F14</ELK_ID>
+        <property id="ST" value=" " formatted=" " uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>1C 29 DC 6</address>
+        <name>Bedroom RemoteLinc - 6</name>
+        <parent type="3">42997</parent>
+        <type>0.18.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1C 29 DC 1</pnode>
+        <ELK_ID>F15</ELK_ID>
+        <property id="ST" value=" " formatted=" " uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>1C 29 DC 7</address>
+        <name>Bedroom RemoteLinc - 7</name>
+        <parent type="3">42997</parent>
+        <type>0.18.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1C 29 DC 1</pnode>
+        <ELK_ID>H09</ELK_ID>
+        <property id="ST" value=" " formatted=" " uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>1C 29 DC 8</address>
+        <name>Bedroom RemoteLinc - 8</name>
+        <parent type="3">42997</parent>
+        <type>0.18.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1C 29 DC 1</pnode>
+        <ELK_ID>H10</ELK_ID>
+        <property id="ST" value=" " formatted=" " uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>1C DF 26 1</address>
+        <name>Sophia Keypad.Light</name>
+        <parent type="3">59604</parent>
+        <type>1.27.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1C DF 26 1</pnode>
+        <ELK_ID>L03</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>1C DF 26 3</address>
+        <name>Sophia Keypad.A</name>
+        <parent type="3">59604</parent>
+        <type>1.27.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1C DF 26 1</pnode>
+        <ELK_ID>K15</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>1C DF 26 4</address>
+        <name>Sophia Keypad.B</name>
+        <parent type="3">59604</parent>
+        <type>1.27.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1C DF 26 1</pnode>
+        <ELK_ID>K16</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>1C DF 26 5</address>
+        <name>Sophia Keypad.C</name>
+        <parent type="3">59604</parent>
+        <type>1.27.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1C DF 26 1</pnode>
+        <ELK_ID>L01</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>1C DF 26 6</address>
+        <name>Sophia Keypad.D</name>
+        <parent type="3">59604</parent>
+        <type>1.27.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1C DF 26 1</pnode>
+        <ELK_ID>L02</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>1C E0 46 1</address>
+        <name>Sarah Keypad-Main</name>
+        <parent type="3">54218</parent>
+        <type>1.27.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1C E0 46 1</pnode>
+        <ELK_ID>K06</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>1C E0 46 3</address>
+        <name>Sarah Keypad-A</name>
+        <parent type="3">54218</parent>
+        <type>1.27.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1C E0 46 1</pnode>
+        <ELK_ID>K02</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>1C E0 46 4</address>
+        <name>Sarah Keypad-B</name>
+        <parent type="3">54218</parent>
+        <type>1.27.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1C E0 46 1</pnode>
+        <ELK_ID>K03</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>1C E0 46 5</address>
+        <name>Sarah Keypad-C</name>
+        <parent type="3">54218</parent>
+        <type>1.27.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1C E0 46 1</pnode>
+        <ELK_ID>K04</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>1C E0 46 6</address>
+        <name>Sarah Keypad-D</name>
+        <parent type="3">54218</parent>
+        <type>1.27.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1C E0 46 1</pnode>
+        <ELK_ID>K05</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>1D FA 5A 1</address>
+        <name>S - Sam Keypad.Light</name>
+        <parent type="3">13167</parent>
+        <type>1.27.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1D FA 5A 1</pnode>
+        <ELK_ID>J09</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>1D FA 5A 3</address>
+        <name>Sam Keypad.A</name>
+        <parent type="3">30962</parent>
+        <type>1.27.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1D FA 5A 1</pnode>
+        <ELK_ID>J05</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>1D FA 5A 4</address>
+        <name>Sam Keypad.B</name>
+        <parent type="3">30962</parent>
+        <type>1.27.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1D FA 5A 1</pnode>
+        <ELK_ID>J06</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>1D FA 5A 5</address>
+        <name>Sam Keypad.C</name>
+        <parent type="3">30962</parent>
+        <type>1.27.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1D FA 5A 1</pnode>
+        <ELK_ID>J07</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>1D FA 5A 6</address>
+        <name>Sam Keypad.D</name>
+        <parent type="3">30962</parent>
+        <type>1.27.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1D FA 5A 1</pnode>
+        <ELK_ID>J08</ELK_ID>
+        <property id="ST" value="255" formatted="On" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>1F 42 F7 1</address>
+        <name>Christmas.Appliance.F7</name>
+        <parent type="3">127</parent>
+        <type>2.9.66.0</type>
+        <enabled>false</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1F 42 F7 1</pnode>
+        <ELK_ID>H05</ELK_ID>
+        <property id="ST" value=" " formatted=" " uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>1F 45 84 1</address>
+        <name>Christmas.Appliance.84</name>
+        <parent type="3">42740</parent>
+        <type>2.9.66.0</type>
+        <enabled>false</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1F 45 84 1</pnode>
+        <ELK_ID>H03</ELK_ID>
+        <property id="ST" value=" " formatted=" " uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>1F 46 F0 1</address>
+        <name>ApplianceLink.F0</name>
+        <parent type="3">42740</parent>
+        <type>2.9.66.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1F 46 F0 1</pnode>
+        <ELK_ID>H14</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>1F 47 4B 1</address>
+        <name>Christmas.Appliance.4B</name>
+        <parent type="3">127</parent>
+        <type>2.9.66.0</type>
+        <enabled>false</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1F 47 4B 1</pnode>
+        <ELK_ID>H02</ELK_ID>
+        <property id="ST" value=" " formatted=" " uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>1F 47 EB 1</address>
+        <name>Christmas.Appliance.EB</name>
+        <parent type="3">42740</parent>
+        <type>2.9.66.0</type>
+        <enabled>false</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>1F 47 EB 1</pnode>
+        <ELK_ID>H04</ELK_ID>
+        <property id="ST" value=" " formatted=" " uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>21 5D 67 1</address>
+        <name>Basement Motion Sensor-Sensor</name>
+        <parent type="3">127</parent>
+        <type>16.1.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>21 5D 67 1</pnode>
+        <ELK_ID>H08</ELK_ID>
+        <property id="ST" value=" " formatted=" " uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>21 5D 67 2</address>
+        <name>Basement Motion Sensor-Dusk.D</name>
+        <parent type="3">127</parent>
+        <type>16.1.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>21 5D 67 1</pnode>
+        <ELK_ID>H06</ELK_ID>
+        <property id="ST" value=" " formatted=" " uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>21 5D 67 3</address>
+        <name>Basement Motion Sensor-Low Ba</name>
+        <parent type="3">127</parent>
+        <type>16.1.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>21 5D 67 1</pnode>
+        <ELK_ID>H07</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>21 62 43 1</address>
+        <name>Kitchen Motion Sensor-Sensor</name>
+        <parent type="3">127</parent>
+        <type>16.1.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>21 62 43 1</pnode>
+        <ELK_ID>I04</ELK_ID>
+        <property id="ST" value=" " formatted=" " uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>21 62 43 2</address>
+        <name>Kitchen Motion Sensor-Dusk.Da</name>
+        <parent type="3">127</parent>
+        <type>16.1.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>21 62 43 1</pnode>
+        <ELK_ID>I02</ELK_ID>
+        <property id="ST" value=" " formatted=" " uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>21 62 43 3</address>
+        <name>Kitchen Motion Sensor-Low Bat</name>
+        <parent type="3">127</parent>
+        <type>16.1.0.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>21 62 43 1</pnode>
+        <ELK_ID>I03</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>22 47 AA 1</address>
+        <name>Main Floor Hallway Light</name>
+        <parent type="3">43858</parent>
+        <type>1.28.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>22 47 AA 1</pnode>
+        <ELK_ID>C15</ELK_ID>
+        <property id="ST" value="255" formatted="On" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>22 47 AA 2</address>
+        <name>Garage Keypad.Away</name>
+        <parent type="3">54384</parent>
+        <type>1.28.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>22 47 AA 1</pnode>
+        <ELK_ID>C12</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>22 47 AA 3</address>
+        <name>Garage Keypad.ArrriveHome</name>
+        <parent type="3">54384</parent>
+        <type>1.28.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>22 47 AA 1</pnode>
+        <ELK_ID>C11</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>22 47 AA 4</address>
+        <name>Garage Keypad.Night</name>
+        <parent type="3">54384</parent>
+        <type>1.28.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>22 47 AA 1</pnode>
+        <ELK_ID>H16</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>22 47 AA 5</address>
+        <name>Garage Keypad.Alarm</name>
+        <parent type="3">54384</parent>
+        <type>1.28.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>22 47 AA 1</pnode>
+        <ELK_ID>C10</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>22 47 AA 6</address>
+        <name>Garage Keypad.Home</name>
+        <parent type="3">54384</parent>
+        <type>1.28.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>22 47 AA 1</pnode>
+        <ELK_ID>C16</ELK_ID>
+        <property id="ST" value="255" formatted="On" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>22 47 AA 7</address>
+        <name>Garage Keypad.Gate</name>
+        <parent type="3">58858</parent>
+        <type>1.28.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>22 47 AA 1</pnode>
+        <ELK_ID>C14</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>22 47 AA 8</address>
+        <name>Garage Keypad.Garage</name>
+        <parent type="3">54384</parent>
+        <type>1.28.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>22 47 AA 1</pnode>
+        <ELK_ID>C13</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>29 3D E2 1</address>
+        <name>Basement Door Lock</name>
+        <parent type="3">23278</parent>
+        <type>15.6.66.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>29 3D E2 1</pnode>
+        <ELK_ID>A14</ELK_ID>
+        <property id="ST" value="255" formatted="locked" uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>29 3D E2 2</address>
+        <name>Unused Back Door.Off.To.Lock</name>
+        <parent type="3">127</parent>
+        <type>15.6.66.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>29 3D E2 1</pnode>
+        <ELK_ID>A13</ELK_ID>
+        <property id="ST" value="255" formatted="locked" uom="on/off"/>
+    </node>
+    <node flag="128">
+        <address>2B 5A 18 1</address>
+        <name>Girls Sink Light</name>
+        <parent type="3">23875</parent>
+        <type>1.32.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>2B 5A 18 1</pnode>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>2B 5A 19 1</address>
+        <name>Girls Shower Light</name>
+        <parent type="3">23875</parent>
+        <type>1.32.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>2B 5A 19 1</pnode>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>2B 5E 9F 1</address>
+        <name>Main Floor Bathroom Light</name>
+        <parent type="3">14382</parent>
+        <type>1.32.65.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>2B 5E 9F 1</pnode>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>2B 99 34 1</address>
+        <name>Office Light</name>
+        <parent type="3">53077</parent>
+        <type>1.65.67.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>2B 99 34 1</pnode>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>2B 99 34 2</address>
+        <name>Office Keypad.B</name>
+        <parent type="3">53077</parent>
+        <type>1.65.67.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>2B 99 34 1</pnode>
+        <property id="ST" value="255" formatted="On" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>2B 99 34 3</address>
+        <name>Office Keypad.C</name>
+        <parent type="3">53077</parent>
+        <type>1.65.67.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>2B 99 34 1</pnode>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>2B 99 34 4</address>
+        <name>Office Keypad.D</name>
+        <parent type="3">53077</parent>
+        <type>1.65.67.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>2B 99 34 1</pnode>
+        <property id="ST" value="255" formatted="On" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>2B 99 34 5</address>
+        <name>Office Keypad.E</name>
+        <parent type="3">53077</parent>
+        <type>1.65.67.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>2B 99 34 1</pnode>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>2B 99 34 6</address>
+        <name>Office Keypad.F</name>
+        <parent type="3">53077</parent>
+        <type>1.65.67.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>2B 99 34 1</pnode>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>2B 99 34 7</address>
+        <name>Office Keypad.G</name>
+        <parent type="3">53077</parent>
+        <type>1.65.67.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>2B 99 34 1</pnode>
+        <property id="ST" value="255" formatted="On" uom="%/on/off"/>
+    </node>
+    <node flag="0">
+        <address>2B 99 34 8</address>
+        <name>Office Keypad.H</name>
+        <parent type="3">53077</parent>
+        <type>1.65.67.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>2B 99 34 1</pnode>
+        <property id="ST" value="255" formatted="On" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>33 9B DC 1</address>
+        <name>Main Floor Scones Light</name>
+        <parent type="3">43858</parent>
+        <type>1.32.68.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>33 9B DC 1</pnode>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>33 A2 70 1</address>
+        <name>Pantry Light</name>
+        <parent type="3">42035</parent>
+        <type>1.32.68.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>33 A2 70 1</pnode>
+        <property id="ST" value="0" formatted="Off" uom="%/on/off"/>
+    </node>
+    <node flag="128">
+        <address>ZW002_1</address>
+        <name>Front Door Lock</name>
+        <family>4</family>
+        <parent type="3">9191</parent>
+        <type>4.64.3.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>ZW002_1</pnode>
+        <sgid>1</sgid>
+        <devtype>
+            <gen>4.64.3</gen>
+            <mfg>297.46443.65018</mfg>
+            <cat>111</cat>
+            <model>5</model>
+        </devtype>
+        <property id="ST" value="0" formatted="Unlocked" uom="11"/>
+    </node>
+    <node flag="128">
+        <address>ZW003_1</address>
+        <name>ZW 003 Repeater</name>
+        <family>4</family>
+        <parent type="3">46017</parent>
+        <type>4.15.1.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>ZW003_1</pnode>
+        <sgid>1</sgid>
+        <devtype>
+            <gen>4.15.1</gen>
+            <mfg>134.4.37</mfg>
+            <cat>129</cat>
+        </devtype>
+    </node>
+    <node flag="128">
+        <address>ZW004_1</address>
+        <name>ZW 004 Repeater</name>
+        <family>4</family>
+        <parent type="3">46017</parent>
+        <type>4.15.1.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>ZW004_1</pnode>
+        <sgid>1</sgid>
+        <devtype>
+            <gen>4.15.1</gen>
+            <mfg>134.4.37</mfg>
+            <cat>129</cat>
+        </devtype>
+    </node>
+    <node flag="128">
+        <address>ZW005_1</address>
+        <name>Deck Door Lock</name>
+        <family>4</family>
+        <parent type="3">42035</parent>
+        <type>4.64.3.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>ZW005_1</pnode>
+        <sgid>1</sgid>
+        <devtype>
+            <gen>4.64.3</gen>
+            <mfg>297.2.0</mfg>
+            <cat>111</cat>
+            <model>5</model>
+        </devtype>
+        <property id="ST" value="100" formatted="Locked" uom="11"/>
+    </node>
+    <group flag="12">
+        <address>00:21:b9:02:0a:52</address>
+        <name>My Lighting</name>
+        <family>6</family>
+        <members>
+            <link type="0">18 5A CF 1</link>
+            <link type="0">18 5A CF 2</link>
+            <link type="0">18 5A CF 3</link>
+            <link type="0">18 5A CF 4</link>
+            <link type="0">18 5A CF 5</link>
+            <link type="0">18 55 FA 1</link>
+            <link type="0">18 55 FA 2</link>
+            <link type="0">18 55 FA 3</link>
+            <link type="0">18 55 FA 4</link>
+            <link type="0">18 55 FA 5</link>
+            <link type="0">18 55 FA 6</link>
+            <link type="0">18 55 FA 7</link>
+            <link type="0">18 55 FA 8</link>
+            <link type="0">18 39 DD 1</link>
+            <link type="0">18 59 CD 1</link>
+            <link type="0">18 59 CD 3</link>
+            <link type="0">18 59 CD 4</link>
+            <link type="0">18 59 CD 5</link>
+            <link type="0">18 59 CD 6</link>
+            <link type="0">33 A2 70 1</link>
+            <link type="0">18 36 B1 1</link>
+            <link type="0">17 15 23 1</link>
+            <link type="0">19 C0 E4 1</link>
+            <link type="0">17 15 6A 1</link>
+            <link type="0">18 43 C4 1</link>
+            <link type="0">19 51 9E 1</link>
+            <link type="0">18 5A CF 6</link>
+            <link type="0">18 11 48 1</link>
+            <link type="0">19 4F 6C 1</link>
+            <link type="0">18 D 22 1</link>
+            <link type="0">18 18 C5 1</link>
+            <link type="0">17 22 F6 1</link>
+            <link type="0">29 3D E2 1</link>
+            <link type="0">29 3D E2 2</link>
+            <link type="0">18 10 86 1</link>
+            <link type="0">17 28 71 1</link>
+            <link type="0">19 53 7D 1</link>
+            <link type="0">18 18 C3 1</link>
+            <link type="0">18 12 18 1</link>
+            <link type="0">19 53 90 1</link>
+            <link type="0">19 57 51 1</link>
+            <link type="0">18 12 29 1</link>
+            <link type="0">18 12 32 1</link>
+            <link type="0">17 27 82 1</link>
+            <link type="0">17 19 F9 1</link>
+            <link type="0">18 E 45 1</link>
+            <link type="0">18 C 87 1</link>
+            <link type="0">19 56 18 1</link>
+            <link type="0">14 5C B2 1</link>
+            <link type="0">14 5C B2 2</link>
+            <link type="0">14 5C B2 3</link>
+            <link type="0">17 D5 A8 1</link>
+            <link type="0">17 D5 A8 2</link>
+            <link type="0">2B 99 34 1</link>
+            <link type="0">18 5A CF 7</link>
+            <link type="0">18 5A CF 8</link>
+            <link type="0">22 47 AA 1</link>
+            <link type="0">22 47 AA 2</link>
+            <link type="0">22 47 AA 3</link>
+            <link type="0">22 47 AA 4</link>
+            <link type="0">22 47 AA 5</link>
+            <link type="0">17 15 35 1</link>
+            <link type="0">33 9B DC 1</link>
+            <link type="0">17 14 73 1</link>
+            <link type="0">18 11 CE 1</link>
+            <link type="0">14 47 41 1</link>
+            <link type="0">14 47 41 2</link>
+            <link type="0">14 49 B9 1</link>
+            <link type="0">14 49 B9 2</link>
+            <link type="0">17 D7 ED 1</link>
+            <link type="0">17 D7 ED 2</link>
+            <link type="0">18 E 2A 1</link>
+            <link type="0">1F 47 4B 1</link>
+            <link type="0">1F 42 F7 1</link>
+            <link type="0">18 2F B1 1</link>
+            <link type="0">2B 99 34 2</link>
+            <link type="0">1A E CC 1</link>
+            <link type="0">18 10 9C 1</link>
+            <link type="0">19 C2 FA 1</link>
+            <link type="0">19 C3 48 1</link>
+            <link type="0">19 C3 5B 1</link>
+            <link type="0">18 C1 C8 1</link>
+            <link type="0">18 C1 AB 1</link>
+            <link type="0">1A A EB 1</link>
+            <link type="0">1C 29 DC 1</link>
+            <link type="0">1C 29 DC 2</link>
+            <link type="0">1C 29 DC 3</link>
+            <link type="0">1C 29 DC 4</link>
+            <link type="0">1C 29 DC 5</link>
+            <link type="0">1C 29 DC 6</link>
+            <link type="0">22 47 AA 6</link>
+            <link type="0">22 47 AA 7</link>
+            <link type="0">22 47 AA 8</link>
+            <link type="0">1B 4D 2D 1</link>
+            <link type="0">1C 29 DC 7</link>
+            <link type="0">1C 29 DC 8</link>
+            <link type="0">1B 31 E 1</link>
+            <link type="0">1B 34 B 1</link>
+            <link type="0">14 7C D8 1</link>
+            <link type="0">14 7C D8 2</link>
+            <link type="0">14 7C D8 3</link>
+            <link type="0">14 A7 12 1</link>
+            <link type="0">14 A7 12 2</link>
+            <link type="0">1C E0 46 1</link>
+            <link type="0">1C E0 46 3</link>
+            <link type="0">1C E0 46 4</link>
+            <link type="0">1C E0 46 5</link>
+            <link type="0">1C E0 46 6</link>
+            <link type="0">17 79 81 1</link>
+            <link type="0">14 A8 BC 1</link>
+            <link type="0">14 A8 BC 2</link>
+            <link type="0">1C DF 26 1</link>
+            <link type="0">1C DF 26 3</link>
+            <link type="0">1C DF 26 4</link>
+            <link type="0">1C DF 26 5</link>
+            <link type="0">1C DF 26 6</link>
+            <link type="0">1D FA 5A 1</link>
+            <link type="0">1D FA 5A 3</link>
+            <link type="0">1D FA 5A 4</link>
+            <link type="0">1D FA 5A 5</link>
+            <link type="0">1D FA 5A 6</link>
+            <link type="0">14 A6 C5 1</link>
+            <link type="0">14 A6 C5 2</link>
+            <link type="0">1F 45 84 1</link>
+            <link type="0">1F 47 EB 1</link>
+            <link type="0">1F 46 F0 1</link>
+            <link type="0">14 7C CF 1</link>
+            <link type="0">14 7C CF 2</link>
+            <link type="0">14 7C CF 3</link>
+            <link type="0">17 79 81 2</link>
+            <link type="0">21 5D 67 1</link>
+            <link type="0">21 5D 67 2</link>
+            <link type="0">21 5D 67 3</link>
+            <link type="0">21 62 43 1</link>
+            <link type="0">21 62 43 2</link>
+            <link type="0">21 62 43 3</link>
+            <link type="0">1A 12 32 1</link>
+            <link type="0">2B 5A 18 1</link>
+            <link type="0">2B 5A 19 1</link>
+            <link type="0">2B 5E 9F 1</link>
+            <link type="0">2B 99 34 3</link>
+            <link type="0">2B 99 34 4</link>
+            <link type="0">2B 99 34 5</link>
+            <link type="0">2B 99 34 6</link>
+            <link type="0">2B 99 34 7</link>
+            <link type="0">2B 99 34 8</link>
+            <link type="0">ZW002_1</link>
+            <link type="0">ZW003_1</link>
+            <link type="0">ZW004_1</link>
+            <link type="0">ZW005_1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>10036</address>
+        <name>MCP - Door Open</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>60</deviceGroup>
+        <members>
+            <link type="32">2B 99 34 5</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>10399</address>
+        <name>Front Hall</name>
+        <parent type="3">43858</parent>
+        <deviceGroup>24</deviceGroup>
+        <ELK_ID>A01</ELK_ID>
+        <members>
+            <link type="16">18 18 C5 1</link>
+            <link type="16">17 22 F6 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>12627</address>
+        <name>Interior Lights Minus Bedroom</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>20</deviceGroup>
+        <ELK_ID>A02</ELK_ID>
+        <members>
+            <link type="32">33 A2 70 1</link>
+            <link type="32">18 36 B1 1</link>
+            <link type="32">18 43 C4 1</link>
+            <link type="32">19 51 9E 1</link>
+            <link type="32">18 11 48 1</link>
+            <link type="32">19 4F 6C 1</link>
+            <link type="32">18 D 22 1</link>
+            <link type="32">18 18 C5 1</link>
+            <link type="32">17 22 F6 1</link>
+            <link type="32">18 10 86 1</link>
+            <link type="32">17 28 71 1</link>
+            <link type="32">19 53 7D 1</link>
+            <link type="32">18 18 C3 1</link>
+            <link type="32">18 12 18 1</link>
+            <link type="32">19 53 90 1</link>
+            <link type="32">18 12 29 1</link>
+            <link type="32">18 12 32 1</link>
+            <link type="32">17 27 82 1</link>
+            <link type="32">17 19 F9 1</link>
+            <link type="32">18 E 45 1</link>
+            <link type="32">18 C 87 1</link>
+            <link type="32">19 56 18 1</link>
+            <link type="32">2B 99 34 1</link>
+            <link type="32">22 47 AA 1</link>
+            <link type="32">33 9B DC 1</link>
+            <link type="32">18 E 2A 1</link>
+            <link type="32">1F 47 4B 1</link>
+            <link type="32">1F 42 F7 1</link>
+            <link type="32">18 2F B1 1</link>
+            <link type="32">1A E CC 1</link>
+            <link type="32">18 10 9C 1</link>
+            <link type="32">18 C1 AB 1</link>
+            <link type="32">1A A EB 1</link>
+            <link type="32">1B 4D 2D 1</link>
+            <link type="32">1B 31 E 1</link>
+            <link type="32">1F 45 84 1</link>
+            <link type="32">1F 47 EB 1</link>
+            <link type="32">1F 46 F0 1</link>
+            <link type="32">1A 12 32 1</link>
+            <link type="32">2B 5A 18 1</link>
+            <link type="32">2B 5A 19 1</link>
+            <link type="32">2B 5E 9F 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>13005</address>
+        <name>Alarm On Buttons</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>58</deviceGroup>
+        <ELK_ID>A03</ELK_ID>
+        <members>
+            <link type="32">18 5A CF 2</link>
+            <link type="32">22 47 AA 5</link>
+            <link type="32">2B 99 34 3</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>13423</address>
+        <name>Dining Room</name>
+        <parent type="3">48638</parent>
+        <deviceGroup>34</deviceGroup>
+        <ELK_ID>A04</ELK_ID>
+        <members>
+            <link type="16">1A E CC 1</link>
+            <link type="16">18 10 9C 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>19128</address>
+        <name>Garage Status</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>17</deviceGroup>
+        <ELK_ID>F05</ELK_ID>
+        <members>
+            <link type="32">18 55 FA 3</link>
+            <link type="32">18 5A CF 8</link>
+            <link type="32">22 47 AA 8</link>
+            <link type="16">17 79 81 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>1930</address>
+        <name>Upstairs Stairs</name>
+        <parent type="3">13066</parent>
+        <deviceGroup>28</deviceGroup>
+        <ELK_ID>F06</ELK_ID>
+        <members>
+            <link type="16">18 12 29 1</link>
+            <link type="16">18 12 32 1</link>
+            <link type="16">19 56 18 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>19882</address>
+        <name>Master Bedroom</name>
+        <parent type="3">42997</parent>
+        <deviceGroup>40</deviceGroup>
+        <ELK_ID>I08</ELK_ID>
+        <members>
+            <link type="16">18 55 FA 1</link>
+            <link type="32">18 C1 C8 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>20639</address>
+        <name>Sam Fan-High</name>
+        <parent type="3">30962</parent>
+        <deviceGroup>56</deviceGroup>
+        <ELK_ID>J01</ELK_ID>
+        <members>
+            <link type="32">1D FA 5A 4</link>
+            <link type="32">1D FA 5A 5</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>21117</address>
+        <name>Sarah Fan-Off</name>
+        <parent type="3">54218</parent>
+        <deviceGroup>44</deviceGroup>
+        <ELK_ID>J16</ELK_ID>
+        <members>
+            <link type="32">1C E0 46 4</link>
+            <link type="32">1C E0 46 5</link>
+            <link type="32">1C E0 46 6</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>23673</address>
+        <name>Kids Go Upstairs Keys</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>29</deviceGroup>
+        <ELK_ID>F16</ELK_ID>
+        <members>
+            <link type="32">18 5A CF 5</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>26542</address>
+        <name>MCP - Phone Present</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>61</deviceGroup>
+        <members>
+            <link type="32">2B 99 34 7</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>27346</address>
+        <name>Basement Stairs</name>
+        <parent type="3">5496</parent>
+        <deviceGroup>26</deviceGroup>
+        <ELK_ID>G01</ELK_ID>
+        <members>
+            <link type="16">18 12 18 1</link>
+            <link type="16">19 53 90 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>28009</address>
+        <name>All Back Motion Lights</name>
+        <parent type="3">58858</parent>
+        <deviceGroup>35</deviceGroup>
+        <ELK_ID>G02</ELK_ID>
+        <members>
+            <link type="16">18 39 DD 1</link>
+            <link type="32">17 15 23 1</link>
+            <link type="32">17 15 6A 1</link>
+            <link type="32">19 C3 5B 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>30560</address>
+        <name>Leaving Keys</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>16</deviceGroup>
+        <ELK_ID>G03</ELK_ID>
+        <members>
+            <link type="32">18 59 CD 3</link>
+            <link type="32">22 47 AA 2</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>31829</address>
+        <name>Sarah Fan-High</name>
+        <parent type="3">54218</parent>
+        <deviceGroup>47</deviceGroup>
+        <ELK_ID>J11</ELK_ID>
+        <members>
+            <link type="32">1C E0 46 3</link>
+            <link type="32">1C E0 46 4</link>
+            <link type="32">1C E0 46 5</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>32667</address>
+        <name>Home Buttons</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>41</deviceGroup>
+        <ELK_ID>H15</ELK_ID>
+        <members>
+            <link type="32">18 59 CD 6</link>
+            <link type="32">18 5A CF 6</link>
+            <link type="32">2B 99 34 2</link>
+            <link type="32">22 47 AA 6</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>32919</address>
+        <name>Main Floor TV Room All Lights</name>
+        <parent type="3">37794</parent>
+        <deviceGroup>19</deviceGroup>
+        <ELK_ID>G04</ELK_ID>
+        <members>
+            <link type="16">18 E 2A 1</link>
+            <link type="32">1F 47 4B 1</link>
+            <link type="32">1F 42 F7 1</link>
+            <link type="32">18 C1 AB 1</link>
+            <link type="32">1F 45 84 1</link>
+            <link type="32">1F 47 EB 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>33836</address>
+        <name>MCP - Car Light</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>64</deviceGroup>
+        <members>
+            <link type="32">2B 99 34 4</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>35388</address>
+        <name>Sophia Fan-High</name>
+        <parent type="3">59604</parent>
+        <deviceGroup>52</deviceGroup>
+        <ELK_ID>K10</ELK_ID>
+        <members>
+            <link type="32">1C DF 26 4</link>
+            <link type="32">1C DF 26 5</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>35783</address>
+        <name>Sam Fan -Med</name>
+        <parent type="3">30962</parent>
+        <deviceGroup>55</deviceGroup>
+        <ELK_ID>I15</ELK_ID>
+        <members>
+            <link type="32">1D FA 5A 4</link>
+            <link type="32">1D FA 5A 6</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>3620</address>
+        <name>Arrive Home</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>38</deviceGroup>
+        <ELK_ID>G05</ELK_ID>
+        <members>
+            <link type="32">18 11 48 1</link>
+            <link type="32">19 4F 6C 1</link>
+            <link type="32">18 D 22 1</link>
+            <link type="32">18 18 C5 1</link>
+            <link type="32">17 22 F6 1</link>
+            <link type="32">18 10 86 1</link>
+            <link type="32">17 28 71 1</link>
+            <link type="32">18 12 29 1</link>
+            <link type="32">18 12 32 1</link>
+            <link type="32">19 56 18 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>37094</address>
+        <name>Main Floor Fireplace Scene</name>
+        <parent type="3">37794</parent>
+        <deviceGroup>37</deviceGroup>
+        <ELK_ID>G06</ELK_ID>
+        <members>
+            <link type="16">18 5A CF 4</link>
+            <link type="32">17 15 35 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>38537</address>
+        <name>All On Buttons</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>36</deviceGroup>
+        <ELK_ID>G07</ELK_ID>
+        <members>
+            <link type="32">18 55 FA 8</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>39987</address>
+        <name>Arrive Home Buttons</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>39</deviceGroup>
+        <ELK_ID>G08</ELK_ID>
+        <members>
+            <link type="32">22 47 AA 3</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>41223</address>
+        <name>Sam Fan Light</name>
+        <parent type="3">30962</parent>
+        <deviceGroup>53</deviceGroup>
+        <ELK_ID>I16</ELK_ID>
+        <members>
+            <link type="16">1D FA 5A 1</link>
+            <link type="32">14 A6 C5 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>44909</address>
+        <name>Main Floor Hall</name>
+        <parent type="3">43858</parent>
+        <deviceGroup>23</deviceGroup>
+        <ELK_ID>G09</ELK_ID>
+        <members>
+            <link type="16">18 11 48 1</link>
+            <link type="16">19 4F 6C 1</link>
+            <link type="16">18 D 22 1</link>
+            <link type="16">22 47 AA 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>45501</address>
+        <name>Sophia Fan-Med</name>
+        <parent type="3">59604</parent>
+        <deviceGroup>51</deviceGroup>
+        <ELK_ID>K13</ELK_ID>
+        <members>
+            <link type="32">1C DF 26 4</link>
+            <link type="32">1C DF 26 6</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>45857</address>
+        <name>Sarah Fan-Med</name>
+        <parent type="3">54218</parent>
+        <deviceGroup>46</deviceGroup>
+        <ELK_ID>J14</ELK_ID>
+        <members>
+            <link type="32">1C E0 46 3</link>
+            <link type="32">1C E0 46 4</link>
+            <link type="32">1C E0 46 6</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>46700</address>
+        <name>Master Suite Lights</name>
+        <parent type="3">42997</parent>
+        <deviceGroup>21</deviceGroup>
+        <ELK_ID>G10</ELK_ID>
+        <members>
+            <link type="32">18 55 FA 1</link>
+            <link type="32">18 11 CE 1</link>
+            <link type="32">18 C1 C8 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>47458</address>
+        <name>Master Bedroom Fireplace Ctrl</name>
+        <parent type="3">42997</parent>
+        <deviceGroup>31</deviceGroup>
+        <ELK_ID>G11</ELK_ID>
+        <members>
+            <link type="16">18 55 FA 5</link>
+            <link type="32">17 14 73 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>49197</address>
+        <name>All Kitchen Lights</name>
+        <parent type="3">42035</parent>
+        <deviceGroup>57</deviceGroup>
+        <ELK_ID>F03</ELK_ID>
+        <members>
+            <link type="32">19 51 9E 1</link>
+            <link type="32">18 10 86 1</link>
+            <link type="32">17 28 71 1</link>
+            <link type="32">1A 12 32 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>49387</address>
+        <name>Basement Rec Room</name>
+        <parent type="3">23278</parent>
+        <deviceGroup>25</deviceGroup>
+        <ELK_ID>G12</ELK_ID>
+        <members>
+            <link type="16">19 53 7D 1</link>
+            <link type="16">18 18 C3 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>51602</address>
+        <name>Sarah Room Light</name>
+        <parent type="3">54218</parent>
+        <deviceGroup>43</deviceGroup>
+        <ELK_ID>K07</ELK_ID>
+        <members>
+            <link type="32">14 A7 12 1</link>
+            <link type="16">1C E0 46 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>52597</address>
+        <name>MCP - Device Active</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>59</deviceGroup>
+        <members>
+            <link type="32">2B 99 34 8</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>53777</address>
+        <name>Sam Fan-Low</name>
+        <parent type="3">30962</parent>
+        <deviceGroup>54</deviceGroup>
+        <ELK_ID>J03</ELK_ID>
+        <members>
+            <link type="32">1D FA 5A 5</link>
+            <link type="32">1D FA 5A 6</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>53993</address>
+        <name>Sophia Fan Light</name>
+        <parent type="3">59604</parent>
+        <deviceGroup>49</deviceGroup>
+        <ELK_ID>K09</ELK_ID>
+        <members>
+            <link type="32">14 A8 BC 1</link>
+            <link type="16">1C DF 26 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>55034</address>
+        <name>Good Night Keys</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>22</deviceGroup>
+        <ELK_ID>G13</ELK_ID>
+        <members>
+            <link type="32">18 5A CF 3</link>
+            <link type="32">18 55 FA 2</link>
+            <link type="32">18 59 CD 4</link>
+            <link type="32">22 47 AA 4</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>59954</address>
+        <name>Upstairs Hall</name>
+        <parent type="3">1460</parent>
+        <deviceGroup>27</deviceGroup>
+        <ELK_ID>G14</ELK_ID>
+        <members>
+            <link type="16">17 27 82 1</link>
+            <link type="16">17 19 F9 1</link>
+            <link type="16">18 E 45 1</link>
+            <link type="16">18 C 87 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>62367</address>
+        <name>MCP - Recent Light</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>62</deviceGroup>
+        <members>
+            <link type="32">2B 99 34 6</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>63141</address>
+        <name>All Outside Lights</name>
+        <parent type="3">58858</parent>
+        <deviceGroup>32</deviceGroup>
+        <ELK_ID>F04</ELK_ID>
+        <members>
+            <link type="32">18 39 DD 1</link>
+            <link type="32">18 59 CD 1</link>
+            <link type="32">17 15 23 1</link>
+            <link type="32">17 15 6A 1</link>
+            <link type="32">19 C3 5B 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>63149</address>
+        <name>Going Upstairs Lights</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>30</deviceGroup>
+        <ELK_ID>G15</ELK_ID>
+        <members>
+            <link type="32">18 12 29 1</link>
+            <link type="32">18 12 32 1</link>
+            <link type="32">17 27 82 1</link>
+            <link type="32">17 19 F9 1</link>
+            <link type="32">18 E 45 1</link>
+            <link type="32">18 C 87 1</link>
+            <link type="32">19 56 18 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>63677</address>
+        <name>Side Gate Status Buttons</name>
+        <parent type="3">58858</parent>
+        <deviceGroup>33</deviceGroup>
+        <ELK_ID>G16</ELK_ID>
+        <members>
+            <link type="32">18 55 FA 7</link>
+            <link type="32">18 5A CF 7</link>
+            <link type="32">22 47 AA 7</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>65377</address>
+        <name>Outside Decorations</name>
+        <parent type="3">58858</parent>
+        <deviceGroup>18</deviceGroup>
+        <ELK_ID>H01</ELK_ID>
+        <members>
+            <link type="16">18 59 CD 5</link>
+            <link type="32">19 C0 E4 1</link>
+            <link type="32">19 C2 FA 1</link>
+            <link type="32">19 C3 48 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>7613</address>
+        <name>Sophia Fan-Low</name>
+        <parent type="3">59604</parent>
+        <deviceGroup>50</deviceGroup>
+        <ELK_ID>K12</ELK_ID>
+        <members>
+            <link type="32">1C DF 26 5</link>
+            <link type="32">1C DF 26 6</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>8861</address>
+        <name>Living Room All</name>
+        <parent type="3">21278</parent>
+        <deviceGroup>42</deviceGroup>
+        <ELK_ID>I05</ELK_ID>
+        <members>
+            <link type="16">18 36 B1 1</link>
+            <link type="32">1B 4D 2D 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>9040</address>
+        <name>Sarah Fan-Low</name>
+        <parent type="3">54218</parent>
+        <deviceGroup>45</deviceGroup>
+        <ELK_ID>J13</ELK_ID>
+        <members>
+            <link type="32">1C E0 46 3</link>
+            <link type="32">1C E0 46 5</link>
+            <link type="32">1C E0 46 6</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>ADR0001</address>
+        <name>Auto DR</name>
+        <family>5</family>
+        <deviceGroup>48</deviceGroup>
+        <ELK_ID>A12</ELK_ID>
+        <members></members>
+    </group>
+</nodes>
