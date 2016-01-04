@@ -1,4 +1,4 @@
-# fake-isy-994i
+# fake-isy-994i [![Build Status](https://api.travis-ci.org/rodtoll/homebridge-isy-js.svg?branch=master)](https://api.travis-ci.org/rodtoll/isy-js.svg?branch=master)
 (C) Rod Toll 2015, Licensed under the MIT-LICENSE.
 
 Provides an express based server which emulates an ISY-99i/994i from Universal Devices. (http://www.universal-devices.com). For information on the ISY's rest interface see the Universal Devices SDK here: https://www.universal-devices.com/isy-developers/.
