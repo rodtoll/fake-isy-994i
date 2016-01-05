@@ -146,22 +146,27 @@ ISYServer.prototype.handleCommandRequest = function(req, res) {
         this.buildCommandResponse(res, false, 404);
     } else if(nodeToUpdate instanceof FolderNode) {
         this.buildCommandResponse(res, false, 500, 'Specified address is a folder, cannot issue command');
-    } else {
-        // Build list of devices to command
-        var devicesToCommand = [];
-        if(nodeToUpdate instanceof SceneNode) {
-            devicesToCommand = nodeToUpdate.children;
-        } else {
-            devicesToCommand.push(nodeToUpdate);
-        } 
-        
+    } else if(nodeToUpdate instanceof SceneNode) {
         try {
-            for(var i = 0; i < devicesToCommand.length; i++) {
-                if(devicesToCommand[i].simulateExecuteCommand(req.params.command, req.params.parameter)) {
-                    for(var socketIndex = 0; socketIndex < this.webSocketClientList.length; socketIndex++) {
-                        this.sendDeviceUpdate(this.webSocketClientList[socketIndex],devicesToCommand[i]);
-                    }
+            var nodesChanged = [];
+            for (var i = 0; i < nodeToUpdate.children.length; i++) {
+                // ISY doesn't support dimming a scene, i.e. sending DON with a level command and doesn't return an
+                // error when you try it. It just turns on. So cutting of the parameter just like ISY would.
+                if (nodeToUpdate.children[i].simulateExecuteCommand(req.params.command, null)) {
+                    nodesChanged.push(nodeToUpdate.children[i]);
                 }
+            }
+            for (var nodeIndex = 0; nodeIndex < nodesChanged.length; nodeIndex++) {
+                this.sendDeviceUpdateToAll(nodesChanged[nodeIndex]);
+            }
+            this.buildCommandResponse(res, true, 200);
+        } catch(err) {
+            this.buildCommandResponse(res, false, 500, err);
+        }
+    } else {
+        try {
+            if(nodeToUpdate.simulateExecuteCommand(req.params.command, req.params.parameter)) {
+                this.sendDeviceUpdateToAll(nodeToUpdate);
             }
             this.buildCommandResponse(res, true, 200);
         }
@@ -296,6 +301,12 @@ ISYServer.prototype.sendDeviceUpdate = function(ws,device) {
         log('WEBSOCKET: NOTIFICATION: '+updateData);
     }
     ws.send(updateData);
+}
+
+ISYServer.prototype.sendDeviceUpdateToAll = function(device) {
+    for(var socketIndex = 0; socketIndex < this.webSocketClientList.length; socketIndex++) {
+        this.sendDeviceUpdate(this.webSocketClientList[socketIndex],device);
+    }
 }
 
 ISYServer.prototype.sendInitialState = function(ws) {
