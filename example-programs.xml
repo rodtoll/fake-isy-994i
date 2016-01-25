@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<programs>
+    <program id="0001" status="true" folder="true">
+        <name>My Programs</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+    <program id="001B" parentId="0001" status="true" folder="true">
+        <name>Alarm Responses</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+    <program id="0060" parentId="0001" status="true" folder="true">
+        <name>Away Automation</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+    <program id="005D" parentId="0001" status="true" folder="true">
+        <name>BLE</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+    <program id="0037" parentId="0001" status="true" folder="true">
+        <name>Elk Responses</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+    <program id="0085" parentId="0001" status="true" folder="true">
+        <name>Ensure Lockdown</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+    <program id="0012" parentId="0001" status="true" folder="true">
+        <name>Garage Door</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+    <program id="007F" parentId="0001" status="true" folder="true">
+        <name>Holidays</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+    <program id="0014" parentId="0001" status="true" folder="true">
+        <name>LightsUsage</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+    <program id="007D" parentId="0001" status="true" folder="true">
+        <name>MCP Support</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+    <program id="002A" parentId="0001" status="true" folder="true">
+        <name>Reporting</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+    <program id="0077" parentId="0001" status="true" folder="true">
+        <name>Sam Bedroom</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+    <program id="0066" parentId="0001" status="true" folder="true">
+        <name>Sarah Bedroom</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+    <program id="0055" parentId="0001" status="true" folder="true">
+        <name>SmartLinc</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+    <program id="000D" parentId="0001" status="true" folder="true">
+        <name>SomeoneHome</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+    <program id="0045" parentId="0001" status="true" folder="true">
+        <name>SomeoneHome_FSM</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+    <program id="0072" parentId="0001" status="true" folder="true">
+        <name>Sophia Bedroom</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+    <program id="0080" parentId="0001" status="true" folder="true">
+        <name>StatusLights</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+    <program id="007E" parentId="0001" status="true" folder="true">
+        <name>Utility</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+    <program id="005E" parentId="0001" status="false" folder="false" enabled="true" runAtStartup="false" running="idle">
+        <name>Main Floor Closet</name>
+        <lastRunTime>2016/01/05 6:30:33 PM</lastRunTime>
+        <lastFinishTime>2016/01/05 6:30:33 PM</lastFinishTime>
+    </program>
+    <program id="0035" parentId="0001" status="false" folder="false" enabled="true" runAtStartup="false" running="idle">
+        <name>Arrive Home - Day</name>
+        <lastRunTime>2016/01/05 3:32:05 PM</lastRunTime>
+        <lastFinishTime>2016/01/05 3:32:05 PM</lastFinishTime>
+        <nextScheduledRunTime>2016/01/06 7:56:06 AM</nextScheduledRunTime>
+    </program>
+    <program id="0082" parentId="0001" status="false" folder="false" enabled="true" runAtStartup="false" running="idle">
+        <name>Arrive Home - Night</name>
+        <lastRunTime>2016/01/05 3:32:04 PM</lastRunTime>
+        <lastFinishTime>2016/01/05 3:32:04 PM</lastFinishTime>
+        <nextScheduledRunTime>2016/01/06 7:56:06 AM</nextScheduledRunTime>
+    </program>
+    <program id="0008" parentId="0001" status="true" folder="false" enabled="true" runAtStartup="false" running="idle">
+        <name>Away Program</name>
+        <lastRunTime>2016/01/05 2:56:38 PM</lastRunTime>
+        <lastFinishTime>2016/01/05 2:56:38 PM</lastFinishTime>
+    </program>
+    <program id="0002" parentId="0001" status="true" folder="false" enabled="true" runAtStartup="false" running="idle">
+        <name>QueryAll</name>
+        <lastRunTime>2016/01/05 10:10:01 AM</lastRunTime>
+        <lastFinishTime>2016/01/05 10:10:01 AM</lastFinishTime>
+        <nextScheduledRunTime>2016/01/06 10:10:00 AM</nextScheduledRunTime>
+    </program>
+    <program id="0005" parentId="0001" status="true" folder="false" enabled="true" runAtStartup="false" running="idle">
+        <name>Night Night</name>
+        <lastRunTime>2016/01/04 9:41:28 PM</lastRunTime>
+        <lastFinishTime>2016/01/04 9:41:28 PM</lastFinishTime>
+    </program>
+    <program id="002F" parentId="0001" status="true" folder="false" enabled="true" runAtStartup="false" running="idle">
+        <name>Server Door Status</name>
+        <lastRunTime>2015/12/31 8:21:24 AM</lastRunTime>
+        <lastFinishTime>2015/12/31 8:21:24 AM</lastFinishTime>
+    </program>
+    <program id="003D" parentId="0001" status="true" folder="false" enabled="true" runAtStartup="false" running="idle">
+        <name>ServerRoomLightsOn</name>
+        <lastRunTime>2015/12/31 8:21:24 AM</lastRunTime>
+        <lastFinishTime>2015/12/31 8:21:24 AM</lastFinishTime>
+    </program>
+    <program id="0013" parentId="0001" status="true" folder="false" enabled="true" runAtStartup="false" running="idle">
+        <name>SetupBasementLightState</name>
+        <lastRunTime>2015/12/31 7:58:06 AM</lastRunTime>
+        <lastFinishTime>2015/12/31 7:58:06 AM</lastFinishTime>
+    </program>
+    <program id="0054" parentId="0001" status="false" folder="false" enabled="true" runAtStartup="true" running="idle">
+        <name>NotifyRestarted</name>
+        <lastRunTime>2015/12/30 1:50:04 PM</lastRunTime>
+        <lastFinishTime>2015/12/30 1:50:04 PM</lastFinishTime>
+    </program>
+    <program id="0009" parentId="0001" status="false" folder="false" enabled="false" runAtStartup="false"
+             running="idle">
+        <name>All On</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+    <program id="0011" parentId="0001" status="false" folder="false" enabled="true" runAtStartup="false" running="idle">
+        <name>Bedroom Romance</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+    <program id="0048" parentId="0001" status="false" folder="false" enabled="false" runAtStartup="false"
+             running="idle">
+        <name>Disable Morning Alarm</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+        <nextScheduledRunTime>2016/01/06 4:55:00 AM</nextScheduledRunTime>
+    </program>
+    <program id="002E" parentId="0001" status="false" folder="false" enabled="false" runAtStartup="false"
+             running="idle">
+        <name>Flash Basement Lights</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+    <program id="0032" parentId="0001" status="false" folder="false" enabled="false" runAtStartup="false"
+             running="idle">
+        <name>Front Light At Night</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+        <nextScheduledRunTime>2016/01/06 4:33:06 PM</nextScheduledRunTime>
+    </program>
+    <program id="000F" parentId="0001" status="false" folder="false" enabled="true" runAtStartup="false" running="idle">
+        <name>Kids Go Upstairs</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+    <program id="0010" parentId="0001" status="false" folder="false" enabled="false" runAtStartup="false"
+             running="idle">
+        <name>Make Dimmer</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+    <program id="000A" parentId="0001" status="false" folder="false" enabled="true" runAtStartup="false" running="idle">
+        <name>Nighttime Hallway</name>
+        <lastRunTime></lastRunTime>
+        <lastFinishTime></lastFinishTime>
+    </program>
+</programs>

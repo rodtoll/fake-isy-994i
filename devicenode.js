@@ -205,4 +205,17 @@ DeviceNode.prototype.getPotentialValues = function() {
     return utils.getElementAttributeValue(this.node, 'property', 'uom');
 }
 
+DeviceNode.prototype.getStatusNode = function(doc) {
+    var statusNode = doc.createElement('node');
+    statusNode.setAttribute('id', this.getAddress());
+    var propertyNode = doc.createElement('property');
+    propertyNode.setAttribute('id', 'ST');
+    propertyNode.setAttribute('value', this.getValue());
+    propertyNode.setAttribute('formatted', this.getValueFormatted());
+    propertyNode.setAttribute('uom', this.getPotentialValues());
+    doc.createAttribute('id', this.getAddress());
+    statusNode.appendChild(propertyNode);
+    return statusNode;
+}
+
 exports.DeviceNode = DeviceNode;
