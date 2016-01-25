@@ -620,9 +620,9 @@ ISYServer.prototype.sendDeviceUpdateToAll = function(device) {
 
 ISYServer.prototype.sendInitialState = function(ws) {
 
-    this.sendElkAreaUpdate(ws, "1", this.elkStatus.getAreaAttribute("1"));
+    /*this.sendElkAreaUpdate(ws, "1", this.elkStatus.getAreaAttribute("1"));
     this.sendElkAreaUpdate(ws, "3", this.elkStatus.getAreaAttribute("3"));
-    this.sendElkAreaUpdate(ws, "2", this.elkStatus.getAreaAttribute("2"));
+    this.sendElkAreaUpdate(ws, "2", this.elkStatus.getAreaAttribute("2"));*/
 
     for(var i = 0; i < this.nodeList.length; i++) {
         var device = this.nodeList[i];
@@ -634,9 +634,9 @@ ISYServer.prototype.sendInitialState = function(ws) {
 
 ISYServer.prototype.sendInitialWebState = function(endpoint) {
 
-    this.sendElkAreaUpdateWeb(endpoint, "1", this.elkStatus.getAreaAttribute("1"));
+    /*this.sendElkAreaUpdateWeb(endpoint, "1", this.elkStatus.getAreaAttribute("1"));
     this.sendElkAreaUpdateWeb(endpoint, "3", this.elkStatus.getAreaAttribute("3"));
-    this.sendElkAreaUpdateWeb(endpoint, "2", this.elkStatus.getAreaAttribute("2"));
+    this.sendElkAreaUpdateWeb(endpoint, "2", this.elkStatus.getAreaAttribute("2"));*/
 
     for(var i = 0; i < this.nodeList.length; i++) {
         var device = this.nodeList[i];
