@@ -39,6 +39,7 @@ ISYServer.prototype.CONFIG_ELK_TOPOLOGY_FILE = 'elkTopologyFile';
 ISYServer.prototype.CONFIG_LOG_RESPONSE_BODY = 'logResponseBody';
 ISYServer.prototype.CONFIG_LOG_WEBSOCKET_NOTIFICATION = 'logWebSockets';
 ISYServer.prototype.CONFIG_LOG_WEB_NOTIFICATION = 'logWebNotification';
+ISYServer.prototype.CONFIG_SCENE_FILE = 'sceneFile';
 
 ISYServer.prototype.loadConfig = function(config) {
     
@@ -53,6 +54,7 @@ ISYServer.prototype.loadConfig = function(config) {
         { name: this.CONFIG_NODE_FILE, default: './example-nodes.xml' },
         { name: this.CONFIG_ELK_STATUS_FILE, default: './example-elk-status.xml' },
         { name: this.CONFIG_ELK_TOPOLOGY_FILE, default: './example-elk-topology.xml' },
+        { name: this.CONFIG_SCENE_FILE, default: './example-scenes.xml' },
         { name: this.CONFIG_LOG_RESPONSE_BODY, default: false},
         { name: this.CONFIG_LOG_WEB_NOTIFICATION, default: false},
         { name: this.CONFIG_LOG_WEBSOCKET_NOTIFICATION, default: true}
@@ -211,6 +213,17 @@ ISYServer.prototype.handleStatusRequest = function(req, res) {
     this.logRequestEndDetails(res);
 }
 
+ISYServer.prototype.handleSceneRequest = function(req, res) {
+    this.logRequestStartDetails(req);
+    this.setupResponseHeaders(res, 200);
+    if(this.getConfigSetting(this.CONFIG_LOG_RESPONSE_BODY)) {
+        log(this.sceneList);
+    }
+    res.send(this.sceneList);
+    this.logRequestEndDetails(res);
+
+}
+
 ISYServer.prototype.logRequestStartDetails = function(req) {
     log("REQUEST. Source="+req.ip+" Url: "+req.originalUrl);   
 }
@@ -263,7 +276,7 @@ ISYServer.prototype.handleCommandRequest = function(req, res) {
             if(this.handleZoneUpdate(zoneId, req.params.command)) {
                 this.sendElkZoneUpdateToAll(zoneId);
             }
-            this.buildCommandResponse(res, false, 200);
+            this.buildCommandResponse(res, true, 200);
         } else {
             this.buildCommandResponse(res, false, 404);
         }
@@ -379,7 +392,9 @@ ISYServer.prototype.loadNodeState = function() {
     
     var fileData = fs.readFileSync(this.getConfigSetting(this.CONFIG_NODE_FILE), 'ascii');
     this.rootDoc = new parser().parseFromString(fileData.substring(2, fileData.length));
-    
+
+    this.sceneList = fs.readFileSync(this.getConfigSetting(this.CONFIG_SCENE_FILE), 'ascii');
+
     // Load folders
     var folders  = this.rootDoc.getElementsByTagName('folder');
     for(var i = 0; i < folders.length; i++) {
@@ -392,9 +407,6 @@ ISYServer.prototype.loadNodeState = function() {
     var devices = this.rootDoc.getElementsByTagName('node');
     for(var j = 0; j < devices.length; j++) {
         var newNode = new DeviceNode(devices[j]);
-        if(newNode.getType() == '4.15.1.0') {
-            continue;
-        }
         this.nodeIndex[newNode.getAddress()] = newNode;
         this.nodeList.push(newNode);        
     }
@@ -424,7 +436,7 @@ ISYServer.prototype.authHandler = function (req, res, next) {
 
     if (!user || !user.name || !user.pass) {
         this.buildUnauthorizedResponse(res);
-        log('ERROR: Denied request, credentials not specified');        
+        log('ERROR: Denied request, credentials not specified. user='+user);
         return res;
     }
 
@@ -432,7 +444,7 @@ ISYServer.prototype.authHandler = function (req, res, next) {
         return next();
     } else {
         this.buildUnauthorizedResponse(res);        
-        log('ERROR: Denied request, credentials not specified');                
+        log('ERROR: Denied request, bad credentials user='+user.name+' password='+user.pass);
         return res;
     }
 }
@@ -627,7 +639,9 @@ ISYServer.prototype.sendInitialState = function(ws) {
     for(var i = 0; i < this.nodeList.length; i++) {
         var device = this.nodeList[i];
         if(device instanceof DeviceNode) {
-            this.sendDeviceUpdate(ws,device);     
+            if(device.hasValue()) {
+                this.sendDeviceUpdate(ws, device);
+            }
         }
     }    
 }
@@ -641,10 +655,13 @@ ISYServer.prototype.sendInitialWebState = function(endpoint) {
     for(var i = 0; i < this.nodeList.length; i++) {
         var device = this.nodeList[i];
         if(device instanceof DeviceNode) {
-            this.sendDeviceUpdateWeb(endpoint,device);
-            // this.sendTroubledUpdateWeb(endpoint,device);
+            if(device.hasValue()) {
+                this.sendDeviceUpdateWeb(endpoint, device);
+                // this.sendTroubledUpdateWeb(endpoint,device);
+            }
         }
     }
+
 }
 
 ISYServer.prototype.configureRoutes = function() {
@@ -656,6 +673,10 @@ ISYServer.prototype.configureRoutes = function() {
     
     this.app.get('/config/:configName/:configValue', function(req, res) {
         that.handleConfigureRequest(req,res);
+    });
+
+    this.app.get('/rest/nodes/scenes', this.authHandler.bind(this), function (req, res) {
+        that.handleSceneRequest(req,res);
     });
 
     this.app.get('/rest/nodes/:address/cmd/:command/:parameter', this.authHandler.bind(this), function (req, res) {
@@ -681,6 +702,8 @@ ISYServer.prototype.configureRoutes = function() {
     this.app.post('/services', this.authHandler.bind(this), function (req, res) {
        that.handleAddWebSubscription(req,res)
     });
+
+
     
     this.app.get('/rest/elk/get/topology', this.authHandler.bind(this), function (req, res) {
         if(!that.getConfigSetting(that.CONFIG_ELK_ENABLED)) {

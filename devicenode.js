@@ -25,7 +25,11 @@ DeviceNode.prototype.setEnabled = function(enabled) {
     utils.getElementValue(this.node, 'enabled', enabled);
 }
 
-DeviceNode.prototype.getValue = function() { 
+DeviceNode.prototype.hasValue = function() {
+    return (this.node.getElementsByTagName("property").length > 0);
+}
+
+DeviceNode.prototype.getValue = function() {
     return utils.getElementAttributeValue(this.node, 'property', 'value');
 }
 
@@ -208,13 +212,15 @@ DeviceNode.prototype.getPotentialValues = function() {
 DeviceNode.prototype.getStatusNode = function(doc) {
     var statusNode = doc.createElement('node');
     statusNode.setAttribute('id', this.getAddress());
-    var propertyNode = doc.createElement('property');
-    propertyNode.setAttribute('id', 'ST');
-    propertyNode.setAttribute('value', this.getValue());
-    propertyNode.setAttribute('formatted', this.getValueFormatted());
-    propertyNode.setAttribute('uom', this.getPotentialValues());
+    if(this.node.getElementsByTagName('property').length > 0) {
+        var propertyNode = doc.createElement('property');
+        propertyNode.setAttribute('id', 'ST');
+        propertyNode.setAttribute('value', this.getValue());
+        propertyNode.setAttribute('formatted', this.getValueFormatted());
+        propertyNode.setAttribute('uom', this.getPotentialValues());
+        statusNode.appendChild(propertyNode);
+    }
     doc.createAttribute('id', this.getAddress());
-    statusNode.appendChild(propertyNode);
     return statusNode;
 }
 

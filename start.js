@@ -13,7 +13,7 @@ var config = {
     elkStatusFile: './example-elk-status.xml',
     elkTopologyFile: './example-elk-topology.xml',
     logResponseBody: false,
-    logWebSockets: false,
+    logWebSockets: false ,
     logWebNotification: false
 }
 
