@@ -24,6 +24,8 @@ The server loads configuration from three files which represent the state of the
 * `nodeFile` - The results of a call to <ISY SERVER>/rest/nodes. This includes the list of folders, devices and scenes.
 * `elkStatusFile` - The results of a call to <ISYSERVER>/elk/get/status. This shows the status of the elk devices.
 * `elkTopologyFile` - The results of a call to <ISYSERVER>/elk/get/topology. This shows the toplogy of the elk network.  
+* `variable1File` - The results of a call to <ISYSERVER>/rest/vars/definitions/1. This shows variables isy is supporting of type 1.
+* `variable2File` - The results of a call to <ISYSERVER>/rest/vars/definitions/2. This shows variables isy is supporting of type 1.
 
 The server uses this to initialize a server which allows you to operate on the devices specified. Not all operations are supported, but the basics are. 
 
@@ -58,10 +60,13 @@ Configuration options:
 * `password` - What password does the server expect? Default: password
 * `requireAuth` - Should auth be enforced? Useful if you just want to experiment before getting your auth setup.
 * `nodeFile` - Fully qualified path to file containing raw results of a call to an ISY in the /rest/nodes path. See example-nodes.xml for a sample.
+* `variable1File` - Fully qualified path to file containing raw results of a call to an ISY in the /rest/vars/definitions/1 path. See example-variables-1.xml for a sample.
+* `variable2File` - Fully qualified path to file containing raw results of a call to an ISY in the /rest/vars/definitions/2 path. See example-variables-2.xml for a sample.
 * `elkStatusFile` - Fully qualified path to file containing raw results of a call to an ISY with elk enabled in the /rest/elk/get/status. See example-elk-status.xml for a sample (and it is the default).
 * `elkTopologyFile` - Fully qualified path to file containing raw results of a call to an ISY with elk enabled in the /rest/elk/get/topology. See example-elk-topology.xml for a sample (and it is the default).
 * `logResponseBody` - Should the body of responses being sent be sent to the log. Default: false
 * `logWebSockets` - Should the body of messages sent to websockets be sent to the log. Default: false
+
 
 Sample:
 ```
@@ -97,12 +102,17 @@ The following REST operations are supported:
 * `/rest/nodes` - ISY Get nodes operation.
 * `/rest/elk/get/topology` - ISY Get elk topology operation.
 * `/rest/elk/get/status` - ISY Get elk topology operation.
+* `/rest/vars/definitions/<type>` - ISY get variable definitions of the specified type.
+* `/rest/vars/get/<type>/` - Get current state of all the variables of the specified type.
+* `/rest/vars/get/<type>/<id>` - Get the current state of the variable of the specified type and id.
+* `/rest/vars/set/<type>/<id>/<value>` - Sets the current value of the variable of the specified type and id.
 
-Additionally, websocket notifications are supported as per the ISY documentation. 
+Additionally, websocket and web notifications are supported as per the ISY documentation.
 
 Notifications supported:
 * Initial device state for all devices
 * Device state changes
+* Variable changes
 
 Notifications not yet supported:
 * Initial response including client id
@@ -116,7 +126,6 @@ The example files included are from an actual server which has a large network (
 TODO
 ----
 * Command-line overrides for config.
-* Support for variables.
 * Support for programs.
 * Support for Elk commands.
 * Support for alarm state.

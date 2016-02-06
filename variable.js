@@ -21,7 +21,6 @@ Variable.prototype.getId = function() {
     return this.id;
 }
 
-
 Variable.prototype.getType = function() {
     return this.type;
 }

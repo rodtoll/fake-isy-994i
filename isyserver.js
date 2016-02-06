@@ -42,8 +42,8 @@ ISYServer.prototype.CONFIG_LOG_RESPONSE_BODY = 'logResponseBody';
 ISYServer.prototype.CONFIG_LOG_WEBSOCKET_NOTIFICATION = 'logWebSockets';
 ISYServer.prototype.CONFIG_LOG_WEB_NOTIFICATION = 'logWebNotification';
 ISYServer.prototype.CONFIG_SCENE_FILE = 'sceneFile';
-ISYServer.prototype.CONFIG_VARIABLE_FILE_1 = "example-variables-1.xml";
-ISYServer.prototype.CONFIG_VARIABLE_FILE_2 = "example-variables-2.xml";
+ISYServer.prototype.CONFIG_VARIABLE_FILE_1 = "variable1File";
+ISYServer.prototype.CONFIG_VARIABLE_FILE_2 = "variable2File";
 
 ISYServer.prototype.loadConfig = function(config) {
     
@@ -692,11 +692,11 @@ ISYServer.prototype.sendInitialWebState = function(endpoint) {
 ISYServer.prototype.buildVariableUpdate = function(variable) {
     var updateData = '<?xml version="1.0"?><Event seqnum="';
     updateData += this.getNextSequenceNumber();
-    updateData += '" sid="uuid:48"><control>1</control>';
+    updateData += '" sid="uuid:48"><control>_1</control>';
     updateData += '<action>6</action>';
     updateData += '<node></node>';
     updateData += '<eventInfo>';
-    updateData += '<var type="' + variable.getType() + '" area="1" val="' + variable.getValue() + '" ts="'+variable.getTs().toString()+'"/>';
+    updateData += '<var type="' + variable.getType() + '" id="'+variable.getId()+'">\n<val>' + variable.getValue() + '</val>\n<ts>'+variable.getTs().toString()+'</ts></var>';
     updateData += '</eventInfo>';
     updateData += '</Event>';
     return updateData;
