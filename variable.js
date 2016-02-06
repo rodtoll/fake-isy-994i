@@ -43,7 +43,7 @@ Variable.prototype.getStateXml = function(doc) {
     initNode.appendChild(doc.createTextNode(this.getValue()));
     varNode.appendChild(initNode);
 
-    var valNode = doc.createElement('var');
+    var valNode = doc.createElement('val');
     valNode.appendChild(doc.createTextNode(this.getValue()));
     varNode.appendChild(valNode);
 
