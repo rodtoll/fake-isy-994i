@@ -14,6 +14,7 @@ var Ssdp = require('upnp-ssdp');
 var xmlparser = require('express-xml-bodyparser');
 var restler = require('restler')
 var ElkStatus = require('./elkstatus.js').ElkStatus;
+var Variable = require('./variable.js').Variable;
 
 var basicAuth = require('basic-auth');
 
@@ -22,6 +23,7 @@ var ISYServer = function(port, config) {
     this.app.use(xmlparser());
     this.port = port;
     this.config = {};
+    this.variables = {};
     this.xmlImplementation = new xmlImpl();
     this.loadConfig(config);
     this.resetState();
@@ -40,6 +42,8 @@ ISYServer.prototype.CONFIG_LOG_RESPONSE_BODY = 'logResponseBody';
 ISYServer.prototype.CONFIG_LOG_WEBSOCKET_NOTIFICATION = 'logWebSockets';
 ISYServer.prototype.CONFIG_LOG_WEB_NOTIFICATION = 'logWebNotification';
 ISYServer.prototype.CONFIG_SCENE_FILE = 'sceneFile';
+ISYServer.prototype.CONFIG_VARIABLE_FILE_1 = "example-variables-1.xml";
+ISYServer.prototype.CONFIG_VARIABLE_FILE_2 = "example-variables-2.xml";
 
 ISYServer.prototype.loadConfig = function(config) {
     
@@ -55,6 +59,8 @@ ISYServer.prototype.loadConfig = function(config) {
         { name: this.CONFIG_ELK_STATUS_FILE, default: './example-elk-status.xml' },
         { name: this.CONFIG_ELK_TOPOLOGY_FILE, default: './example-elk-topology.xml' },
         { name: this.CONFIG_SCENE_FILE, default: './example-scenes.xml' },
+        { name: this.CONFIG_VARIABLE_FILE_1, default: './example-variables-1.xml' },
+        { name: this.CONFIG_VARIABLE_FILE_2, default: './example-variables-2.xml' },
         { name: this.CONFIG_LOG_RESPONSE_BODY, default: false},
         { name: this.CONFIG_LOG_WEB_NOTIFICATION, default: false},
         { name: this.CONFIG_LOG_WEBSOCKET_NOTIFICATION, default: true}
@@ -385,6 +391,17 @@ ISYServer.prototype.handleResetNodesRequest = function(req,res) {
     this.logRequestEndDetails(res);
 }
 
+ISYServer.prototype.loadVariables = function(data,type) {
+    var variableDoc = new parser().parseFromString(data.substring(2, data.length));
+    var variableElements = variableDoc.getElementsByTagName('e');
+    var variableList = [];
+    for(var i = 0; i < variableElements.length; i++) {
+        var newVariable = new Variable(variableElements[i].getAttribute('id'), variableElements[i].getAttribute('name'),type);
+        variableList.push(newVariable);
+    }
+    this.variables[type] = variableList;
+}
+
 ISYServer.prototype.loadNodeState = function() {
     // Ensure we are clean
     this.nodeIndex = {};
@@ -394,6 +411,14 @@ ISYServer.prototype.loadNodeState = function() {
     this.rootDoc = new parser().parseFromString(fileData.substring(2, fileData.length));
 
     this.sceneList = fs.readFileSync(this.getConfigSetting(this.CONFIG_SCENE_FILE), 'ascii');
+
+    this.varData = {};
+
+    this.varData['1'] = fs.readFileSync(this.getConfigSetting(this.CONFIG_VARIABLE_FILE_1), 'ascii');
+    this.loadVariables(this.varData['1'],'1');
+
+    this.varData['2'] = fs.readFileSync(this.getConfigSetting(this.CONFIG_VARIABLE_FILE_2), 'ascii');
+    this.loadVariables(this.varData['2'],'2');
 
     // Load folders
     var folders  = this.rootDoc.getElementsByTagName('folder');
@@ -664,6 +689,187 @@ ISYServer.prototype.sendInitialWebState = function(endpoint) {
 
 }
 
+ISYServer.prototype.buildVariableUpdate = function(variable) {
+    var updateData = '<?xml version="1.0"?><Event seqnum="';
+    updateData += this.getNextSequenceNumber();
+    updateData += '" sid="uuid:48"><control>1</control>';
+    updateData += '<action>6</action>';
+    updateData += '<node></node>';
+    updateData += '<eventInfo>';
+    updateData += '<var type="' + variable.getType() + '" area="1" val="' + variable.getValue() + '" ts="'+variable.getTs().toString()+'"/>';
+    updateData += '</eventInfo>';
+    updateData += '</Event>';
+    return updateData;
+}
+
+ISYServer.prototype.sendVariableUpdate = function(ws, variable) {
+    var updateData = this.buildVariableUpdate(variable);
+    if(this.getConfigSetting(this.CONFIG_LOG_WEBSOCKET_NOTIFICATION)) {
+        log('WEBSOCKET: NOTIFICATION: '+updateData);
+    }
+    ws.send(updateData);
+}
+
+ISYServer.prototype.sendVariableUpdateWeb = function(subscribeUrl,variable) {
+    var updateData = this.buildVariableUpdate(variable);
+    if(this.getConfigSetting(this.CONFIG_LOG_WEB_NOTIFICATION)) {
+        log('WEB: NOTIFICATION: Target URL: '+subscribeUrl);
+        log('WEB: NOTIFICATION: '+updateData);
+    }
+    var options = {
+        data: updateData,
+        headers: {
+            'CONTENT-TYPE': 'text/xml'
+        }
+    }
+    restler.post(subscribeUrl, options).on('error', function() {
+        log('WEB: Notification failed to: '+subscribeUrl);
+    });
+}
+
+ISYServer.prototype.handleVariableGetRequest = function(req,res) {
+    var variableType = req.params.type;
+    var variableId = req.params.id;
+
+    this.logRequestStartDetails(req);
+
+    if(variableType != '1' && variableType != '2')
+    {
+        this.buildCommandResponse(res, false, 500, 'Invalid variable type specified');
+        this.logRequestEndDetails(res);
+        return;
+    }
+
+    var variableList = this.variables[variableType];
+    var isFound = false;
+
+    for(var variableIndex = 0; variableIndex < variableList.length; variableIndex++) {
+        var variable = variableList[variableIndex];
+        if(variable.getId() == variableId) {
+            var result = "";
+            this.setupResponseHeaders(res, 200);
+
+            var responseDoc = this.createResponseDocument();
+            responseDoc.appendChild(variable.getStateXml(responseDoc));
+
+            var result = responseDoc.toString();
+
+            if(this.getConfigSetting(this.CONFIG_LOG_RESPONSE_BODY)) {
+                log(result);
+            }
+            res.send(result);
+            this.logRequestEndDetails(res);
+            return;
+        }
+    }
+
+    this.buildCommandResponse(res, false, 404, 'Specified variable was not found');
+    this.logRequestEndDetails(res);
+    return;
+}
+
+ISYServer.prototype.sendVariableUpdateToAll = function(variable) {
+    for(var socketIndex = 0; socketIndex < this.webSocketClientList.length; socketIndex++) {
+        this.sendVariableUpdate(this.webSocketClientList[socketIndex],variable);
+    }
+    var tempWebList = this.webSubscriptions.slice()
+    for(var webIndex = 0; webIndex < tempWebList.length; webIndex++) {
+        this.sendVariableUpdateWeb(tempWebList[webIndex],variable);
+    }
+}
+
+ISYServer.prototype.handleVariableSetRequest = function(req,res) {
+    var variableType = req.params.type;
+    var variableId = req.params.id;
+    var variableNewValue = req.params.value;
+
+    this.logRequestStartDetails(req);
+
+    if(variableType != '1' && variableType != '2')
+    {
+        this.buildCommandResponse(res, false, 500, 'Invalid variable type specified');
+        this.logRequestEndDetails(res);
+        return;
+    }
+
+    var variableList = this.variables[variableType];
+    var isFound = false;
+
+    for(var variableIndex = 0; variableIndex < variableList.length; variableIndex++) {
+        var variable = variableList[variableIndex];
+        if(variable.getId() == variableId) {
+            var didChange = variableNewValue != variable.getValue();
+            variable.setValue(variableNewValue);
+            this.buildCommandResponse(res, true, 200, "Variable value set");
+            this.logRequestEndDetails(res);
+            if(didChange) {
+                this.sendVariableUpdateToAll(variable);
+            }
+            return;
+        }
+    }
+
+    this.buildCommandResponse(res, false, 404, 'Specified variable was not found');
+    this.logRequestEndDetails(res);
+    return;
+}
+
+ISYServer.prototype.handleVariableGetListRequest = function(req,res) {
+
+    var variableType = req.params.type;
+
+    this.logRequestStartDetails(req);
+
+    if(variableType != '1' && variableType != '2')
+    {
+        this.buildCommandResponse(res, false, 500, 'Invalid variable type specified');
+        this.logRequestEndDetails(res);
+        return;
+    }
+
+    var variableList = this.variables[variableType];
+
+    var result = "";
+    this.setupResponseHeaders(res, 200);
+
+    var responseDoc = this.createResponseDocument();
+    var varsElement = responseDoc.createElement('vars');
+    for(var varIndex = 0; varIndex < variableList.length; varIndex++) {
+        varsElement.appendChild(variableList[varIndex].getStateXml(responseDoc));
+    }
+    responseDoc.appendChild(varsElement);
+
+    var result = responseDoc.toString();
+
+    if(this.getConfigSetting(this.CONFIG_LOG_RESPONSE_BODY)) {
+        log(result);
+    }
+    res.send(result);
+    this.logRequestEndDetails(res);
+}
+
+ISYServer.prototype.handleVariableDefinitionsRequest = function(req,res) {
+    var variableType = req.params.type;
+
+    this.logRequestStartDetails(req);
+
+    if(variableType != '1' && variableType != '2')
+    {
+        this.buildCommandResponse(res, false, 500, 'Invalid variable type specified');
+        this.logRequestEndDetails(res);
+        return;
+    }
+
+    this.logRequestStartDetails(req);
+    this.setupResponseHeaders(res,200);
+    if(this.getConfigSetting(this.CONFIG_LOG_RESPONSE_BODY)) {
+        log(this.varData[variableType].toString());
+    }
+    res.send(this.varData[variableType].toString());
+    this.logRequestEndDetails(res);
+
+}
+
 ISYServer.prototype.configureRoutes = function() {
     var that = this;
     
@@ -693,6 +899,23 @@ ISYServer.prototype.configureRoutes = function() {
 
     this.app.get('/rest/nodes', this.authHandler.bind(this), function (req, res) {
         that.handleNodesRequest(req,res);
+    });
+
+    this.app.get('/rest/vars/get/:type/:id', this.authHandler.bind(this), function (req, res) {
+        that.handleVariableGetRequest(req,res);
+    });
+
+    this.app.get('/rest/vars/set/:type/:id/:value', this.authHandler.bind(this), function (req, res) {
+        that.handleVariableSetRequest(req,res);
+    });
+
+    this.app.get('/rest/vars/get/:type', this.authHandler.bind(this), function (req, res) {
+        that.handleVariableGetListRequest(req,res);
+    });
+
+
+    this.app.get('/rest/vars/definitions/:type', this.authHandler.bind(this), function (req, res) {
+        that.handleVariableDefinitionsRequest(req,res);
     });
 
     this.app.get('/rest/status', this.authHandler.bind(this), function (req, res) {

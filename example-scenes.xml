@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes>
+    <root></root>
+    <group flag="12">
+        <address>00:21:b9:02:0a:52</address>
+        <name>My Lighting</name>
+        <family>6</family>
+        <members>
+            <link type="0">18 5A CF 1</link>
+            <link type="0">18 5A CF 2</link>
+            <link type="0">18 5A CF 3</link>
+            <link type="0">18 5A CF 4</link>
+            <link type="0">18 5A CF 5</link>
+            <link type="0">18 55 FA 1</link>
+            <link type="0">18 55 FA 2</link>
+            <link type="0">18 55 FA 3</link>
+            <link type="0">18 55 FA 4</link>
+            <link type="0">18 55 FA 5</link>
+            <link type="0">18 55 FA 6</link>
+            <link type="0">18 55 FA 7</link>
+            <link type="0">18 55 FA 8</link>
+            <link type="0">18 39 DD 1</link>
+            <link type="0">18 59 CD 1</link>
+            <link type="0">18 59 CD 3</link>
+            <link type="0">18 59 CD 4</link>
+            <link type="0">18 59 CD 5</link>
+            <link type="0">18 59 CD 6</link>
+            <link type="0">33 A2 70 1</link>
+            <link type="0">18 36 B1 1</link>
+            <link type="0">17 15 23 1</link>
+            <link type="0">19 C0 E4 1</link>
+            <link type="0">17 15 6A 1</link>
+            <link type="0">18 43 C4 1</link>
+            <link type="0">19 51 9E 1</link>
+            <link type="0">18 5A CF 6</link>
+            <link type="0">18 11 48 1</link>
+            <link type="0">19 4F 6C 1</link>
+            <link type="0">18 D 22 1</link>
+            <link type="0">18 18 C5 1</link>
+            <link type="0">17 22 F6 1</link>
+            <link type="0">29 3D E2 1</link>
+            <link type="0">29 3D E2 2</link>
+            <link type="0">18 10 86 1</link>
+            <link type="0">17 28 71 1</link>
+            <link type="0">19 53 7D 1</link>
+            <link type="0">18 18 C3 1</link>
+            <link type="0">18 12 18 1</link>
+            <link type="0">19 53 90 1</link>
+            <link type="0">19 57 51 1</link>
+            <link type="0">18 12 29 1</link>
+            <link type="0">18 12 32 1</link>
+            <link type="0">17 27 82 1</link>
+            <link type="0">17 19 F9 1</link>
+            <link type="0">18 E 45 1</link>
+            <link type="0">18 C 87 1</link>
+            <link type="0">19 56 18 1</link>
+            <link type="0">14 5C B2 1</link>
+            <link type="0">14 5C B2 2</link>
+            <link type="0">14 5C B2 3</link>
+            <link type="0">17 D5 A8 1</link>
+            <link type="0">17 D5 A8 2</link>
+            <link type="0">2B 99 34 1</link>
+            <link type="0">18 5A CF 7</link>
+            <link type="0">18 5A CF 8</link>
+            <link type="0">22 47 AA 1</link>
+            <link type="0">22 47 AA 2</link>
+            <link type="0">22 47 AA 3</link>
+            <link type="0">22 47 AA 4</link>
+            <link type="0">22 47 AA 5</link>
+            <link type="0">17 15 35 1</link>
+            <link type="0">33 9B DC 1</link>
+            <link type="0">17 14 73 1</link>
+            <link type="0">18 11 CE 1</link>
+            <link type="0">14 47 41 1</link>
+            <link type="0">14 47 41 2</link>
+            <link type="0">14 49 B9 1</link>
+            <link type="0">14 49 B9 2</link>
+            <link type="0">17 D7 ED 1</link>
+            <link type="0">17 D7 ED 2</link>
+            <link type="0">18 E 2A 1</link>
+            <link type="0">1F 47 4B 1</link>
+            <link type="0">1F 42 F7 1</link>
+            <link type="0">18 2F B1 1</link>
+            <link type="0">2B 99 34 2</link>
+            <link type="0">1A E CC 1</link>
+            <link type="0">18 10 9C 1</link>
+            <link type="0">19 C2 FA 1</link>
+            <link type="0">19 C3 48 1</link>
+            <link type="0">19 C3 5B 1</link>
+            <link type="0">18 C1 C8 1</link>
+            <link type="0">18 C1 AB 1</link>
+            <link type="0">1A A EB 1</link>
+            <link type="0">1C 29 DC 1</link>
+            <link type="0">1C 29 DC 2</link>
+            <link type="0">1C 29 DC 3</link>
+            <link type="0">1C 29 DC 4</link>
+            <link type="0">1C 29 DC 5</link>
+            <link type="0">1C 29 DC 6</link>
+            <link type="0">22 47 AA 6</link>
+            <link type="0">22 47 AA 7</link>
+            <link type="0">22 47 AA 8</link>
+            <link type="0">1B 4D 2D 1</link>
+            <link type="0">1C 29 DC 7</link>
+            <link type="0">1C 29 DC 8</link>
+            <link type="0">1B 31 E 1</link>
+            <link type="0">1B 34 B 1</link>
+            <link type="0">14 7C D8 1</link>
+            <link type="0">14 7C D8 2</link>
+            <link type="0">14 7C D8 3</link>
+            <link type="0">14 A7 12 1</link>
+            <link type="0">14 A7 12 2</link>
+            <link type="0">1C E0 46 1</link>
+            <link type="0">1C E0 46 3</link>
+            <link type="0">1C E0 46 4</link>
+            <link type="0">1C E0 46 5</link>
+            <link type="0">1C E0 46 6</link>
+            <link type="0">17 79 81 1</link>
+            <link type="0">14 A8 BC 1</link>
+            <link type="0">14 A8 BC 2</link>
+            <link type="0">1C DF 26 1</link>
+            <link type="0">1C DF 26 3</link>
+            <link type="0">1C DF 26 4</link>
+            <link type="0">1C DF 26 5</link>
+            <link type="0">1C DF 26 6</link>
+            <link type="0">1D FA 5A 1</link>
+            <link type="0">1D FA 5A 3</link>
+            <link type="0">1D FA 5A 4</link>
+            <link type="0">1D FA 5A 5</link>
+            <link type="0">1D FA 5A 6</link>
+            <link type="0">14 A6 C5 1</link>
+            <link type="0">14 A6 C5 2</link>
+            <link type="0">1F 45 84 1</link>
+            <link type="0">1F 47 EB 1</link>
+            <link type="0">1F 46 F0 1</link>
+            <link type="0">14 7C CF 1</link>
+            <link type="0">14 7C CF 2</link>
+            <link type="0">14 7C CF 3</link>
+            <link type="0">17 79 81 2</link>
+            <link type="0">21 5D 67 1</link>
+            <link type="0">21 5D 67 2</link>
+            <link type="0">21 5D 67 3</link>
+            <link type="0">21 62 43 1</link>
+            <link type="0">21 62 43 2</link>
+            <link type="0">21 62 43 3</link>
+            <link type="0">1A 12 32 1</link>
+            <link type="0">2B 5A 18 1</link>
+            <link type="0">2B 5A 19 1</link>
+            <link type="0">2B 5E 9F 1</link>
+            <link type="0">2B 99 34 3</link>
+            <link type="0">2B 99 34 4</link>
+            <link type="0">2B 99 34 5</link>
+            <link type="0">2B 99 34 6</link>
+            <link type="0">2B 99 34 7</link>
+            <link type="0">2B 99 34 8</link>
+            <link type="0">ZW002_1</link>
+            <link type="0">ZW003_1</link>
+            <link type="0">ZW004_1</link>
+            <link type="0">ZW005_1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>10036</address>
+        <name>MCP - Door Open</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>60</deviceGroup>
+        <members>
+            <link type="32">2B 99 34 5</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>10399</address>
+        <name>Front Hall</name>
+        <parent type="3">43858</parent>
+        <deviceGroup>24</deviceGroup>
+        <ELK_ID>A01</ELK_ID>
+        <members>
+            <link type="16">18 18 C5 1</link>
+            <link type="16">17 22 F6 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>12627</address>
+        <name>Interior Lights Minus Bedroom</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>20</deviceGroup>
+        <ELK_ID>A02</ELK_ID>
+        <members>
+            <link type="32">33 A2 70 1</link>
+            <link type="32">18 36 B1 1</link>
+            <link type="32">18 43 C4 1</link>
+            <link type="32">19 51 9E 1</link>
+            <link type="32">18 11 48 1</link>
+            <link type="32">19 4F 6C 1</link>
+            <link type="32">18 D 22 1</link>
+            <link type="32">18 18 C5 1</link>
+            <link type="32">17 22 F6 1</link>
+            <link type="32">18 10 86 1</link>
+            <link type="32">17 28 71 1</link>
+            <link type="32">19 53 7D 1</link>
+            <link type="32">18 18 C3 1</link>
+            <link type="32">18 12 18 1</link>
+            <link type="32">19 53 90 1</link>
+            <link type="32">18 12 29 1</link>
+            <link type="32">18 12 32 1</link>
+            <link type="32">17 27 82 1</link>
+            <link type="32">17 19 F9 1</link>
+            <link type="32">18 E 45 1</link>
+            <link type="32">18 C 87 1</link>
+            <link type="32">19 56 18 1</link>
+            <link type="32">2B 99 34 1</link>
+            <link type="32">22 47 AA 1</link>
+            <link type="32">33 9B DC 1</link>
+            <link type="32">18 E 2A 1</link>
+            <link type="32">1F 47 4B 1</link>
+            <link type="32">1F 42 F7 1</link>
+            <link type="32">18 2F B1 1</link>
+            <link type="32">1A E CC 1</link>
+            <link type="32">18 10 9C 1</link>
+            <link type="32">18 C1 AB 1</link>
+            <link type="32">1A A EB 1</link>
+            <link type="32">1B 4D 2D 1</link>
+            <link type="32">1B 31 E 1</link>
+            <link type="32">1F 45 84 1</link>
+            <link type="32">1F 47 EB 1</link>
+            <link type="32">1F 46 F0 1</link>
+            <link type="32">1A 12 32 1</link>
+            <link type="32">2B 5A 18 1</link>
+            <link type="32">2B 5A 19 1</link>
+            <link type="32">2B 5E 9F 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>13005</address>
+        <name>Alarm On Buttons</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>58</deviceGroup>
+        <ELK_ID>A03</ELK_ID>
+        <members>
+            <link type="32">18 5A CF 2</link>
+            <link type="32">22 47 AA 5</link>
+            <link type="32">2B 99 34 3</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>13423</address>
+        <name>Dining Room</name>
+        <parent type="3">48638</parent>
+        <deviceGroup>34</deviceGroup>
+        <ELK_ID>A04</ELK_ID>
+        <members>
+            <link type="16">1A E CC 1</link>
+            <link type="16">18 10 9C 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>19128</address>
+        <name>Garage Status</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>17</deviceGroup>
+        <ELK_ID>F05</ELK_ID>
+        <members>
+            <link type="32">18 55 FA 3</link>
+            <link type="32">18 5A CF 8</link>
+            <link type="32">22 47 AA 8</link>
+            <link type="16">17 79 81 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>1930</address>
+        <name>Upstairs Stairs</name>
+        <parent type="3">13066</parent>
+        <deviceGroup>28</deviceGroup>
+        <ELK_ID>F06</ELK_ID>
+        <members>
+            <link type="16">18 12 29 1</link>
+            <link type="16">18 12 32 1</link>
+            <link type="16">19 56 18 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>19882</address>
+        <name>Master Bedroom</name>
+        <parent type="3">42997</parent>
+        <deviceGroup>40</deviceGroup>
+        <ELK_ID>I08</ELK_ID>
+        <members>
+            <link type="16">18 55 FA 1</link>
+            <link type="32">18 C1 C8 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>20639</address>
+        <name>Sam Fan-High</name>
+        <parent type="3">30962</parent>
+        <deviceGroup>56</deviceGroup>
+        <ELK_ID>J01</ELK_ID>
+        <members>
+            <link type="32">1D FA 5A 4</link>
+            <link type="32">1D FA 5A 5</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>21117</address>
+        <name>Sarah Fan-Off</name>
+        <parent type="3">54218</parent>
+        <deviceGroup>44</deviceGroup>
+        <ELK_ID>J16</ELK_ID>
+        <members>
+            <link type="32">1C E0 46 4</link>
+            <link type="32">1C E0 46 5</link>
+            <link type="32">1C E0 46 6</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>23673</address>
+        <name>Kids Go Upstairs Keys</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>29</deviceGroup>
+        <ELK_ID>F16</ELK_ID>
+        <members>
+            <link type="32">18 5A CF 5</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>26542</address>
+        <name>MCP - Phone Present</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>61</deviceGroup>
+        <members>
+            <link type="32">2B 99 34 7</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>27346</address>
+        <name>Basement Stairs</name>
+        <parent type="3">5496</parent>
+        <deviceGroup>26</deviceGroup>
+        <ELK_ID>G01</ELK_ID>
+        <members>
+            <link type="16">18 12 18 1</link>
+            <link type="16">19 53 90 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>28009</address>
+        <name>All Back Motion Lights</name>
+        <parent type="3">58858</parent>
+        <deviceGroup>35</deviceGroup>
+        <ELK_ID>G02</ELK_ID>
+        <members>
+            <link type="16">18 39 DD 1</link>
+            <link type="32">17 15 23 1</link>
+            <link type="32">17 15 6A 1</link>
+            <link type="32">19 C3 5B 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>30560</address>
+        <name>Leaving Keys</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>16</deviceGroup>
+        <ELK_ID>G03</ELK_ID>
+        <members>
+            <link type="32">18 59 CD 3</link>
+            <link type="32">22 47 AA 2</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>31829</address>
+        <name>Sarah Fan-High</name>
+        <parent type="3">54218</parent>
+        <deviceGroup>47</deviceGroup>
+        <ELK_ID>J11</ELK_ID>
+        <members>
+            <link type="32">1C E0 46 3</link>
+            <link type="32">1C E0 46 4</link>
+            <link type="32">1C E0 46 5</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>32667</address>
+        <name>Home Buttons</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>41</deviceGroup>
+        <ELK_ID>H15</ELK_ID>
+        <members>
+            <link type="32">18 59 CD 6</link>
+            <link type="32">18 5A CF 6</link>
+            <link type="32">2B 99 34 2</link>
+            <link type="32">22 47 AA 6</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>32919</address>
+        <name>Main Floor TV Room All Lights</name>
+        <parent type="3">37794</parent>
+        <deviceGroup>19</deviceGroup>
+        <ELK_ID>G04</ELK_ID>
+        <members>
+            <link type="16">18 E 2A 1</link>
+            <link type="32">1F 47 4B 1</link>
+            <link type="32">1F 42 F7 1</link>
+            <link type="32">18 C1 AB 1</link>
+            <link type="32">1F 45 84 1</link>
+            <link type="32">1F 47 EB 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>33836</address>
+        <name>MCP - Car Light</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>64</deviceGroup>
+        <members>
+            <link type="32">2B 99 34 4</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>35388</address>
+        <name>Sophia Fan-High</name>
+        <parent type="3">59604</parent>
+        <deviceGroup>52</deviceGroup>
+        <ELK_ID>K10</ELK_ID>
+        <members>
+            <link type="32">1C DF 26 4</link>
+            <link type="32">1C DF 26 5</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>35783</address>
+        <name>Sam Fan -Med</name>
+        <parent type="3">30962</parent>
+        <deviceGroup>55</deviceGroup>
+        <ELK_ID>I15</ELK_ID>
+        <members>
+            <link type="32">1D FA 5A 4</link>
+            <link type="32">1D FA 5A 6</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>3620</address>
+        <name>Arrive Home</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>38</deviceGroup>
+        <ELK_ID>G05</ELK_ID>
+        <members>
+            <link type="32">18 11 48 1</link>
+            <link type="32">19 4F 6C 1</link>
+            <link type="32">18 D 22 1</link>
+            <link type="32">18 18 C5 1</link>
+            <link type="32">17 22 F6 1</link>
+            <link type="32">18 10 86 1</link>
+            <link type="32">17 28 71 1</link>
+            <link type="32">18 12 29 1</link>
+            <link type="32">18 12 32 1</link>
+            <link type="32">19 56 18 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>37094</address>
+        <name>Main Floor Fireplace Scene</name>
+        <parent type="3">37794</parent>
+        <deviceGroup>37</deviceGroup>
+        <ELK_ID>G06</ELK_ID>
+        <members>
+            <link type="16">18 5A CF 4</link>
+            <link type="32">17 15 35 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>38537</address>
+        <name>All On Buttons</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>36</deviceGroup>
+        <ELK_ID>G07</ELK_ID>
+        <members>
+            <link type="32">18 55 FA 8</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>39987</address>
+        <name>Arrive Home Buttons</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>39</deviceGroup>
+        <ELK_ID>G08</ELK_ID>
+        <members>
+            <link type="32">22 47 AA 3</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>41223</address>
+        <name>Sam Fan Light</name>
+        <parent type="3">30962</parent>
+        <deviceGroup>53</deviceGroup>
+        <ELK_ID>I16</ELK_ID>
+        <members>
+            <link type="16">1D FA 5A 1</link>
+            <link type="32">14 A6 C5 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>44909</address>
+        <name>Main Floor Hall</name>
+        <parent type="3">43858</parent>
+        <deviceGroup>23</deviceGroup>
+        <ELK_ID>G09</ELK_ID>
+        <members>
+            <link type="16">18 11 48 1</link>
+            <link type="16">19 4F 6C 1</link>
+            <link type="16">18 D 22 1</link>
+            <link type="16">22 47 AA 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>45501</address>
+        <name>Sophia Fan-Med</name>
+        <parent type="3">59604</parent>
+        <deviceGroup>51</deviceGroup>
+        <ELK_ID>K13</ELK_ID>
+        <members>
+            <link type="32">1C DF 26 4</link>
+            <link type="32">1C DF 26 6</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>45857</address>
+        <name>Sarah Fan-Med</name>
+        <parent type="3">54218</parent>
+        <deviceGroup>46</deviceGroup>
+        <ELK_ID>J14</ELK_ID>
+        <members>
+            <link type="32">1C E0 46 3</link>
+            <link type="32">1C E0 46 4</link>
+            <link type="32">1C E0 46 6</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>46700</address>
+        <name>Master Suite Lights</name>
+        <parent type="3">42997</parent>
+        <deviceGroup>21</deviceGroup>
+        <ELK_ID>G10</ELK_ID>
+        <members>
+            <link type="32">18 55 FA 1</link>
+            <link type="32">18 11 CE 1</link>
+            <link type="32">18 C1 C8 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>47458</address>
+        <name>Master Bedroom Fireplace Ctrl</name>
+        <parent type="3">42997</parent>
+        <deviceGroup>31</deviceGroup>
+        <ELK_ID>G11</ELK_ID>
+        <members>
+            <link type="16">18 55 FA 5</link>
+            <link type="32">17 14 73 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>49197</address>
+        <name>All Kitchen Lights</name>
+        <parent type="3">42035</parent>
+        <deviceGroup>57</deviceGroup>
+        <ELK_ID>F03</ELK_ID>
+        <members>
+            <link type="32">19 51 9E 1</link>
+            <link type="32">18 10 86 1</link>
+            <link type="32">17 28 71 1</link>
+            <link type="32">1A 12 32 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>49387</address>
+        <name>Basement Rec Room</name>
+        <parent type="3">23278</parent>
+        <deviceGroup>25</deviceGroup>
+        <ELK_ID>G12</ELK_ID>
+        <members>
+            <link type="16">19 53 7D 1</link>
+            <link type="16">18 18 C3 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>51602</address>
+        <name>Sarah Room Light</name>
+        <parent type="3">54218</parent>
+        <deviceGroup>43</deviceGroup>
+        <ELK_ID>K07</ELK_ID>
+        <members>
+            <link type="32">14 A7 12 1</link>
+            <link type="16">1C E0 46 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>52597</address>
+        <name>MCP - Device Active</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>59</deviceGroup>
+        <members>
+            <link type="32">2B 99 34 8</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>53777</address>
+        <name>Sam Fan-Low</name>
+        <parent type="3">30962</parent>
+        <deviceGroup>54</deviceGroup>
+        <ELK_ID>J03</ELK_ID>
+        <members>
+            <link type="32">1D FA 5A 5</link>
+            <link type="32">1D FA 5A 6</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>53993</address>
+        <name>Sophia Fan Light</name>
+        <parent type="3">59604</parent>
+        <deviceGroup>49</deviceGroup>
+        <ELK_ID>K09</ELK_ID>
+        <members>
+            <link type="32">14 A8 BC 1</link>
+            <link type="16">1C DF 26 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>55034</address>
+        <name>Good Night Keys</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>22</deviceGroup>
+        <ELK_ID>G13</ELK_ID>
+        <members>
+            <link type="32">18 5A CF 3</link>
+            <link type="32">18 55 FA 2</link>
+            <link type="32">18 59 CD 4</link>
+            <link type="32">22 47 AA 4</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>59954</address>
+        <name>Upstairs Hall</name>
+        <parent type="3">1460</parent>
+        <deviceGroup>27</deviceGroup>
+        <ELK_ID>G14</ELK_ID>
+        <members>
+            <link type="16">17 27 82 1</link>
+            <link type="16">17 19 F9 1</link>
+            <link type="16">18 E 45 1</link>
+            <link type="16">18 C 87 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>62367</address>
+        <name>MCP - Recent Light</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>62</deviceGroup>
+        <members>
+            <link type="32">2B 99 34 6</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>63141</address>
+        <name>All Outside Lights</name>
+        <parent type="3">58858</parent>
+        <deviceGroup>32</deviceGroup>
+        <ELK_ID>F04</ELK_ID>
+        <members>
+            <link type="32">18 39 DD 1</link>
+            <link type="32">18 59 CD 1</link>
+            <link type="32">17 15 23 1</link>
+            <link type="32">17 15 6A 1</link>
+            <link type="32">19 C3 5B 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>63149</address>
+        <name>Going Upstairs Lights</name>
+        <parent type="3">42740</parent>
+        <deviceGroup>30</deviceGroup>
+        <ELK_ID>G15</ELK_ID>
+        <members>
+            <link type="32">18 12 29 1</link>
+            <link type="32">18 12 32 1</link>
+            <link type="32">17 27 82 1</link>
+            <link type="32">17 19 F9 1</link>
+            <link type="32">18 E 45 1</link>
+            <link type="32">18 C 87 1</link>
+            <link type="32">19 56 18 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>63677</address>
+        <name>Side Gate Status Buttons</name>
+        <parent type="3">58858</parent>
+        <deviceGroup>33</deviceGroup>
+        <ELK_ID>G16</ELK_ID>
+        <members>
+            <link type="32">18 55 FA 7</link>
+            <link type="32">18 5A CF 7</link>
+            <link type="32">22 47 AA 7</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>65377</address>
+        <name>Outside Decorations</name>
+        <parent type="3">58858</parent>
+        <deviceGroup>18</deviceGroup>
+        <ELK_ID>H01</ELK_ID>
+        <members>
+            <link type="16">18 59 CD 5</link>
+            <link type="32">19 C0 E4 1</link>
+            <link type="32">19 C2 FA 1</link>
+            <link type="32">19 C3 48 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>7613</address>
+        <name>Sophia Fan-Low</name>
+        <parent type="3">59604</parent>
+        <deviceGroup>50</deviceGroup>
+        <ELK_ID>K12</ELK_ID>
+        <members>
+            <link type="32">1C DF 26 5</link>
+            <link type="32">1C DF 26 6</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>8861</address>
+        <name>Living Room All</name>
+        <parent type="3">21278</parent>
+        <deviceGroup>42</deviceGroup>
+        <ELK_ID>I05</ELK_ID>
+        <members>
+            <link type="16">18 36 B1 1</link>
+            <link type="32">1B 4D 2D 1</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>9040</address>
+        <name>Sarah Fan-Low</name>
+        <parent type="3">54218</parent>
+        <deviceGroup>45</deviceGroup>
+        <ELK_ID>J13</ELK_ID>
+        <members>
+            <link type="32">1C E0 46 3</link>
+            <link type="32">1C E0 46 5</link>
+            <link type="32">1C E0 46 6</link>
+        </members>
+    </group>
+    <group flag="132">
+        <address>ADR0001</address>
+        <name>Auto DR</name>
+        <family>5</family>
+        <deviceGroup>48</deviceGroup>
+        <ELK_ID>A12</ELK_ID>
+        <members></members>
+    </group>
+</nodes>

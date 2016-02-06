@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CList type="VAR_INT">
+    <e id="1" name="OfficeMotionEnabled"/>
+    <e id="2" name="GarageDoorOpenMinutes"/>
+    <e id="3" name="BasementDoorOpenMinutes"/>
+    <e id="4" name="MainFloorDoorOpenMinutes"/>
+    <e id="5" name="TotalDailyBasementDoorOpens"/>
+    <e id="6" name="TotalDailyGarageDoorOpens"/>
+    <e id="7" name="TotalDailyFrontDoorOpens"/>
+    <e id="8" name="BasementLightOn"/>
+    <e id="9" name="TotalServerRoomDoorOpens"/>
+    <e id="10" name="TotalDailyDeckDoorOpens"/>
+    <e id="11" name="TestTemperature"/>
+    <e id="12" name="Office_Humidity"/>
+    <e id="13" name="Office_Temperature"/>
+    <e id="14" name="Office_Movement"/>
+    <e id="15" name="Lights_BasementTVRoomTotal"/>
+    <e id="17" name="Lights_KitchenMainTotal"/>
+    <e id="16" name="Lights_BasementStairsTotal"/>
+    <e id="19" name="Lights_MainFrontHallwayTotal"/>
+    <e id="18" name="Lights_KitchenPendantTotal"/>
+    <e id="21" name="Lights_OfficeTotal"/>
+    <e id="20" name="Lights_MainHallwayTotal"/>
+    <e id="23" name="Lights_UpstairsHallTotal"/>
+    <e id="22" name="Lights_StairsGoingUpTotal"/>
+    <e id="25" name="Lights_KitchenTable"/>
+    <e id="24" name="Lights_BonusRoomTotal"/>
+</CList>

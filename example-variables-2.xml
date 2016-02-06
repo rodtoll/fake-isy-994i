@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CList type="VAR_INT">
+    <e id="68" name="Infiniti_Present"/>
+    <e id="1" name="AlarmFrontDoorOpen"/>
+    <e id="2" name="AlarmBasementDoorOpen"/>
+    <e id="3" name="AlarmGarageDoorOpen"/>
+    <e id="4" name="AlarmActive"/>
+    <e id="5" name="AlarmStayModeActive"/>
+    <e id="6" name="AlarmAwayModeActive"/>
+    <e id="67" name="Honda_Present"/>
+    <e id="7" name="AlarmGoingOff"/>
+    <e id="8" name="AlarmDeckDoorOpen"/>
+    <e id="9" name="SomeoneHome"/>
+    <e id="10" name="HomeState"/>
+    <e id="19" name="LockdownOccured"/>
+    <e id="18" name="SystemRestarted"/>
+    <e id="23" name="Sarah_SamsungS5_Ping"/>
+    <e id="22" name="OfficeTV_Present"/>
+    <e id="25" name="IsDeviceActive"/>
+    <e id="24" name="IsPhonePresent"/>
+    <e id="27" name="XboxOne_On"/>
+    <e id="26" name="IsDoorOpen"/>
+    <e id="29" name="Bedroom_TV_On"/>
+    <e id="28" name="PS3_On"/>
+    <e id="91" name="Mainfloor_TV_Ping"/>
+    <e id="31" name="Main_TV_On"/>
+    <e id="90" name="Jo_SamsungS5_Ping"/>
+    <e id="30" name="Main_ChromeCast_On"/>
+    <e id="34" name="Basement_ChromeCast_On"/>
+    <e id="35" name="Rod_Nexus6_Ping"/>
+    <e id="32" name="Wii_On"/>
+    <e id="33" name="Basement_TV_On"/>
+    <e id="36" name="DeviceActivityRecently"/>
+    <e id="37" name="LightActivityRecently"/>
+</CList>
