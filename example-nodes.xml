@@ -479,6 +479,32 @@
         <property id="ST" value="0" formatted="Off" uom="on/off"/>
     </node>
     <node flag="128">
+        <address>17 80 81 1</address>
+        <name>Garage Door Sensor 2</name>
+        <parent type="3">54384</parent>
+        <type>7.0.54.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>17 80 81 1</pnode>
+        <ELK_ID>I01</ELK_ID>
+        <property id="ST" value="255" formatted="On" uom="on/off"/>
+    </node>
+    <node flag="0">
+        <address>17 80 81 2</address>
+        <name>Garage Sensor 2-Unused Relay</name>
+        <parent type="3">127</parent>
+        <type>7.0.54.0</type>
+        <enabled>true</enabled>
+        <deviceClass>0</deviceClass>
+        <wattage>0</wattage>
+        <dcPeriod>0</dcPeriod>
+        <pnode>17 80 81 1</pnode>
+        <ELK_ID>K01</ELK_ID>
+        <property id="ST" value="0" formatted="Off" uom="on/off"/>
+    </node>
+    <node flag="128">
         <address>17 D5 A8 1</address>
         <name>Garage Door Opener-Unused Sen</name>
         <parent type="3">127</parent>
