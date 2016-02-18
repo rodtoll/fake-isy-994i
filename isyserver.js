@@ -15,6 +15,7 @@ var xmlparser = require('express-xml-bodyparser');
 var restler = require('restler')
 var ElkStatus = require('./elkstatus.js').ElkStatus;
 var Variable = require('./variable.js').Variable;
+var dateFormat = require('dateformat');
 
 var basicAuth = require('basic-auth');
 
@@ -117,7 +118,7 @@ ISYServer.prototype.buildSubscribeResponse = function(res, subscriptionId) {
     if(this.getConfigSetting(this.CONFIG_LOG_RESPONSE_BODY)) {
         log('Response Body: '+response);
     }
-    res.send(response)
+    res.send(response);
 }
 
 ISYServer.prototype.setupSubscribeResponseHeaders = function(res, resultCode) {
@@ -690,13 +691,14 @@ ISYServer.prototype.sendInitialWebState = function(endpoint) {
 }
 
 ISYServer.prototype.buildVariableUpdate = function(variable) {
+    var timeStamp = dateFormat(variable.getTs(), "yyyymmdd hh:MM:ss");
     var updateData = '<?xml version="1.0"?><Event seqnum="';
     updateData += this.getNextSequenceNumber();
     updateData += '" sid="uuid:48"><control>_1</control>';
     updateData += '<action>6</action>';
     updateData += '<node></node>';
     updateData += '<eventInfo>';
-    updateData += '<var type="' + variable.getType() + '" id="'+variable.getId()+'">\n<val>' + variable.getValue() + '</val>\n<ts>'+variable.getTs().toString()+'</ts></var>';
+    updateData += '<var type="' + variable.getType() + '" id="'+variable.getId()+'">\n<val>' + variable.getValue() + '</val>\n<ts>'+timeStamp+'</ts></var>';
     updateData += '</eventInfo>';
     updateData += '</Event>';
     return updateData;

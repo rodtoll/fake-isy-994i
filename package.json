@@ -2,7 +2,7 @@
   "name": "fake-isy-994i",
   "description": "Node.js server that acts like a ISY-994i ",
   "license": "MIT",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "author": "Rod Toll <rod_toll@hotmail.com>",
   "keywords": [
     "isy",
@@ -17,7 +17,8 @@
     "faye-websocket": "",
     "restler": "^3.4.0",
     "upnp-ssdp": "0.0.2",
-    "xmldom": ""
+    "xmldom": "",
+    "dateformat": ""
   },
   "bugs": {
     "url": "https://github.com/rodtoll/fake-isy-994i/issues"
