@@ -14,7 +14,8 @@ var config = {
     elkTopologyFile: './example-elk-topology.xml',
     logResponseBody: false,
     logWebSockets: false ,
-    logWebNotification: false
+    logWebNotification: false,
+    failVariableCalls: false
 }
 
 var server = new ISYServer(3000, config);

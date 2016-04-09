@@ -66,6 +66,7 @@ Configuration options:
 * `elkTopologyFile` - Fully qualified path to file containing raw results of a call to an ISY with elk enabled in the /rest/elk/get/topology. See example-elk-topology.xml for a sample (and it is the default).
 * `logResponseBody` - Should the body of responses being sent be sent to the log. Default: false
 * `logWebSockets` - Should the body of messages sent to websockets be sent to the log. Default: false
+* `failVariableCalls` - Should calls to get variable state fail? This emulates behavior of ISY when no variables are set.
 
 
 Sample:

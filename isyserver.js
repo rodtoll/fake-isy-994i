@@ -42,6 +42,7 @@ ISYServer.prototype.CONFIG_ELK_TOPOLOGY_FILE = 'elkTopologyFile';
 ISYServer.prototype.CONFIG_LOG_RESPONSE_BODY = 'logResponseBody';
 ISYServer.prototype.CONFIG_LOG_WEBSOCKET_NOTIFICATION = 'logWebSockets';
 ISYServer.prototype.CONFIG_LOG_WEB_NOTIFICATION = 'logWebNotification';
+ISYServer.prototype.CONFIG_FAIL_VARIABLE_CALLS = 'failVariableCalls';
 ISYServer.prototype.CONFIG_SCENE_FILE = 'sceneFile';
 ISYServer.prototype.CONFIG_VARIABLE_FILE_1 = "variable1File";
 ISYServer.prototype.CONFIG_VARIABLE_FILE_2 = "variable2File";
@@ -64,7 +65,8 @@ ISYServer.prototype.loadConfig = function(config) {
         { name: this.CONFIG_VARIABLE_FILE_2, default: './example-variables-2.xml' },
         { name: this.CONFIG_LOG_RESPONSE_BODY, default: false},
         { name: this.CONFIG_LOG_WEB_NOTIFICATION, default: false},
-        { name: this.CONFIG_LOG_WEBSOCKET_NOTIFICATION, default: true}
+        { name: this.CONFIG_LOG_WEBSOCKET_NOTIFICATION, default: true},
+        { name: this.CONFIG_FAIL_VARIABLE_CALLS, default: false }
     ];
     
     // Special case logging as we need to setup logging BEFORE loading config so we can log setting results
@@ -108,6 +110,10 @@ ISYServer.prototype.buildCommandResponse = function(res, resultSuccess, resultCo
         log('Response Body: '+resultString);
     }
     res.send(resultString);
+}
+
+ISYServer.prototype.buildCommandResponseEmpty = function(res, resultCode) {
+    res.status(resultCode).end();
 }
 
 ISYServer.prototype.buildSubscribeResponse = function(res, subscriptionId) {
@@ -735,6 +741,12 @@ ISYServer.prototype.handleVariableGetRequest = function(req,res) {
 
     this.logRequestStartDetails(req);
 
+    if(this.getConfigSetting(this.CONFIG_FAIL_VARIABLE_CALLS)) {
+        this.buildCommandResponseEmpty(res, 404);
+        this.logRequestEndDetails(res);
+        return;
+    }
+
     if(variableType != '1' && variableType != '2')
     {
         this.buildCommandResponse(res, false, 500, 'Invalid variable type specified');
@@ -822,6 +834,12 @@ ISYServer.prototype.handleVariableGetListRequest = function(req,res) {
 
     this.logRequestStartDetails(req);
 
+    if(this.getConfigSetting(this.CONFIG_FAIL_VARIABLE_CALLS)) {
+        this.buildCommandResponseEmpty(res, 404);
+        this.logRequestEndDetails(res);
+        return;
+    }
+
     if(variableType != '1' && variableType != '2')
     {
         this.buildCommandResponse(res, false, 500, 'Invalid variable type specified');
@@ -854,6 +872,12 @@ ISYServer.prototype.handleVariableDefinitionsRequest = function(req,res) {
     var variableType = req.params.type;
 
     this.logRequestStartDetails(req);
+
+    if(this.getConfigSetting(this.CONFIG_FAIL_VARIABLE_CALLS)) {
+        this.buildCommandResponseEmpty(res, 404);
+        this.logRequestEndDetails(res);
+        return;
+    }
 
     if(variableType != '1' && variableType != '2')
     {
