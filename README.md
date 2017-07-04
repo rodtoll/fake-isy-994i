@@ -1,6 +1,14 @@
 # fake-isy-994i 
 (C) Rod Toll 2015, Licensed under the MIT-LICENSE.
 
+# ACTIVE DEVELOPMENT & SUPPORT SUSPENDED
+I am sad to announce that I am suspending support for this project. This means I will no longer be addressing any open bugs, responding to feature requests or 
+releasing new versions. Between work and my home life there simply isn't the time. I will leave the repository online and the 
+package on npm but that is it. As this code is licensed under the MIT license you are of course welcome to branch this code and make it your own and use it in your 
+own projects -- but you do so, as always, with no warranty or support from me. 
+
+# Old Readme..
+
 Provides an express based server which emulates an ISY-99i/994i from Universal Devices. (http://www.universal-devices.com). For information on the ISY's rest interface see the Universal Devices SDK here: https://www.universal-devices.com/isy-developers/.
 
 Purpose
